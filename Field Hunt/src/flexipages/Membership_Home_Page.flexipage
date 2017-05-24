@@ -3,12 +3,54 @@
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
-                <name>customMinHeight</name>
-                <value>400px</value>
+                <name>cacheAge</name>
+                <value>1440</value>
             </componentInstanceProperties>
-            <componentName>TASKRAY_LTNG:trTaskRayBoard</componentName>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>All Membership Opps by Month and Stage - Current FY</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>reportName</name>
+                <value>All_Membership_Opps_Current_FY</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showRefreshButton</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:reportChart</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>cacheAge</name>
+                <value>1440</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>reportName</name>
+                <value>Year_over_Year_Membership_Renewals</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showRefreshButton</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:reportChart</componentName>
         </componentInstances>
         <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>width</name>
+                <value>NARROW</value>
+            </componentInstanceProperties>
+            <componentName>TASKRAY_LTNG:trMyProjects</componentName>
+        </componentInstances>
+        <name>bottomRight</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -27,21 +69,6 @@
             </componentInstanceProperties>
             <componentName>flexipage:filterListCard</componentName>
         </componentInstances>
-        <name>bottomLeft</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>width</name>
-                <value>NARROW</value>
-            </componentInstanceProperties>
-            <componentName>TASKRAY_LTNG:trMyProjects</componentName>
-        </componentInstances>
-        <name>bottomRight</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>

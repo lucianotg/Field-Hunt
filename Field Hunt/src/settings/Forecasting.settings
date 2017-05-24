@@ -244,6 +244,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -258,6 +262,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -281,7 +289,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -306,6 +314,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -346,6 +358,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -476,6 +492,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -486,6 +506,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -530,6 +554,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -620,6 +652,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -646,6 +682,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -704,12 +744,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -753,7 +793,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -805,10 +845,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -821,6 +863,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -831,6 +874,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -863,9 +907,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -877,6 +923,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -899,6 +947,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -906,6 +955,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -920,8 +970,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>
@@ -1108,6 +1158,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -1122,6 +1176,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -1145,7 +1203,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -1170,6 +1228,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -1210,6 +1272,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -1340,6 +1406,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -1350,6 +1420,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -1394,6 +1468,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -1484,6 +1566,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -1510,6 +1596,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -1568,12 +1658,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -1617,7 +1707,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -1669,10 +1759,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -1685,6 +1777,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -1695,6 +1788,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -1727,9 +1821,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -1741,6 +1837,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -1763,6 +1861,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -1770,6 +1869,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -1784,8 +1884,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>
@@ -1980,6 +2080,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -1994,6 +2098,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -2017,7 +2125,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -2042,6 +2150,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -2082,6 +2194,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -2212,6 +2328,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -2222,6 +2342,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -2266,6 +2390,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -2356,6 +2488,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2382,6 +2518,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -2440,12 +2580,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -2489,7 +2629,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -2543,10 +2683,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -2559,6 +2701,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -2569,6 +2712,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -2601,9 +2745,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -2615,6 +2761,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -2637,6 +2785,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -2644,6 +2793,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -2658,8 +2808,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>
@@ -2846,6 +2996,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -2860,6 +3014,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -2883,7 +3041,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -2908,6 +3066,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -2948,6 +3110,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -3078,6 +3244,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -3088,6 +3258,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -3132,6 +3306,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -3222,6 +3404,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3248,6 +3434,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -3306,12 +3496,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -3355,7 +3545,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -3407,10 +3597,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -3423,6 +3615,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -3433,6 +3626,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -3465,9 +3659,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -3479,6 +3675,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -3501,6 +3699,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -3508,6 +3707,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -3522,8 +3722,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>
@@ -3710,6 +3910,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -3724,6 +3928,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -3747,7 +3955,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -3772,6 +3980,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -3812,6 +4024,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -3942,6 +4158,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -3952,6 +4172,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -3996,6 +4220,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -4086,6 +4318,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4112,6 +4348,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -4170,12 +4410,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -4219,7 +4459,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -4271,10 +4511,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -4287,6 +4529,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -4297,6 +4540,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -4329,9 +4573,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -4343,6 +4589,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -4365,6 +4613,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -4372,6 +4621,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -4386,8 +4636,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>
@@ -4582,6 +4832,10 @@
             <label>[TEMP] Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeecD</field>
+            <label>1st Renewal Letter Conga Template</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000B6tYJ</field>
             <label>1st Renewal Letter Conga URL</label>
         </opportunityListFieldsLabelMappings>
@@ -4596,6 +4850,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000leGD</field>
             <label>2nd Renewal Letter Sent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CMAiS</field>
+            <label>A/R Account Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kxEM</field>
@@ -4619,7 +4877,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000lpi9</field>
-            <label>Amount Refunded</label>
+            <label>Amount Refunded [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7W</field>
@@ -4644,6 +4902,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1b</field>
             <label>Check/Reference Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BelL0</field>
+            <label>Close Date Year and Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000BdQ7X</field>
@@ -4684,6 +4946,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AfmDu</field>
             <label>Date Renewal Form Received</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLebp</field>
+            <label>Deferred Revenue Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1d</field>
@@ -4814,6 +5080,10 @@
             <label>Invoice Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BewIw</field>
+            <label>Invoice Contact Phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj000000ArddN</field>
             <label>Invoice Date</label>
         </opportunityListFieldsLabelMappings>
@@ -4824,6 +5094,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kwzg</field>
             <label>Invoice Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000CLeMV</field>
+            <label>Is Deferred Revenue</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPu</field>
@@ -4868,6 +5142,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi8</field>
             <label>Member Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BfKyh</field>
+            <label>Membership Close Date (Formula)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BA2DF</field>
+            <label>Membership Close Month</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xGi9</field>
@@ -4958,6 +5240,10 @@
             <label>Opportunity ID 18</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00Nj000000Bequy</field>
+            <label>Opportunity Record Type Name Short</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kNfo</field>
             <label>Opp Record Type ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4984,6 +5270,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009kwPv</field>
             <label>Previous Grant/Gift Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00Nj000000BeZXr</field>
+            <label>Primary Campaign ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000009iXj5</field>
@@ -5042,12 +5332,12 @@
             <label>Recurring Donation Installment Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj0000008xGi4</field>
-            <label>Remaining Balance</label>
+            <field>00Nj000000BfTgm</field>
+            <label>Refunds/Credits</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00Nj000000BA2DF</field>
-            <label>Renewal Date Month</label>
+            <field>00Nj0000008xGi4</field>
+            <label>Remaining Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj000000AsraL</field>
@@ -5091,7 +5381,7 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000000kjKJ</field>
-            <label>Total Paid</label>
+            <label>Total Paid [DEPRECATED]</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00Nj0000008xH1o</field>
@@ -5145,10 +5435,12 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00Nj0000008xGxu</field>
             <field>00Nj000000B6vxp</field>
+            <field>00Nj000000BeecD</field>
             <field>00Nj000000B6tYJ</field>
             <field>00Nj0000000leG8</field>
             <field>00Nj000000BB1UC</field>
             <field>00Nj0000000leGD</field>
+            <field>00Nj000000CMAiS</field>
             <field>00Nj0000000kxEM</field>
             <field>00Nj000000AfbFw</field>
             <field>00Nj0000008xH1Z</field>
@@ -5161,6 +5453,7 @@
             <field>00Nj0000008xIGZ</field>
             <field>00Nj000000BsZeW</field>
             <field>00Nj0000008xH1b</field>
+            <field>00Nj000000BelL0</field>
             <field>00Nj000000BdQ7X</field>
             <field>00Nj0000008xGxo</field>
             <field>00Nj000000AnuBf</field>
@@ -5171,6 +5464,7 @@
             <field>00Nj0000008xGxp</field>
             <field>00Nj0000008xHXX</field>
             <field>00Nj000000AfmDu</field>
+            <field>00Nj000000CLebp</field>
             <field>00Nj0000008xH1d</field>
             <field>00Nj0000008xGxq</field>
             <field>00Nj0000008xGi6</field>
@@ -5203,9 +5497,11 @@
             <field>00Nj000000BAfmX</field>
             <field>00Nj000000ArjNk</field>
             <field>00Nj0000000lCT4</field>
+            <field>00Nj000000BewIw</field>
             <field>00Nj000000ArddN</field>
             <field>00Nj000000BB3B7</field>
             <field>00Nj0000000kwzg</field>
+            <field>00Nj000000CLeMV</field>
             <field>00Nj0000009kwPu</field>
             <field>00Nj0000008xGi7</field>
             <field>00Nj000000AnuBV</field>
@@ -5217,6 +5513,8 @@
             <field>00Nj000000B9cEo</field>
             <field>00Nj000000B9cEp</field>
             <field>00Nj0000008xGi8</field>
+            <field>00Nj000000BfKyh</field>
+            <field>00Nj000000BA2DF</field>
             <field>00Nj0000008xGi9</field>
             <field>00Nj0000008xGiA</field>
             <field>00Nj000000B6vyJ</field>
@@ -5239,6 +5537,7 @@
             <field>00Nj0000008xGiJ</field>
             <field>00Nj0000000kmFj</field>
             <field>00Nj000000AIgqx</field>
+            <field>00Nj000000Bequy</field>
             <field>00Nj0000000kNfo</field>
             <field>00Nj0000008xH1l</field>
             <field>00Nj0000008xGxs</field>
@@ -5246,6 +5545,7 @@
             <field>00Nj0000008xH1m</field>
             <field>00Nj0000008xGiI</field>
             <field>00Nj0000009kwPv</field>
+            <field>00Nj000000BeZXr</field>
             <field>00Nj0000009iXj5</field>
             <field>00Nj0000000levM</field>
             <field>00Nj0000000leFj</field>
@@ -5260,8 +5560,8 @@
             <field>00Nj0000008xGyR</field>
             <field>00Nj0000009IaA8</field>
             <field>00Nj0000009IaA9</field>
+            <field>00Nj000000BfTgm</field>
             <field>00Nj0000008xGi4</field>
-            <field>00Nj000000BA2DF</field>
             <field>00Nj000000AsraL</field>
             <field>00Nj0000009kwPw</field>
             <field>00Nj000000AefKH</field>

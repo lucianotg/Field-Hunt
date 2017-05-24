@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hub Membership</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hub Memberships</value>
+    </caseValues>
+    <fields>
+        <label><!-- Hub Contact --></label>
+        <name>Hub_Contact__c</name>
+        <relationshipLabel><!-- Hub Memberships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hub Group ID --></label>
+        <name>Hub_Group_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hub Group Link --></label>
+        <name>Hub_Group_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hub Group Name --></label>
+        <name>Hub_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hub User --></label>
+        <name>Hub_User__c</name>
+        <relationshipLabel><!-- Hub Memberships --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

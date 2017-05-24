@@ -12,4 +12,5 @@
     <tab>standard-File</tab>
     <tab>standard-Product2</tab>
     <tab>standard-Forecasting3</tab>
+    <tab>standard-Quote</tab>
 </CustomApplication>

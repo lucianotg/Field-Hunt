@@ -3,7 +3,7 @@
     <baseObject>Opportunity</baseObject>
     <category>opportunities</category>
     <deployed>true</deployed>
-    <description>Allows you to filet Opportunities based on the Primary Campaign information.</description>
+    <description>Allows you to filter Opportunities based on the Primary Campaign information.</description>
     <label>Opportunities with Campaign Fields</label>
     <sections>
         <columns>
@@ -43,11 +43,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account_Rosters__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>gf_sf__Acknowledgement_Sent__c</field>
             <table>Opportunity</table>
         </columns>
@@ -68,7 +63,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Amount_Refunded__c</field>
+            <field>Amount_Refunded_DEPRECATED__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -673,7 +668,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Renewal_Date_Month__c</field>
+            <field>Membership_Close_Month__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -743,7 +738,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_Paid__c</field>
+            <field>Total_Paid_Deprecated__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>

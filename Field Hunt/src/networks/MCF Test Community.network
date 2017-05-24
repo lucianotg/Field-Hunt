@@ -21,10 +21,11 @@
     <enableNicknameDisplay>false</enableNicknameDisplay>
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <navigationLinkSet>
         <navigationMenuItem>
-            <defaultListViewId>00Bj0000002bR00EAE</defaultListViewId>
+            <defaultListViewId>My_ChatterGroups</defaultListViewId>
             <label>Groups</label>
             <position>1</position>
             <publiclyAvailable>false</publiclyAvailable>

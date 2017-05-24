@@ -530,4 +530,12 @@
         </columns>
         <masterLabel>Comments</masterLabel>
     </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact.Account.gf_sf__Funder_Category__c</field>
+            <table>User</table>
+        </columns>
+        <masterLabel>Account (via Contact)</masterLabel>
+    </sections>
 </ReportType>

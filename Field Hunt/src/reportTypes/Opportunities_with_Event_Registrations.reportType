@@ -42,7 +42,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Amount_Refunded__c</field>
+            <field>Amount_Refunded_DEPRECATED__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -477,7 +477,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Total_Paid__c</field>
+            <field>Total_Paid_Deprecated__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
