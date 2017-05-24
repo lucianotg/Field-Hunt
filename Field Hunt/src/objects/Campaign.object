@@ -1,0 +1,3697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Campaign_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <compactLayoutAssignment>MCF_Campaign_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MCF_Campaign_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Status</fields>
+        <fields>StartDate</fields>
+        <fields>Non_Staff_Registrations__c</fields>
+        <fields>AmountWonOpportunities</fields>
+        <label>MCF Campaign Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>ActualCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Campaign_Fiscal_Year__c</fullName>
+        <description>Returns the fiscal year of the Start Date or Start Date and Time field on the campaign, if they&apos;re not blank. The field is used to determine which Opportunities are deferred revenue when exporting to Great Plains</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+  NOT( ISBLANK(StartDate) ), 
+   TEXT( YEAR(StartDate) ),
+   IF(
+    NOT( ISBLANK(gf_sf__Start_Date_and_Time__c) ), 
+     TEXT( YEAR( DATEVALUE(gf_sf__Start_Date_and_Time__c) ) ),
+     NULL)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Returns the fiscal year of the Start Date or Start Date and Time field on the campaign, if they&apos;re not blank. The field is used to determine which Opportunities are deferred revenue when exporting to Great Plains</inlineHelpText>
+        <label>Campaign Fiscal Year</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_ID_18__c</fullName>
+        <description>This is the long Campaign ID, as opposed to the partial, 15-digit ID shown in URLs.</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the long Campaign ID, as opposed to the partial, 15-digit ID shown in URLs.</inlineHelpText>
+        <label>Campaign ID 18</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_Memb_Record_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(CampaignMemberRecordTypeId)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign Memb Record Type ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_Record_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(RecordTypeId)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign Record Type ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Remaining_Title__c</fullName>
+        <description>Shows the number of days remaining until the event, plus the event name. Is used in dashboards to sort events.</description>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(DATEVALUE(gf_sf__Start_Date_and_Time__c ) -  TODAY()), 3 , &quot;0&quot;)  &amp; &quot; - &quot; &amp;  gf_sf__Event_Title__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the number of days remaining until the event, plus the event name. Is used in dashboards to sort events.</inlineHelpText>
+        <label>Days Remaining + Title</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Event_Month__c</fullName>
+        <description>Shows the month of the Event Start Date and Time.</description>
+        <externalId>false</externalId>
+        <formula>CASE( TEXT( MONTH( DATEVALUE(gf_sf__Start_Date_and_Time__c) ) ), 
+&quot;1&quot;, &quot;01. January&quot;,
+&quot;2&quot;, &quot;02. February&quot;,
+&quot;3&quot;, &quot;03. March&quot;,
+&quot;4&quot;, &quot;04. April&quot;,
+&quot;5&quot;, &quot;05. May&quot;,
+&quot;6&quot;, &quot;06. June&quot;,
+&quot;7&quot;, &quot;07. July&quot;,
+&quot;8&quot;, &quot;08. August&quot;,
+&quot;9&quot;, &quot;09. September&quot;,
+&quot;10&quot;, &quot;10. October&quot;,
+&quot;11&quot;, &quot;11. November&quot;,
+&quot;12&quot;, &quot;12. December&quot;,
+&quot;Error: Check &apos;Event Month&apos; field&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the month of the Event Start Date and Time.</inlineHelpText>
+        <label>Event Month</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Force_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>Force Update</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>General_Ledger_Account__c</fullName>
+        <description>This is the descriptive name of the General Ledger Account associated with this Campaign Record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the correct General Ledger Account for MEETING FEES ONLY.</inlineHelpText>
+        <label>General Ledger Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ad Income - E-communications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ad Income - Giving Forum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contracting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exhibitor Fees - Annual Conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fiscal Agent - MN Food Funder&apos;s Network</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grants - Advancing Voices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grants - My Brother&apos;s Keeper</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grants - Public Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Job Posting Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Advancing Voices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Annual Conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Annual Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - CEO Circle</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Contract Training</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Government Relations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Member Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Public Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Ron McKinley Fellowship Program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting Fees - Webinars</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Member Dues - New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Member Dues - Renewal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MGO Subscription - New</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MGO Subscription - Renewal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Miscellaneous Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prepaid Dues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prepaid - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Refund/Clearing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Advancing Voices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Annual Conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Annual Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - CEO Circle</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Community Foundation Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Corporate Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Co-sponsored and Pop-up Programs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Family Philanthropy Programs and Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Giving Forum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Government Relations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Grantmaking for the 21st Century</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Member Celebration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Member Networks</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - My Brother&apos;s Keeper</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - New Office Space</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Public Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorships - Webinars</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>General_Ledger_Code__c</fullName>
+        <description>This is the General Ledger Account Code for this Campaign.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the correct General Ledger Code for MEETING FEES ONLY.</inlineHelpText>
+        <label>General Ledger Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>General_Ledger_Account__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>000-1010</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-1145</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2080</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2090</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2098</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-9995</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>140-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>140-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>190-3100-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>190-3100-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>190-3900</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>220-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>320-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>320-3300-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>322-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>322-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>323-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>323-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>324-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>324-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>325-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>325-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3200</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>330-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>330-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>340-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>340-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3160</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>360-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>360-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>390-3250</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>390-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>530-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>530-3500</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>585-3720-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>585-3720-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>590-3500</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>590-3500-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>620-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>620-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>837-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>837-3200</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3150</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3200</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>850-3300</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>899-3150-01</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - My Brother&apos;s Keeper</controllingFieldValue>
+                <controllingFieldValue>Sponsorships - Advancing Voices</controllingFieldValue>
+                <valueName>837-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - New Office Space</controllingFieldValue>
+                <valueName>899-3150-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Co-sponsored and Pop-up Programs</controllingFieldValue>
+                <valueName>320-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Public Policy</controllingFieldValue>
+                <valueName>327-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Webinars</controllingFieldValue>
+                <valueName>330-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contracting</controllingFieldValue>
+                <valueName>390-3250</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Ron McKinley Fellowship Program</controllingFieldValue>
+                <valueName>850-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Annual Conference</controllingFieldValue>
+                <valueName>350-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Annual Meeting</controllingFieldValue>
+                <valueName>140-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - CEO Circle</controllingFieldValue>
+                <valueName>325-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Community Foundation Programs and Networks</controllingFieldValue>
+                <controllingFieldValue>Sponsorships - Community Foundation Programs and Networks</controllingFieldValue>
+                <valueName>323-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Contract Training</controllingFieldValue>
+                <valueName>390-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Corporate Programs and Networks</controllingFieldValue>
+                <valueName>322-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Co-sponsored and Pop-up Programs</controllingFieldValue>
+                <valueName>320-3300-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Family Philanthropy Programs and Networks</controllingFieldValue>
+                <valueName>324-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Government Relations</controllingFieldValue>
+                <valueName>620-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Grantmaking for the 21st Century</controllingFieldValue>
+                <valueName>340-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ad Income - E-communications</controllingFieldValue>
+                <controllingFieldValue>Job Posting Income</controllingFieldValue>
+                <valueName>590-3500-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ad Income - Giving Forum</controllingFieldValue>
+                <valueName>530-3500</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <valueName>000-1010</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Exhibitor Fees - Annual Conference</controllingFieldValue>
+                <valueName>350-3160</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - Advancing Voices</controllingFieldValue>
+                <valueName>839-3200</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - My Brother&apos;s Keeper</controllingFieldValue>
+                <valueName>837-3200</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - Public Policy</controllingFieldValue>
+                <valueName>327-3200</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Advancing Voices</controllingFieldValue>
+                <valueName>839-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Member Networks</controllingFieldValue>
+                <valueName>360-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fiscal Agent - MN Food Funder&apos;s Network</controllingFieldValue>
+                <valueName>000-2098</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Public Policy</controllingFieldValue>
+                <valueName>327-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Webinars</controllingFieldValue>
+                <valueName>330-3300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Dues - New</controllingFieldValue>
+                <valueName>190-3100-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Dues - Renewal</controllingFieldValue>
+                <valueName>190-3100-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGO Subscription - New</controllingFieldValue>
+                <valueName>585-3720-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGO Subscription - Renewal</controllingFieldValue>
+                <valueName>585-3720-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous Income</controllingFieldValue>
+                <valueName>190-3900</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prepaid Dues</controllingFieldValue>
+                <valueName>000-2080</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prepaid - Other</controllingFieldValue>
+                <valueName>000-2090</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refund/Clearing</controllingFieldValue>
+                <valueName>000-9995</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Annual Conference</controllingFieldValue>
+                <valueName>350-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Annual Meeting</controllingFieldValue>
+                <valueName>140-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - CEO Circle</controllingFieldValue>
+                <valueName>325-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Corporate Programs and Networks</controllingFieldValue>
+                <valueName>322-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Family Philanthropy Programs and Networks</controllingFieldValue>
+                <valueName>324-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Giving Forum</controllingFieldValue>
+                <valueName>530-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Government Relations</controllingFieldValue>
+                <valueName>620-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Grantmaking for the 21st Century</controllingFieldValue>
+                <valueName>340-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Member Networks</controllingFieldValue>
+                <valueName>360-3150</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Member Celebration</controllingFieldValue>
+                <valueName>220-3150</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>IMPakCancellations__c</fullName>
+        <description>Cancellations from IMPak.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cancellations from IMPak. Do not edit this field.</inlineHelpText>
+        <label>IMPak Cancellatoins</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMPak_Total_Registrants__c</fullName>
+        <description>Total Registrants from IMPak.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Registrants from IMPak. Do not edit this field.</inlineHelpText>
+        <label>IMPak Total Registrants</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Campaign</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <value>001j000000cX4BJAA0</value>
+            </filterItems>
+            <infoMessage>Select the person who is acting as a lead on this Campaign.</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID__c</fullName>
+        <description>This is the Event Code from our old database.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is the Event Code from our old database.</inlineHelpText>
+        <label>Legacy ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>New_Campaign_Member_Fee__c</fullName>
+        <description>Used only in the Quick Action to add Campaign Members.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the fee for the new campaign member.</inlineHelpText>
+        <label>New Campaign Member Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_Campaign_Member_Status__c</fullName>
+        <description>Used in the Add Member to Campaign Quick Action only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the status for the new campaign member.</inlineHelpText>
+        <label>New Campaign Member Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Attended</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>New_Campaign_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>New Campaign Member</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Campaigns (New Campaign Member)</relationshipLabel>
+        <relationshipName>New_Campaign_Member</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Non_Staff_Registrations__c</fullName>
+        <description>Counts the number of people registered who are not MCF employees.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts the number of people registered who are not MCF employees.</inlineHelpText>
+        <label>Non-Staff Registrations</label>
+        <summaryFilterItems>
+            <field>CampaignMember.gf_sf__Organization__c</field>
+            <operation>notEqual</operation>
+            <value>001j000000cX4BJAA0</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>equals</operation>
+            <value>Attended, Complete, No Show, No-show, Registered</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Registration_Goal__c</fullName>
+        <description>The number of people we hope will register for the event.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of people you hope to register for the event.</inlineHelpText>
+        <label>Registration Goal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Attendees__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This fields adds up all the Campaign members marked with a status of &quot;Attended&quot;</inlineHelpText>
+        <label>Attendees</label>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>equals</operation>
+            <value>Attended</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Committee_Affinity_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Group</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Committee_Affinity_Group</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>GroupMeetings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Drupal_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Drupal ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Drupal_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Drupal Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__End_Date_and_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Date and Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Event_Title__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Usually comes from Drupal but may need to be entered manually. This is the long form, more descriptive title for an event or campaign, and is used on external communications such as invoices.</inlineHelpText>
+        <label>Event Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Event_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of event being held</inlineHelpText>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Webinar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reception</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Location__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Login_Required__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Login Required</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Members_Only__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Members Only</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__No_shows_Cancellations__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This fields adds up all the Campaign members marked with a status of &quot;No-show&quot; or &quot;Canceled&quot;</inlineHelpText>
+        <label>No-shows/Cancellations</label>
+        <summaryFilterItems>
+            <field>CampaignMember.Status</field>
+            <operation>equals</operation>
+            <value>No-show, Canceled</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Online_Registration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Online Registration</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Start_Date_and_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Date and Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>gf_sf__Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time (deprecated)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gf_sps__Number_of_Sponsors__c</fullName>
+        <deprecated>false</deprecated>
+        <description>How many sponsors are participating.</description>
+        <externalId>false</externalId>
+        <label>Number of Sponsors</label>
+        <summaryFilterItems>
+            <field>CampaignMember.gf_sf__Registration_Type__c</field>
+            <operation>equals</operation>
+            <value>Sponsor</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <listViews>
+        <fullName>AllActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Events_and_Meetings</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>gf_sf__Start_Date_and_Time__c</columns>
+        <columns>Lead_Contact__c</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>PARENT_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sf__Events_and_Meetings</value>
+        </filters>
+        <filters>
+            <field>gf_sf__Start_Date_and_Time__c</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <label>Events and Meetings - This Year</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>gf_sf__Events_and_Meetings</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>gf_sf__Committee_Affinity_Group__c</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>gf_sf__Start_Date_and_Time__c</columns>
+        <columns>gf_sf__End_Date_and_Time__c</columns>
+        <columns>Lead_Contact__c</columns>
+        <columns>gf_sf__Location__c</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sf__Events_and_Meetings</value>
+        </filters>
+        <label>Events and Meetings</label>
+    </listViews>
+    <listViews>
+        <fullName>gf_sf__General_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sf__General</value>
+        </filters>
+        <label>General Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>gf_sf__Mailing_Lists</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sf__Mailing_List</value>
+        </filters>
+        <label>Mailing Lists</label>
+    </listViews>
+    <listViews>
+        <fullName>gf_sps__Projects</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sps__Project</value>
+        </filters>
+        <label>Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>xEvents_This_Year_with_No_Parent_Campaign</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>gf_sf__Start_Date_and_Time__c</columns>
+        <columns>Lead_Contact__c</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>PARENT_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.gf_sf__Events_and_Meetings</value>
+        </filters>
+        <filters>
+            <field>gf_sf__Start_Date_and_Time__c</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>PARENT_NAME</field>
+            <operation>equals</operation>
+        </filters>
+        <label>xEvents This Year with No Parent Camp</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>gf_sf__Events_and_Meetings</fullName>
+        <active>true</active>
+        <description>This record type is for events or meetings such as those for committees or affinity groups.</description>
+        <label>Events and Meetings</label>
+        <picklistValues>
+            <picklist>General_Ledger_Account__c</picklist>
+            <values>
+                <fullName>Contracting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibitor Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiscal Agent - MN Food Funder%27s Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Contract Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Ron McKinley Fellowship Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Webinars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid - Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>General_Ledger_Code__c</picklist>
+            <values>
+                <fullName>000-1010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-1145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2080</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2098</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-9995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>220-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3300-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3250</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>850-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>899-3150-01</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Campaign_Member_Status__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Event_Type__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reception</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>gf_sf__General</fullName>
+        <active>true</active>
+        <description>Use this record type for all campaigns that are not Mailing lists or Events</description>
+        <label>General</label>
+        <picklistValues>
+            <picklist>General_Ledger_Account__c</picklist>
+            <values>
+                <fullName>Ad Income - E-communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Income - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibitor Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiscal Agent - MN Food Funder%27s Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Posting Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Contract Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Webinars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid Dues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund%2FClearing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Celebration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - New Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Webinars</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>General_Ledger_Code__c</picklist>
+            <values>
+                <fullName>000-1010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-1145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2080</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2098</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-9995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>220-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3300-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3250</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>899-3150-01</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Campaign_Member_Status__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Event_Type__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>gf_sf__Mailing_List</fullName>
+        <active>true</active>
+        <description>Use this record type when setting up a new mailing list</description>
+        <label>Mailing List</label>
+        <picklistValues>
+            <picklist>General_Ledger_Account__c</picklist>
+            <values>
+                <fullName>Ad Income - E-communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Income - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibitor Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiscal Agent - MN Food Funder%27s Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Posting Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Contract Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Webinars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid Dues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund%2FClearing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Celebration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - New Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Webinars</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>General_Ledger_Code__c</picklist>
+            <values>
+                <fullName>000-1010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-1145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2080</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2098</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-9995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>220-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3300-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>899-3150-01</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Campaign_Member_Status__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral Program</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Event_Type__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>gf_sf__Product</fullName>
+        <active>false</active>
+        <description>To be used for tracking sales of individual products.</description>
+        <label>Product</label>
+        <picklistValues>
+            <picklist>General_Ledger_Account__c</picklist>
+            <values>
+                <fullName>Ad Income - E-communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Income - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibitor Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiscal Agent - MN Food Funder%27s Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Posting Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Contract Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Webinars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid Dues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund%2FClearing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Celebration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - New Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Webinars</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>General_Ledger_Code__c</picklist>
+            <values>
+                <fullName>000-1010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-1145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2080</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2098</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-9995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>220-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3300-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>899-3150-01</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Campaign_Member_Status__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Event_Type__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>gf_sps__Project</fullName>
+        <active>false</active>
+        <description>Use to track a project or other body of work</description>
+        <label>Project</label>
+        <picklistValues>
+            <picklist>General_Ledger_Account__c</picklist>
+            <values>
+                <fullName>Ad Income - E-communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ad Income - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibitor Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fiscal Agent - MN Food Funder%27s Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grants - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Posting Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO Subscription - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Contract Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Fees - Webinars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member Dues - Renewal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous Income</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid Dues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund%2FClearing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Advancing Voices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Annual Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - CEO Circle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Co-sponsored and Pop-up Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Community Foundation Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Corporate Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Family Philanthropy Programs and Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Giving Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Government Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Grantmaking for the 21st Century</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Celebration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Member Networks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - My Brother%27s Keeper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - New Office Space</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorships - Webinars</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>General_Ledger_Code__c</picklist>
+            <values>
+                <fullName>000-1010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-1145</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2080</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2090</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-2098</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>000-9995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>140-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3100-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>190-3900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>220-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>320-3300-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>322-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>323-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>324-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>325-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>327-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>330-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>340-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3160</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>350-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>390-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>530-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>585-3720-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>590-3500-02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>620-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>837-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3150</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3200</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>839-3300</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>899-3150-01</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Campaign_Member_Status__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Event_Type__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>gf_sf__Start_Date_and_Time__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Non_Staff_Registrations__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lead_Contact__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>gf_sf__Start_Date_and_Time__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>FullAccess</sharingModel>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>gf_sf__Add_Group_Members</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Add Group Members</masterLabel>
+        <openType>replace</openType>
+        <page>gf_sf__CMCommitteeUpdates</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>npo02__Household_Mailing_List</fullName>
+        <availability>online</availability>
+        <description>Deduplicated mailing list of Households</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Household Mailing List</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/npsp__HH_CampaignDedupeBTN?id={!Campaign.Id}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,34 @@
+<!---<apex:page standardcontroller="Conductor__c" 
+    extensions="Conductor_CtlExt"
+    sidebar="{!ShowSidebar}" 
+    showHeader="{!ShowHeader}">--->
+
+<apex:page standardcontroller="APXT_BPM__Conductor__c" 
+    extensions="APXT_BPM.Conductor_CtlExt"
+    sidebar="true" 
+    showHeader="true">        
+    
+    <script Language="JavaScript">
+        function launchScheduler(){        
+            if("{!VersionString}" == "C7")
+            {
+                //window.opener.location.href = '{!RedirectUrl}';
+                //self.close();
+                self.location = '{!RedirectUrl}';
+            }
+            else
+            {
+                self.location = '{!RedirectUrl}';
+            }            
+        }
+    </script>
+        
+    <script Language="JavaScript">
+        window.onload = launchScheduler();  
+    </script>    
+    
+    <div style="background-color:#f8f8f8;display:relative;width:125px;margin-left:25px;margin-top:25px;padding:10px;border:1px dashed #888888;">
+        <img style="margin-right:5px;" src='https://composer.congamerge.com/apxtlibraryjs/resources/images/apxt-conga-o-loading-32.gif'/>
+        <div style="font-size:16px;display:inline;position:relative;top:-10px">Loading ...</div>
+    </div>
+</apex:page>

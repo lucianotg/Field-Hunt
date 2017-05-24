@@ -1,0 +1,33 @@
+<aura:component >
+  <aura:attribute name="projectStartDate" type="String" />
+  <aura:attribute name="projectEndDate" type="String" />
+  <aura:attribute name="mountedInRow" type="String" />
+  <aura:attribute name="projectCompletionPercentage" type="String" />
+  <aura:attribute name="listColorMap" type="Object" />
+  <aura:attribute name="milestoneTasks" type="Array" />
+  <aura:dependency type="COMPONENT" resource="markup://TASKRAY_LTNG:trProjectOverview_view_milestoneRow" />
+
+  <div class="overview-container">
+    <aura:if isTrue="{!v.mountedInRow == 'true'}">
+      <div class="slds-text-heading--label project-overview-header">{!$Label.taskray_ltng.trMyProjectsComponent_ProjectOverview}</div>
+    </aura:if>
+    <div class="progress-bar--container">
+      <div class="{!(v.projectCompletionPercentage == 0) ? 'progress-bar--bar progress-bar--zerowidthbar' : 'progress-bar--bar'}" style="{!'width: '+v.projectCompletionPercentage+'%'}">
+        <span class="progress-bar--pct-complete-label">{!v.projectCompletionPercentage+'%'}</span>
+      </div>
+    </div>
+    <div class="slds-float--left slds-text-heading--label">{!v.projectStartDate}</div>
+    <div class="slds-float--right slds-text-heading--label">{!v.projectEndDate}</div>
+    <div class="slds-clearfix" />
+    <div class="milestones--container">
+      <aura:iteration items="{!v.milestoneTasks}" var="milestoneTask">
+        <TASKRAY_LTNG:trProjectOverview_view_milestoneRow isComplete="{!milestoneTask.task.TASKRAY__trCompleted__c}"
+          isOverdue="{!milestoneTask.isOverdue}"
+          name="{!milestoneTask.task.Name}"
+          formattedEndDate="{!milestoneTask.formattedEndDate}"
+          listColor="{!milestoneTask.listColor}"
+        />
+      </aura:iteration>
+    </div>
+  </div>
+</aura:component>

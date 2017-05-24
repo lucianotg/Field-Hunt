@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>npe5__Affiliation__c$Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.FirstName</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.LastName</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Email</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Account.Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Title</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.npe01__WorkPhone__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Status__c</field>
+    </columns>
+    <description>Current Ron McKinley Philanthropy Fellows</description>
+    <filter>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Organization__c.Name</column>
+            <operator>equals</operator>
+            <value>Ron McKinley Philanthropy Fellows</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Status__c</column>
+            <operator>equals</operator>
+            <value>Current</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ron McKinley Fellows - Current</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Affiliations_with_Account_and_Contact_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>npe5__Affiliation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

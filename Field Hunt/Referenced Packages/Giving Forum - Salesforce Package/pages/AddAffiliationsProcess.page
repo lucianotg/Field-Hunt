@@ -1,0 +1,46 @@
+<apex:page standardController="Contact" tabStyle="Contact" recordSetVar="contacts" extensions="gf_sf.AddAffiliationsController">
+	<a name="skiplink"><img class="skiplink skipLinkTargetInner zen-skipLinkTarget" width="1" height="1" title="Content Starts Here" alt="Content Starts Here" src="/s.gif"></img></a>
+	
+	<apex:sectionHeader title="Permission Groups" subtitle="Add Affiliations"/>
+	
+	<br />
+	
+	<apex:form id="aaForm">
+		<!-- @TODO: Presumably there is some way to have VF render this "wizardBlock" markup, akin to apex:pageBlock. -->
+		<div class="bWizardBlock tertiaryPalette">
+			<div class="pbWizardTitle tertiaryPalette brandTertiaryBgr">
+				<div class="ptRightTitle">Step 2 of 2</div>
+				<h2>Step 2. Complete</h2>
+			</div>
+			
+			<div class="pbBody">
+				<div class="pbWizardBody">
+					<apex:repeat value="{!statusMessages}" var="message" id="aaStatusMessage">
+						<p><apex:outputText value="{!message}" /></p>
+					</apex:repeat>
+				</div>
+				<div class="pbWizardFooter">
+					<div class="pbBottomButtons">
+						<apex:commandButton action="{!step1}" value="Previous" styleClass="btn" />
+						<apex:commandButton action="{!done}" value="Done" styleClass="btn" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</apex:form>
+	
+	<br />
+	
+	<apex:pageBlock title="Contacts affiliated" id="aaSelectedList">
+		<apex:pageBlockTable value="{!selectedWithAffiliations}" var="row" id="aaTab">
+			<apex:column value="{!row.name}" id="aaContactName" headerValue="Name" />
+			<apex:column id="aaContactAffiliations" headerValue="Current Affiliations">
+				<apex:repeat value="{!row.affiliations}" var="affiliation" id="aaContactAffiliation">
+					<apex:outputText value="{!affiliation}" /><br />
+				</apex:repeat>
+			</apex:column>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	
+</apex:page>

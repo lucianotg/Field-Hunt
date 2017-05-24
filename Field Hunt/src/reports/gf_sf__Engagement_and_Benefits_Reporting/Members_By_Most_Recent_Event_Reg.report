@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Email</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Phone</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.npe01__WorkPhone__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.Most_Recent_Event_Reg__c</field>
+    </columns>
+    <description>Report shows low engagement members. This shows a list of member organizations, organized by their most recent event registrations (oldest to newest).</description>
+    <filter>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Organization__c.Membership_Status_for_Reports__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Current</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$gf_sf__Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Primary</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Members By Most Recent Event Reg</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Affiliations_with_Account_and_Contact_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>npe5__Affiliation__c$npe5__Organization__c.Most_Recent_Event_Reg__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>npe5__Affiliation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Adjustments are used to track when Opportunities that are already in our accounting software have a change in Amount. They are made by Process Builder and should never be created manually.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Adjustment_Amount__c</fullName>
+        <description>This is the amount of the adjustment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the amount of the adjustment.</inlineHelpText>
+        <label>Adjustment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Great_Plains_Export_Date__c</fullName>
+        <description>This is the date the adjustment was exported to Great Plains.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date the adjustment was exported to Great Plains.</inlineHelpText>
+        <label>Great Plains Export Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Is_Deferred_Revenue__c</fullName>
+        <description>When the Adjustment is created, if the Campaign Fiscal Year is the next year, this formula field will flag it as Deferred Revenue. The adjustment will be made to the correct Deferred Revenue account in Great Plains.</description>
+        <externalId>false</externalId>
+        <formula>IF( YEAR( DATEVALUE(CreatedDate) ) &lt; VALUE( Opportunity__r.Campaign.Campaign_Fiscal_Year__c ), TRUE,
+FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>When the Adjustment is created, if the Campaign Fiscal Year is the next year, this formula field will flag it as Deferred Revenue. The adjustment will be made to the correct Deferred Revenue account in Great Plains.</inlineHelpText>
+        <label>Is Deferred Revenue</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Adjustments</relationshipLabel>
+        <relationshipName>Adjustment</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Sent_to_Great_Plains__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field shows whether or not this Adjustment has been exported to Great Plains.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows whether or not this Adjustment has been exported to Great Plains.</inlineHelpText>
+        <label>Sent to Great Plains</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Adjustment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Prep_for_Great_Plains</fullName>
+        <columns>NAME</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Adjustment_Amount__c</columns>
+        <columns>Sent_to_Great_Plains__c</columns>
+        <columns>Great_Plains_Export_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sent_to_Great_Plains__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Prep for Great Plains</label>
+        <sharedTo>
+            <group>Admin_Staff</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>ADJ-{000000}</displayFormat>
+        <label>Adjustment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Adjustments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Opportunity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Adjustment_Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sent_to_Great_Plains__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>These settings determine which Forum triggers should be active. Note that all triggers will be active for users/roles without a setting.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CampaignMemberAccountLookup__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This trigger works to ensure that a contact’s participation in an event is also recorded (i.e. - connected) at their primary account if not specified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This trigger works to ensure that a contact’s participation in an event is also recorded (i.e. - connected) at their primary account if not specified.</inlineHelpText>
+        <label>CampaignMemberAccountLookup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignMembersCommitteeUpdate__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The purpose of this trigger is to associate all members of a Group or Committee with an Event.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The purpose of this trigger is to associate all members of a Group or Committee with an Event.</inlineHelpText>
+        <label>CampaignMembersCommitteeUpdate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignStatus__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This trigger automatically sets up a list of relevant Campaign Member Status values when Campaigns of record type “Events or Meetings” are created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This trigger automatically sets up a list of relevant Campaign Member Status values when Campaigns of record type “Events or Meetings” are created.</inlineHelpText>
+        <label>CampaignStatus</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactMemberStatus__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This trigger keeps a member organization’s contacts up-to-date with any change in the Membership Status or Membership Level.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This trigger keeps a member organization’s contacts up-to-date with any change in the Membership Status or Membership Level.</inlineHelpText>
+        <label>ContactMemberStatus</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityUpdateCampaignMember__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>DEPRECATED - NO LONGER IN USE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DEPRECATED - NO LONGER IN USE</inlineHelpText>
+        <label>OpportunityUpdateCampaignMember</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UpdateAffiliationContacts__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This trigger works to ensure that the Functions listed on a contact’s affiliation records are in sync with the three lookup fields on the Account for:
+Primary Contact
+Billing Contact
+Web Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This trigger works to ensure that the Functions listed on a contact’s affiliation records are in sync with the three lookup fields on the Account for:
+Primary Contact
+Billing Contact
+Web Contact</inlineHelpText>
+        <label>UpdateAffiliationContacts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Triggers Active</label>
+    <visibility>Public</visibility>
+</CustomObject>

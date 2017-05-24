@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Error_Email_No_Parent_Payment</name>
+        <label>Error Email No Parent Payment</label>
+        <locationX>723</locationX>
+        <locationY>153</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NoParentPaymentBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>NoParentPaymentSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>info@mcf.org</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <constants>
+        <name>conNumberZero</name>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </constants>
+    <constants>
+        <name>conTextOne</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>1</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Parent_Payment_Exists</name>
+        <label>Parent Payment Exists</label>
+        <locationX>247</locationX>
+        <locationY>17</locationY>
+        <defaultConnector>
+            <targetReference>Create_Allocation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Parent_Payment_Doesn_t_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varParentPaymentId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Parent_Payment</targetReference>
+            </connector>
+            <label>Parent Payment Doesn&apos;t Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Parent_Payment_Exists_0</name>
+        <label>Parent Payment Exists</label>
+        <locationX>423</locationX>
+        <locationY>150</locationY>
+        <defaultConnector>
+            <targetReference>Create_Allocation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Parent_Payment_Doesn_t_Exists_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varParentPaymentId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Email_No_Parent_Payment</targetReference>
+            </connector>
+            <label>Parent Payment Doesn&apos;t Exists</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Create Allocation for MGO Payments {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Allocation for MGO Payments</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Allocation</name>
+        <label>Create Allocation</label>
+        <locationX>590</locationX>
+        <locationY>20</locationY>
+        <inputAssignments>
+            <field>gf_pp__Amount__c</field>
+            <value>
+                <elementReference>varAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_pp__Opportunity__c</field>
+            <value>
+                <elementReference>varOpportunityId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_pp__Parent_Payment__c</field>
+            <value>
+                <elementReference>varParentPaymentId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>gf_pp__Allocation__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Parent_Payment</name>
+        <label>Create Parent Payment</label>
+        <locationX>244</locationX>
+        <locationY>150</locationY>
+        <assignRecordIdToReference>varParentPaymentId</assignRecordIdToReference>
+        <connector>
+            <targetReference>Parent_Payment_Exists_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>conTextOne</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_pp__Payment_Amount__c</field>
+            <value>
+                <elementReference>conNumberZero</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_pp__Payment_Date__c</field>
+            <value>
+                <elementReference>varClosedDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_pp__Payment_Method__c</field>
+            <value>
+                <stringValue>Credit Card Paypal</stringValue>
+            </value>
+        </inputAssignments>
+        <object>gf_pp__Parent_Payment__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Look_Up_Parent_Payment</name>
+        <label>Look Up Parent Payment</label>
+        <locationX>72</locationX>
+        <locationY>19</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Parent_Payment_Exists</targetReference>
+        </connector>
+        <filters>
+            <field>gf_pp__Payment_Date__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varClosedDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>gf_pp__Payment_Method__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Credit Card Paypal</stringValue>
+            </value>
+        </filters>
+        <object>gf_pp__Parent_Payment__c</object>
+        <outputAssignments>
+            <assignToReference>varParentPaymentId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Look_Up_Parent_Payment</startElementReference>
+    <textTemplates>
+        <description>Email body to send if no Parent Payment exists or was created</description>
+        <name>NoParentPaymentBody</name>
+        <text>Flow Create Allocation for MGO Payments failed.
+
+The Parent Payment did not exist, and was not created.
+
+Variables:
+Amount - {!varAmount}
+Check Reference - {!varCheckReference}
+Opportunity ID - {!varOpportunityId}
+Parent Payment ID - {!varParentPaymentId}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Subect link for error email when there is no Parent Payment</description>
+        <name>NoParentPaymentSubject</name>
+        <text>Flow Error - Create Allocation for MGO Payments</text>
+    </textTemplates>
+    <variables>
+        <name>varAmount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>varCheckReference</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varClosedDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varOpportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varParentPaymentId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

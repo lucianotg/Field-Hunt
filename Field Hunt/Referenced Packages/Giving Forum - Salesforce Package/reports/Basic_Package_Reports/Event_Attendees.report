@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Organization__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_STATUS</field>
+    </columns>
+    <columns>
+        <field>MEMBER_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>HAS_RESPONDED</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Fee__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Paid__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Registration_Type__c</field>
+    </columns>
+    <description>A general report on Event Attendees.  Use the Campaign filter to narrow the attendees to a specific meeting or Event</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Campaign.Events_and_Meetings</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Event Attendees</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignWithCampaignMembers</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>HAS_RESPONDED</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

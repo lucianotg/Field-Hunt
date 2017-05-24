@@ -1,0 +1,50 @@
+<apex:page standardController="Contact" tabStyle="Contact" recordSetVar="contacts" extensions="gf_sf.AddAffiliationsController">
+	<a name="skiplink"><img class="skiplink skipLinkTargetInner zen-skipLinkTarget" width="1" height="1" title="Content Starts Here" alt="Content Starts Here" src="/s.gif"></img></a>
+	
+	<apex:sectionHeader title="Permission Groups" subtitle="Add Affiliations"/>
+	
+	<br />
+	
+	<apex:form id="aaForm">
+		<!-- @TODO: Presumably there is some way to have VF render this "wizardBlock" markup, akin to apex:pageBlock. -->
+		<div class="bWizardBlock tertiaryPalette">
+			<div class="pbWizardTitle tertiaryPalette brandTertiaryBgr">
+				<div class="ptRightTitle">Step 1 of 2</div>
+				<h2>Step 1. Select a campaign and member status</h2>
+			</div>
+			
+			<div class="pbBody">
+				<div class="pbDescription ">Select a group or committee account. All of the selected contacts will be affiliated with the account selected here.</div>
+				<div class="pbWizardBody">
+					<apex:panelGrid columns="2">
+						<apex:outputLabel value="Committee or Group Account" for="committeeOrGroupAccount"/>
+						<apex:inputField id="committeeOrGroupAccount" value="{!affiliationTemplate.npe5__Organization__c}" required="false"/>
+						<apex:outputLabel value="Status" for="affiliationStatus"/>
+						<apex:inputField id="affiliationStatus" value="{!affiliationTemplate.npe5__Status__c}"/>
+					</apex:panelGrid>
+				</div>
+				<div class="pbWizardFooter">
+					<div class="pbBottomButtons">
+						<apex:commandButton action="{!step2}" value="Save Affiliations" styleClass="btn" />
+						<apex:commandButton action="{!done}" value="Cancel" styleClass="btn" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</apex:form>
+	
+	<br />
+	
+	<apex:pageBlock title="Contacts to be affiliated" id="aaSelectedList">
+		<apex:pageBlockTable value="{!selectedWithAffiliations}" var="row" id="aaTab">
+			<apex:column value="{!row.name}" id="aaContactName" headerValue="Name" />
+			<apex:column id="aaContactAffiliations" headerValue="Current Affiliations">
+				<apex:repeat value="{!row.affiliations}" var="affiliation" id="aaContactAffiliation">
+					<apex:outputText value="{!affiliation}" /><br />
+				</apex:repeat>
+			</apex:column>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	
+</apex:page>

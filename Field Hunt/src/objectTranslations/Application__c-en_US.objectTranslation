@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applications</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the first line of the applicant&apos;s address. --></help>
+        <label><!-- Applicant Address Line 1 --></label>
+        <name>Applicant_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the second line of the applicant&apos;s address. --></help>
+        <label><!-- Applicant Address Line 2 --></label>
+        <name>Applicant_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the applicant&apos;s city. --></help>
+        <label><!-- Applicant City --></label>
+        <name>Applicant_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the applicant&apos;s country. --></help>
+        <label><!-- Applicant Country --></label>
+        <name>Applicant_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the email address of the applicant --></help>
+        <label><!-- Applicant Email --></label>
+        <name>Applicant_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the first name of the applicant. --></help>
+        <label><!-- Applicant First Name --></label>
+        <name>Applicant_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the last name of the applicant. --></help>
+        <label><!-- Applicant Last Name --></label>
+        <name>Applicant_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the LinedIn URL for the applicant. --></help>
+        <label><!-- Applicant LinkedIn URL --></label>
+        <name>Applicant_LinkedIn_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the middle name of the applicant. --></help>
+        <label><!-- Applicant Middle Name --></label>
+        <name>Applicant_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the phone number of the applicant. --></help>
+        <label><!-- Applicant Phone Number --></label>
+        <name>Applicant_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the applicant&apos;s postal code. --></help>
+        <label><!-- Applicant Postal Code --></label>
+        <name>Applicant_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the applicant&apos;s state. --></help>
+        <label><!-- Applicant State --></label>
+        <name>Applicant_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the stage the applicant has reached in the interview process. --></help>
+        <label><!-- Application Stage --></label>
+        <name>Application_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Applied</masterLabel>
+            <translation><!-- Applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chosen for Phone Screen</masterLabel>
+            <translation><!-- Chosen for Phone Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finalist</masterLabel>
+            <translation><!-- Finalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hired</masterLabel>
+            <translation><!-- Hired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-finalist</masterLabel>
+            <translation><!-- Semi-finalist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used for the Ron McKinley program only. Enter the cycle when the application was submitted. This will usually be just a year (2016 for applications received during the 2016 application cycle, even if the fellows start in 2017). --></help>
+        <label><!-- RMPF Application Cycle --></label>
+        <name>RMPF_Application_Cycle__c</name>
+    </fields>
+    <layouts>
+        <layout>Application Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ron McKinley Philanthropy Fellowship Application</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Job Application --></label>
+        <name>Job_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ron McKinley Applicant --></label>
+        <name>Ron_McKinley_Applicant</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

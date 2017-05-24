@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>All_Active_Users</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Active Users</shortDescription>
+        <value>All Active Users</value>
+    </labels>
+    <labels>
+        <fullName>All_Inactive_Users</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Inactive Users</shortDescription>
+        <value>All Inactive Users</value>
+    </labels>
+    <labels>
+        <fullName>All_Users</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Users</shortDescription>
+        <value>All Users</value>
+    </labels>
+    <labels>
+        <fullName>Did_not_select</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Did not select</shortDescription>
+        <value>You did not select any user record for update. Please select at least one user record for update !</value>
+    </labels>
+    <labels>
+        <fullName>Email_Sender_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Sender Name</shortDescription>
+        <value>Company Support</value>
+    </labels>
+    <labels>
+        <fullName>Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Subject</shortDescription>
+        <value>FAILURE: Mass User Activation</value>
+    </labels>
+    <labels>
+        <fullName>General_Exception</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Exception</shortDescription>
+        <value>An exception occurred while updating user.Please try later</value>
+    </labels>
+    <labels>
+        <fullName>LICENSE_LIMIT_EXCEEDED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LICENSE_LIMIT_EXCEEDED</shortDescription>
+        <value>LICENSE_LIMIT_EXCEEDED</value>
+    </labels>
+    <labels>
+        <fullName>License_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Error</shortDescription>
+        <value>An exception occurred while updating users.Please check if you have required Salesforce as well as featured licenses available.An email about the failure details has been sent to</value>
+    </labels>
+    <labels>
+        <fullName>Note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Note</shortDescription>
+        <value>Note: Above two values may mismatch, if you have selected users which are already in the Status you requested</value>
+    </labels>
+    <labels>
+        <fullName>Reset_Password_Note</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reset Password Note</shortDescription>
+        <value>Users are Activated and Email has been sent.</value>
+    </labels>
+    <labels>
+        <fullName>Result_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Result Message</shortDescription>
+        <value>RESULT.Total Selected Users :</value>
+    </labels>
+    <labels>
+        <fullName>Select_User_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select User Profile</shortDescription>
+        <value>Select User Profile</value>
+    </labels>
+    <labels>
+        <fullName>Select_User_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select User Role</shortDescription>
+        <value>Select User Role</value>
+    </labels>
+    <labels>
+        <fullName>Total_Activated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total Activated</shortDescription>
+        <value>Total Activated Users :</value>
+    </labels>
+    <labels>
+        <fullName>Total_Deactivated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total Deactivated</shortDescription>
+        <value>Total Deactivated Users :</value>
+    </labels>
+</CustomLabels>

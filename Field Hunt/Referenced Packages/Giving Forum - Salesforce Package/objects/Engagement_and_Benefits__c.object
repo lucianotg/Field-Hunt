@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Custom object used for internal tracking of member&apos;s utilization of benefits and the different ways in which they engage with the regional association.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Comments_Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Comments/Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Contact Lookup field</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Engagement and Benefits</relationshipLabel>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Date of request/contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date of the original request/point of contact.</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Dependent picklist describing nature of engagement/benefit</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advocacy Practice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approach 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approach 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approach 3</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Direct Lobby</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>E-communications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indirect Lobby</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Info</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Introduction</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Media</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Presenting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Print</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Membership</controllingFieldValue>
+                <valueName>Approach 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Membership</controllingFieldValue>
+                <valueName>Approach 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Membership</controllingFieldValue>
+                <valueName>Approach 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Membership</controllingFieldValue>
+                <controllingFieldValue>Services</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Public Policy</controllingFieldValue>
+                <controllingFieldValue>Engagements</controllingFieldValue>
+                <controllingFieldValue>Peer Connection</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Services</controllingFieldValue>
+                <valueName>Advice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Services</controllingFieldValue>
+                <valueName>Consulting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Services</controllingFieldValue>
+                <valueName>Presenting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Services</controllingFieldValue>
+                <valueName>Research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <valueName>E-communications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <valueName>Info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <valueName>Media</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <valueName>Print</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Public Policy</controllingFieldValue>
+                <valueName>Advocacy Practice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Public Policy</controllingFieldValue>
+                <valueName>Direct Lobby</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Public Policy</controllingFieldValue>
+                <valueName>Indirect Lobby</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Public Policy</controllingFieldValue>
+                <valueName>Policy Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engagements</controllingFieldValue>
+                <valueName>Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engagements</controllingFieldValue>
+                <valueName>Meeting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engagements</controllingFieldValue>
+                <valueName>Phone Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peer Connection</controllingFieldValue>
+                <valueName>Introduction</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Email_to_Engagement_Sender__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Sender of the Email to Engagement record</inlineHelpText>
+        <label>Email-to-Engagement Sender</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email_to_Engagement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this engagement was logged by Email to Engagement</inlineHelpText>
+        <label>Email-to-Engagement Record</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Organization__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Organization</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Engagement and Benefits</relationshipLabel>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Related_Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup field to a Campaign</description>
+        <externalId>false</externalId>
+        <label>Related Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Engagement and Benefits</relationshipLabel>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup field to Opportunity</description>
+        <externalId>false</externalId>
+        <label>Related Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Engagement and Benefits</relationshipLabel>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Picklist field describing type of engagement or benefit</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Communications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Engagements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Peer Connection</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sponsorship</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Engagement and Benefits</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Date__c</columns>
+        <columns>Description__c</columns>
+        <columns>Type__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement_and_Benefits__c.Engagement</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Benefits</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Organization__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement_and_Benefits__c.Benefits</value>
+        </filters>
+        <label>Benefits</label>
+    </listViews>
+    <listViews>
+        <fullName>Benefits_with_Opportunity_or_Campaign</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Organization__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement_and_Benefits__c.Benefits</value>
+        </filters>
+        <filters>
+            <field>Related_Campaign__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Related_Opportunity__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Benefits with Opportunity or Campaign</label>
+    </listViews>
+    <listViews>
+        <fullName>Engagement</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Organization__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement_and_Benefits__c.Engagement</value>
+        </filters>
+        <label>Engagement</label>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_with_Opportunity_or_Campaign</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Organization__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Engagement_and_Benefits__c.Engagement</value>
+        </filters>
+        <filters>
+            <field>Related_Campaign__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Related_Opportunity__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Engagement with Opportunity or Campaign</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EB-{0000}</displayFormat>
+        <label>Record Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Engagement and Benefits</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Benefits</fullName>
+        <active>true</active>
+        <description>Use to track member utilization of benefits offered</description>
+        <label>Benefits</label>
+        <picklistValues>
+            <picklist>Description__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Peer Connection</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Engagement</fullName>
+        <active>true</active>
+        <description>Use to track engagement with members</description>
+        <label>Engagement</label>
+        <picklistValues>
+            <picklist>Description__c</picklist>
+            <values>
+                <fullName>Advice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advocacy Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approach 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approach 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approach 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Lobby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indirect Lobby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Introduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Policy Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presenting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engagements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

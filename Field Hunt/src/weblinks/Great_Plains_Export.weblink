@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Great Plains Export</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com?SolMgr=1
+&amp;sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;Id={!User.Id}
+
+&amp;ReportId=[AdjDecreases]00Oj0000004Qh1n?pv0=,
+[AdjIncreases]00Oj0000000il1d?pv0=,
+[Deposits]00Oj0000004Qh0p?pv0=,
+[Opportunities]00Oj0000000ikmd?pv0=,
+[Refunds]00Oj0000004Qh0u?pv0=
+
+&amp;TemplateId=a0sj00000021xOB
+
+&amp;OCNR=1</url>
+</CustomPageWebLink>

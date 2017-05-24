@@ -1,0 +1,78 @@
+<aura:component >
+  <aura:attribute name="taskStatusCountsWithColor" type="Array" />
+  <aura:attribute name="progressArray" type="Array" />
+  <aura:attribute name="blockedCount" type="Integer" default="0"/>
+  <aura:attribute name="overdueCount" type="Integer" default="0"/>
+  <aura:attribute name="projectName" type="String"/>
+
+  <div class="overview-container">
+    <div class="snapshot-top-container">
+      <div class="snapshot-circle-container">
+        <div class="snapshot-circle">
+          <TASKRAY_LTNG:trMultipleArcProgressCircle_view progressArray="{!v.progressArray}" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="snapshot-stat-list-container">
+        <div class="snapshot-stat-list">
+          <span>
+            <aura:iteration items="{!v.taskStatusCountsWithColor}" var="statusObj" indexVar="index">
+              <span>
+                <aura:if isTrue="{!statusObj.label != 'blocked' &amp;&amp; statusObj.label != 'overdue'}">
+                    <div class="status-info-row">
+                      <div class="status-square--container slds-float--left" style="{!'background-color:'+statusObj.color+';'}" />
+                      <div class="snapshot-stat-list-item">{!statusObj.count+' '+statusObj.label}</div>
+                      <div style="slds-clearfix"></div>
+                    </div>
+                </aura:if>
+              </span>
+            </aura:iteration>
+          </span> 
+        </div>
+      </div>
+    </div>
+    <div class="slds-clearfix" />
+    <div class="overview-container--bottom">
+        <aura:if isTrue="{!v.blockedCount > 0 &amp;&amp; v.overdueCount > 0}">
+          <div class="snapshot-bottom-left">
+            <div class="snapshot-bottom-left-stat">
+              <div class="slds-float--left">
+                <TASKRAY_LTNG:svgIcon svgPath="/utility-sprite/svg/symbols.svg#warning" category="utility" size="x-small" name="left" class="slds-button__icon slds-icon-warning-task-snapshot" isButton="false" />
+              </div>
+              <div class="snapshot-bottom-left-text">{!v.blockedCount+' '+$Label.taskray_ltng.trTaskSnapshot_blocked}</div>
+            </div>
+          </div>
+          <div class="snapshot-bottom-right">
+            <div class="snapshot-bottom-right-stat">
+              <div class="slds-float--left">
+                <TASKRAY_LTNG:svgIcon svgPath="/utility-sprite/svg/symbols.svg#clock" category="utility" size="x-small" name="left" class="slds-button__icon slds-icon-clock-task-snapshot" isButton="false" />
+              </div>
+              <div class="snapshot-bottom-right-text" >{!v.overdueCount+' '+$Label.taskray_ltng.trTaskSnapshot_overdue}</div>
+            </div>
+          </div>
+          <div class="slds-clearfix" />
+        </aura:if>
+        <aura:if isTrue="{!v.blockedCount > 0 &amp;&amp; v.overdueCount == 0}">
+          <div class="snapshot-bottom-middle">
+            <div class="snapshot-bottom-middle-stat">
+              <div class="slds-float--left">
+                <TASKRAY_LTNG:svgIcon svgPath="/utility-sprite/svg/symbols.svg#warning" category="utility" size="x-small" name="left" class="slds-button__icon slds-icon-warning-task-snapshot" isButton="false" />
+              </div>
+              <div class="snapshot-bottom-center-text">{!v.blockedCount+' '+$Label.taskray_ltng.trTaskSnapshot_blocked}</div>
+            </div>
+          </div>
+        </aura:if>
+        <aura:if isTrue="{!v.overdueCount > 0 &amp;&amp; v.blockedCount == 0}">
+          <div class="snapshot-bottom-middle">
+            <div class="snapshot-bottom-middle-stat">
+              <div class="slds-float--left">
+                <TASKRAY_LTNG:svgIcon svgPath="/utility-sprite/svg/symbols.svg#clock" category="utility" size="x-small" name="left" class="slds-button__icon slds-icon-clock-task-snapshot" isButton="false" />
+              </div>
+              <div class="snapshot-bottom-center-text" >{!v.overdueCount+' '+$Label.taskray_ltng.trTaskSnapshot_overdue}</div>
+            </div>
+          </div>
+        </aura:if>
+    </div>
+  </div>
+</aura:component>

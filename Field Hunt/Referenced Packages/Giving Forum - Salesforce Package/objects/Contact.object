@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Account_Last_Membership_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Last Membership Level</label>
+        <length>127</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Membership_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Membership Status</label>
+        <length>127</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Areas_of_Interest__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Areas of Interest field is synched with Drupal to allow users to opt-in and opt-out of mailings around focus areas.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is synched with Drupal to allow users to opt-in and opt-out of mailings around focus areas. CAUTION: If you add new values to Drupal first and they will auto-populate in Salesforce. Please keep this in mind when editing this field.</inlineHelpText>
+        <label>Areas of Interest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>tbd</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Blog__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Blog</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VALUES</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_First_Membership__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date this member first joined the association.</inlineHelpText>
+        <label>Date of First Membership</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Drupal_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Drupal ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Drupal_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Drupal Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ethnicity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ethnicity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Caucasian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>African American</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Latino</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asian/Pacific Islanders</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>American Indian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Facebook__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Caution - this field integrates with Drupal</inlineHelpText>
+        <label>Facebook URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Flickr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Flickr</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transgender</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Google_plus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Google+</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Inc_In_Directory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inc. In Directory?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inc_Individual_In_Directory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inc. Individual In Directory?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncludeInMemDirectory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Include in Member Directory?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Individual_Membership_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Individual Membership Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prospective</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Former</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Eligible for Membership</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MGO - Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MGO - Inactive</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Individual_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Individual Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VALUES</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Instagram__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Instagram</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Languages__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Languages</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Membership_Level_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>if( text( Individual_Membership_Status__c )= &quot;Current&quot;, npo02__LastMembershipLevel__c , if( Account_Membership_Status__c=&quot;Current&quot;, Account_Last_Membership_Level__c , null))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>CAUTION This field syncs with Drupal. Please keep this in mind when editing this field.</inlineHelpText>
+        <label>Last Membership Level (Formula)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LinkedIn__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Caution - this field integrates with Drupal</inlineHelpText>
+        <label>LinkedIn URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Mail_Preference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter in the contact&apos;s preference for how they want to be communicated with. CAUTION This field syncs with Drupal. If you add new values to Drupal first and they will auto-populate in Salesforce. Please keep this in mind when editing this field.</inlineHelpText>
+        <label>Mail Preference</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Picklist Text</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Mailing_List__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing List (Deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Membership_Status_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>If ( text(Individual_Membership_Status__c)  &lt;&gt;  &quot;&quot;,  text(Individual_Membership_Status__c) ,  Account_Membership_Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>CAUTION This field syncs with Drupal. Please keep this in mind when editing this field.</inlineHelpText>
+        <label>Membership Status (Formula)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_Suffix__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Name / Suffix</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nickname__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>CAUTION This field syncs with Drupal. Please keep this in mind when editing this field.</inlineHelpText>
+        <label>Nickname</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT( Account.Funder_Category__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Caution - this field integrates with Drupal</inlineHelpText>
+        <label>Organization Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Last_Membership_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Account.npo02__LastMembershipLevel__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Org Last Membership Level (deprecated)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Member_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.Membership_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Organization Member Status (deprecated)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Picture_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for populating by Drupal. It is the url of the picture uploaded by the member contact.</inlineHelpText>
+        <label>Picture URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Picture__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(Picture_URL__c, &quot;Picture&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the picture uploaded to Drupal by the member contact.</inlineHelpText>
+        <label>Picture</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pinterest__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pinterest</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Professional_Interests__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Caution - this field integrates with Drupal</inlineHelpText>
+        <label>Professional Interests</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Placeholder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agriculture, Food &amp; Nutrition</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Arts, Culture and Humanities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community &amp; Economic Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Criminal Justice &amp; Legal Systems</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Disaster Preparedness &amp; Relief</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diversity Inclusion &amp; Equity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - Cradle To Career</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - E 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - Early Childhood</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - English Language Learners</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - Equity Gaps</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - Higher Ed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education - Out of School Time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Environment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health - Diseases and Disorders</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health - General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health - Medical Research</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health - Mental Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health - Public Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Services - Children &amp; Youth</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Services - Family services</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Services - General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>International Grantmaking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Philanthropy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Affairs &amp; Civic Engagement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Safety</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Religion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Science &amp; Technology</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Sciences</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sports and Recreation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RedHen_Detail_Link__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A link to the RedHen record for this Contact</inlineHelpText>
+        <label>RedHen Detail Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Security_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Security Group (Deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Needs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Special Needs</label>
+        <length>45</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Spouse__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a text field for the Spouse&apos;s name. If the spouse is also a Contact record in the system, then create a Relationship between the two records using the related list below. CAUTION This field syncs with Drupal. Please keep this in mind when editing.</inlineHelpText>
+        <label>Spouse</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tumblr__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tumblr</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Twitter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Caution - this field integrates with Drupal</inlineHelpText>
+        <label>Twitter URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Unique_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unique Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Entered_Organization__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom text field for users to self-identify with an organization when registering for a user account on the website.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do not edit this field. It is for a new Drupal user account only.</inlineHelpText>
+        <label>User Entered Organization</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Web__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Must be full Web address and include http://www....</inlineHelpText>
+        <label>Web</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>YouTube_Vimeo__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>YouTube/Vimeo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <recordTypes>
+        <fullName>General_Contact</fullName>
+        <active>true</active>
+        <description>This is the standard contact record type used for most individuals.</description>
+        <label>General Contact</label>
+        <picklistValues>
+            <picklist>Areas_of_Interest__c</picklist>
+            <values>
+                <fullName>tbd</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>VALUES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ethnicity__c</picklist>
+            <values>
+                <fullName>African American</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Indian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asian%2FPacific Islanders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Caucasian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Latino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gender__c</picklist>
+            <values>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transgender</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Individual_Membership_Status__c</picklist>
+            <values>
+                <fullName>MGO - Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO - Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Individual_Type__c</picklist>
+            <values>
+                <fullName>VALUES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Preference__c</picklist>
+            <values>
+                <fullName>Picklist Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Brother</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gen%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mayor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pastor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sen%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sister</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>The Hon</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Professional_Interests__c</picklist>
+            <values>
+                <fullName>Agriculture%2C Food %26 Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arts%2C Culture and Humanities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community %26 Economic Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Justice %26 Legal Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Preparedness %26 Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diversity Inclusion %26 Equity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Cradle To Career</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - E 12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Early Childhood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - English Language Learners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Equity Gaps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Higher Ed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Out of School Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Diseases and Disorders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Medical Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Public Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - Children %26 Youth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - Family services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International Grantmaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Philanthropy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs %26 Civic Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Safety</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Religion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Science %26 Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sports and Recreation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__PreferredPhone__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Preferred_Email__c</picklist>
+            <values>
+                <fullName>Alternate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Primary_Address_Type__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Secondary_Address_Type__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__SystemAccountProcessor__c</picklist>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One-to-One</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__Naming_Exclusions__c</picklist>
+            <values>
+                <fullName>Household%5F%5Fc%2EFormal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household%5F%5Fc%2EInformal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household%5F%5Fc%2EName</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__SystemHouseholdProcessor__c</picklist>
+            <values>
+                <fullName>All Individual Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All New or Edited Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contacts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Individual_Member</fullName>
+        <active>false</active>
+        <description>This record type is only used for individuals that have an Individual Membership.</description>
+        <label>Individual Member</label>
+        <picklistValues>
+            <picklist>Areas_of_Interest__c</picklist>
+            <values>
+                <fullName>tbd</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>VALUES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ethnicity__c</picklist>
+            <values>
+                <fullName>African American</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Indian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asian%2FPacific Islanders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Caucasian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Latino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gender__c</picklist>
+            <values>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transgender</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Individual_Membership_Status__c</picklist>
+            <values>
+                <fullName>Current</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Former</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO - Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MGO - Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Eligible for Membership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospective</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Individual_Type__c</picklist>
+            <values>
+                <fullName>VALUES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Preference__c</picklist>
+            <values>
+                <fullName>Picklist Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Brother</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gen%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mayor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pastor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sen%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sister</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>The Hon</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Professional_Interests__c</picklist>
+            <values>
+                <fullName>Agriculture%2C Food %26 Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arts%2C Culture and Humanities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community %26 Economic Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Justice %26 Legal Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Preparedness %26 Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diversity Inclusion %26 Equity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Cradle To Career</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - E 12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Early Childhood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - English Language Learners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Equity Gaps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Higher Ed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education - Out of School Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Diseases and Disorders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Medical Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health - Public Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - Children %26 Youth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - Family services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Services - General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International Grantmaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Philanthropy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Placeholder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs %26 Civic Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Safety</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Religion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Science %26 Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sports and Recreation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__PreferredPhone__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Preferred_Email__c</picklist>
+            <values>
+                <fullName>Alternate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Primary_Address_Type__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__Secondary_Address_Type__c</picklist>
+            <values>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npe01__SystemAccountProcessor__c</picklist>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One-to-One</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__Naming_Exclusions__c</picklist>
+            <values>
+                <fullName>Household%5F%5Fc%2EFormal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household%5F%5Fc%2EInformal_Greeting%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household%5F%5Fc%2EName</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>npo02__SystemHouseholdProcessor__c</picklist>
+            <values>
+                <fullName>All Individual Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All New or Edited Contacts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contacts</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Validate_Blog_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (  Blog__c  &lt;&gt; null, not(REGEX(   Blog__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Blog__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Facebook_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF ( Facebook__c &lt;&gt; null, not(REGEX(   Facebook__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Facebook__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Flickr_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF ( Flickr__c &lt;&gt; null, not(REGEX( Flickr__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Flickr__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Google_Plus_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (  Google_plus__c &lt;&gt; null, not(REGEX( Google_plus__c , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Google_plus__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Instagram_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (   Instagram__c &lt;&gt; null, not(REGEX( Instagram__c , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Instagram__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_LinkedIn_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF ( LinkedIn__c  &lt;&gt; null, not(REGEX(  LinkedIn__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>LinkedIn__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Pinterest_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (  Pinterest__c &lt;&gt; null, not(REGEX( Pinterest__c , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Pinterest__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Tumblr_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (   Tumblr__c &lt;&gt; null, not(REGEX( Tumblr__c , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Tumblr__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Twitter_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (Twitter__c &lt;&gt; null, not(REGEX(  Twitter__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Twitter__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Web_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF ( Web__c  &lt;&gt; null, not(REGEX( Web__c , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>Web__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_YouTube_Vimeo_by_Drupal_Regex</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (  YouTube_Vimeo__c  &lt;&gt; null, not(REGEX( YouTube_Vimeo__c  , &quot;^(?:ftp|https?|feed)://(?:(?:(?:[\\w\\.\\-\\+!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+:)*(?:[\\w\\.\\-\\+%!$&amp;&apos;\\(\\)*,;=]|%[0-9a-f]{2})+@)?(?:(?:[a-z0-9\\-\\.]|%[0-9a-f]{2})+|(?:\\[(?:[0-9a-f]{0,4}:)*(?:[0-9a-f]{0,4})\\]))(?::[0-9]+)?(?:[/|\\?](?:[\\w#!:\\.\\?\\+=&amp;@$&apos;~*,;/\\(\\)\\[\\]\\-]|%[0-9a-f]{2})*)?$&quot;)), false)</errorConditionFormula>
+        <errorDisplayField>YouTube_Vimeo__c</errorDisplayField>
+        <errorMessage>Please enter a valid url. The most common error is not starting the value with http://</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Add_Affiliations</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Add Affiliations</masterLabel>
+        <openType>sidebar</openType>
+        <page>AddAffiliations</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

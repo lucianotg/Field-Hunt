@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is used when integrating with Great Plains. It contains the correct Accounts Receivable code for each Opportunity. 000-1110 for Memberships, 000-1165 for Grants, and 000-1145 for everything else. --></help>
+        <label><!-- A/R Account Code --></label>
+        <name>A_R_Account_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the renewal cycle, and comes directly from the Account information. --></help>
+        <label><!-- Account Renewal Cycle --></label>
+        <name>Account_Renewal_Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Rosters --></label>
+        <name>Account_Rosters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Refunded [DEPRECATED] --></label>
+        <name>Amount_Refunded_DEPRECATED__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is what is still owed on the Opportunity (Amount - Total Paid - Amount Refunded). --></help>
+        <label><!-- Balance Due --></label>
+        <name>Balance_Due__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date this invoice should be mailed. --></help>
+        <label><!-- Bill Me Later Date --></label>
+        <name>Bill_Me_Later_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date Year and Month --></label>
+        <name>Close_Date_Year_and_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complimentary Registrations Unfulfilled --></label>
+        <name>Complimentary_Registrations_Unfulfilled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter is the number of complimentary registrations given to an organization when they sponsor an event. --></help>
+        <label><!-- Complimentary Registrations --></label>
+        <name>Complimentary_Registrations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Invoice Template ID --></label>
+        <name>Create_Invoice_Template_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when the membership form is received. Leave blank if they paid without sending a renewal form. --></help>
+        <label><!-- Date Renewal Form Received --></label>
+        <name>Date_Renewal_Form_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used in the Great Plains integration if an invoice is deferred revenue. Assigns &quot;000-2095&quot; to conference opportunities, &quot;000-2080&quot; to membership opportunities, and &quot;000-2090&quot; to anything else. --></help>
+        <label><!-- Deferred Revenue Account --></label>
+        <name>Deferred_Revenue_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Product Line Item ID, used to populate the Opportunity Product. --></help>
+        <label><!-- Drupal Product Line Item ID --></label>
+        <name>Drupal_Product_Line_Item_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Product Quantity from the website, used to populate the Opportunity Product. --></help>
+        <label><!-- Drupal Product Quantity --></label>
+        <name>Drupal_Product_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Product SKU selected in Drupal. --></help>
+        <label><!-- Drupal Product SKU --></label>
+        <name>Drupal_Product_SKU__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used with Jitterbit, Data Loader, or other tools to force an update of the opportunity. --></help>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the correct General Ledger Account. This field is automatically set for Memberships (based on New or Renewal), and Event Registrations (based on the General Ledger Account on the Campaign.) --></help>
+        <label><!-- General Ledger Account --></label>
+        <name>General_Ledger_Account__c</name>
+        <picklistValues>
+            <masterLabel>Ad Income - E-communications</masterLabel>
+            <translation><!-- Ad Income - E-communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Income - Giving Forum</masterLabel>
+            <translation><!-- Ad Income - Giving Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracting</masterLabel>
+            <translation><!-- Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive-In-Residence</masterLabel>
+            <translation><!-- Executive-In-Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibitor Fees - Annual Conference</masterLabel>
+            <translation><!-- Exhibitor Fees - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiscal Agent - Finish Strong</masterLabel>
+            <translation><!-- Fiscal Agent - Finish Strong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiscal Agent - MN Food Funder&apos;s Network</masterLabel>
+            <translation><!-- Fiscal Agent - MN Food Funder&apos;s Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Advancing Voices</masterLabel>
+            <translation><!-- Grants - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - My Brother&apos;s Keeper</masterLabel>
+            <translation><!-- Grants - My Brother&apos;s Keeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Public Policy</masterLabel>
+            <translation><!-- Grants - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Blandin Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Blandin Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Bush Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Bush Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - F.R. Bigelow Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - F.R. Bigelow Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Greater Twin Cities United Way</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Greater Twin Cities United Way --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Medtronic Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Medtronic Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Minneapolis Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Minneapolis Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Ron McKinley Philanthropy Fellows - Saint Paul Foundation</masterLabel>
+            <translation><!-- Grants - Ron McKinley Philanthropy Fellows - Saint Paul Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Posting Income</masterLabel>
+            <translation><!-- Job Posting Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO Subscription - New</masterLabel>
+            <translation><!-- MGO Subscription - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO Subscription - Renewal</masterLabel>
+            <translation><!-- MGO Subscription - Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Advancing Voices</masterLabel>
+            <translation><!-- Meeting Fees - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Annual Conference</masterLabel>
+            <translation><!-- Meeting Fees - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Annual Meeting</masterLabel>
+            <translation><!-- Meeting Fees - Annual Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - CEO Circle</masterLabel>
+            <translation><!-- Meeting Fees - CEO Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Co-sponsored and Pop-up Programs</masterLabel>
+            <translation><!-- Meeting Fees - Co-sponsored and Pop-up Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Community Foundation Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Community Foundation Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Contract Training</masterLabel>
+            <translation><!-- Meeting Fees - Contract Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Corporate Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Corporate Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Family Philanthropy Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Family Philanthropy Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Government Relations</masterLabel>
+            <translation><!-- Meeting Fees - Government Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Grantmaking for the 21st Century</masterLabel>
+            <translation><!-- Meeting Fees - Grantmaking for the 21st Century --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Member Networks</masterLabel>
+            <translation><!-- Meeting Fees - Member Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Public Policy</masterLabel>
+            <translation><!-- Meeting Fees - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Ron McKinley Fellowship Program</masterLabel>
+            <translation><!-- Meeting Fees - Ron McKinley Fellowship Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Webinars</masterLabel>
+            <translation><!-- Meeting Fees - Webinars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Dues - New</masterLabel>
+            <translation><!-- Member Dues - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Dues - Renewal</masterLabel>
+            <translation><!-- Member Dues - Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Grant</masterLabel>
+            <translation><!-- Miscellaneous Grant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Income</masterLabel>
+            <translation><!-- Miscellaneous Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid - Other</masterLabel>
+            <translation><!-- Prepaid - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid Dues</masterLabel>
+            <translation><!-- Prepaid Dues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund/Clearing</masterLabel>
+            <translation><!-- Refund/Clearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Advancing Voices</masterLabel>
+            <translation><!-- Sponsorships - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Annual Conference</masterLabel>
+            <translation><!-- Sponsorships - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Annual Meeting</masterLabel>
+            <translation><!-- Sponsorships - Annual Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - CEO Circle</masterLabel>
+            <translation><!-- Sponsorships - CEO Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Co-sponsored and Pop-up Programs</masterLabel>
+            <translation><!-- Sponsorships - Co-sponsored and Pop-up Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Community Foundation Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Community Foundation Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Corporate Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Corporate Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Family Philanthropy Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Family Philanthropy Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Giving Forum</masterLabel>
+            <translation><!-- Sponsorships - Giving Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Government Relations</masterLabel>
+            <translation><!-- Sponsorships - Government Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Grantmaking for the 21st Century</masterLabel>
+            <translation><!-- Sponsorships - Grantmaking for the 21st Century --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Member Celebration</masterLabel>
+            <translation><!-- Sponsorships - Member Celebration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Member Networks</masterLabel>
+            <translation><!-- Sponsorships - Member Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - My Brother&apos;s Keeper</masterLabel>
+            <translation><!-- Sponsorships - My Brother&apos;s Keeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - New Office Space</masterLabel>
+            <translation><!-- Sponsorships - New Office Space --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Public Policy</masterLabel>
+            <translation><!-- Sponsorships - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Webinars</masterLabel>
+            <translation><!-- Sponsorships - Webinars --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the correct General Ledger Code. This field is automatically set for Memberships (based on New or Renewal), and Event Registrations (based on the General Ledger Code on the Campaign.) --></help>
+        <label><!-- General Ledger Code --></label>
+        <name>General_Ledger_Code__c</name>
+        <picklistValues>
+            <masterLabel>000-1010</masterLabel>
+            <translation><!-- 000-1010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-1145</masterLabel>
+            <translation><!-- 000-1145 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2080</masterLabel>
+            <translation><!-- 000-2080 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2090</masterLabel>
+            <translation><!-- 000-2090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2098</masterLabel>
+            <translation><!-- 000-2098 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2101</masterLabel>
+            <translation><!-- 000-2101 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-9995</masterLabel>
+            <translation><!-- 000-9995 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140-3150</masterLabel>
+            <translation><!-- 140-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140-3300</masterLabel>
+            <translation><!-- 140-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3100-01</masterLabel>
+            <translation><!-- 190-3100-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3100-02</masterLabel>
+            <translation><!-- 190-3100-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3200</masterLabel>
+            <translation><!-- 190-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3900</masterLabel>
+            <translation><!-- 190-3900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>220-3150</masterLabel>
+            <translation><!-- 220-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>320-3150</masterLabel>
+            <translation><!-- 320-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>320-3300-01</masterLabel>
+            <translation><!-- 320-3300-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>322-3150</masterLabel>
+            <translation><!-- 322-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>322-3300</masterLabel>
+            <translation><!-- 322-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>323-3150</masterLabel>
+            <translation><!-- 323-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>323-3300</masterLabel>
+            <translation><!-- 323-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>324-3150</masterLabel>
+            <translation><!-- 324-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>324-3300</masterLabel>
+            <translation><!-- 324-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325-3150</masterLabel>
+            <translation><!-- 325-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325-3300</masterLabel>
+            <translation><!-- 325-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3150</masterLabel>
+            <translation><!-- 327-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3200</masterLabel>
+            <translation><!-- 327-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3300</masterLabel>
+            <translation><!-- 327-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330-3150</masterLabel>
+            <translation><!-- 330-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330-3300</masterLabel>
+            <translation><!-- 330-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>340-3150</masterLabel>
+            <translation><!-- 340-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>340-3300</masterLabel>
+            <translation><!-- 340-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3150</masterLabel>
+            <translation><!-- 350-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3160</masterLabel>
+            <translation><!-- 350-3160 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3300</masterLabel>
+            <translation><!-- 350-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>360-3150</masterLabel>
+            <translation><!-- 360-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>360-3300</masterLabel>
+            <translation><!-- 360-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>390-3250</masterLabel>
+            <translation><!-- 390-3250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>390-3300</masterLabel>
+            <translation><!-- 390-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>530-3150</masterLabel>
+            <translation><!-- 530-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>530-3500</masterLabel>
+            <translation><!-- 530-3500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>585-3720-01</masterLabel>
+            <translation><!-- 585-3720-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>585-3720-02</masterLabel>
+            <translation><!-- 585-3720-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>590-3500</masterLabel>
+            <translation><!-- 590-3500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>590-3500-02</masterLabel>
+            <translation><!-- 590-3500-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>620-3150</masterLabel>
+            <translation><!-- 620-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>620-3300</masterLabel>
+            <translation><!-- 620-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>837-3150</masterLabel>
+            <translation><!-- 837-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>837-3200</masterLabel>
+            <translation><!-- 837-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3150</masterLabel>
+            <translation><!-- 839-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3200</masterLabel>
+            <translation><!-- 839-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3300</masterLabel>
+            <translation><!-- 839-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>850-3200</masterLabel>
+            <translation><!-- 850-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>850-3300</masterLabel>
+            <translation><!-- 850-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>856-3200</masterLabel>
+            <translation><!-- 856-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>857-3200</masterLabel>
+            <translation><!-- 857-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>858-3200</masterLabel>
+            <translation><!-- 858-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>859-3200</masterLabel>
+            <translation><!-- 859-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>860-3200</masterLabel>
+            <translation><!-- 860-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>861-3200</masterLabel>
+            <translation><!-- 861-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>897-3900</masterLabel>
+            <translation><!-- 897-3900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>899-3150-01</masterLabel>
+            <translation><!-- 899-3150-01 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the date that the Opportunity was sent to Great Plains. It should be blank if the Opportunity has not been exported. --></help>
+        <label><!-- Great Plains Export Date --></label>
+        <name>Great_Plains_Export_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Impak ID (in this case, the Impak Invoice ID). --></help>
+        <label><!-- Impak ID --></label>
+        <name>Impak_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the difference between the projected amount (amount paid last year) and the amount paid or invoiced this year. A positive amount indicates they renewed for more than the expected amount. Only calculated on Paid, Invoiced or Renewal Declined. --></help>
+        <label><!-- Increase/Decrease --></label>
+        <name>Increase_Decrease__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows how old an invoice is, if the Opportunity has been moved to the Invoice stage. --></help>
+        <label><!-- Invoice Age --></label>
+        <name>Invoice_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field showing the phone number for the Invoice Contact (priority: Product Sale Contact &gt; Billing Contact &gt; Primary Contact &gt; NULL) --></help>
+        <label><!-- Invoice Contact Phone --></label>
+        <name>Invoice_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact name that will show up on the invoice. Priority order: Product Sale Contact, Primary Contact for Account, Billing Contact for Account. --></help>
+        <label><!-- Invoice Contact --></label>
+        <name>Invoice_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- This custom field is the date that will show up on the invoice. It is read-only for most users, and is controlled by a workflow rule when the Opportunity is changed to Closed/Won. To change this date, contact the database administrator. --></help>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the description that will be used on the detail line of the invoice. --></help>
+        <label><!-- Invoice Description --></label>
+        <name>Invoice_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the auto-generated invoice number for this invoice. --></help>
+        <label><!-- Invoice Number --></label>
+        <name>Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Compares the Close Date of the Opportunity to the Campaign Fiscal Year. If the Opportunity closed in the year before the event or campaign takes places, then it flags the Opportunity as Deferred Revenue. --></help>
+        <label><!-- Is Deferred Revenue --></label>
+        <name>Is_Deferred_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the logo placements that are not yet fulfilled, or de-select the ones that are completed. --></help>
+        <label><!-- Logo Placement Unfulfilled --></label>
+        <name>Logo_Placement_Unfulfilled__c</name>
+        <picklistValues>
+            <masterLabel>Conference Signage</masterLabel>
+            <translation><!-- Conference Signage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/E-newsletter</masterLabel>
+            <translation><!-- Email/E-newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Materials</masterLabel>
+            <translation><!-- Meeting Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - On Audio Host Site</masterLabel>
+            <translation><!-- Podcast - On Audio Host Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save the Date Postcards</masterLabel>
+            <translation><!-- Save the Date Postcards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Logo Placement --></label>
+        <name>Logo_Placement__c</name>
+        <picklistValues>
+            <masterLabel>Conference Signage</masterLabel>
+            <translation><!-- Conference Signage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/E-newsletter</masterLabel>
+            <translation><!-- Email/E-newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Materials</masterLabel>
+            <translation><!-- Meeting Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - On Audio Host Site</masterLabel>
+            <translation><!-- Podcast - On Audio Host Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save the Date Postcards</masterLabel>
+            <translation><!-- Save the Date Postcards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Shows how many users are on this particular MGO Subscription. --></help>
+        <label><!-- MGO Number of Users --></label>
+        <name>MGO_Number_of_Users__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows if a Thank You email has been sent for completed MGO orders. --></help>
+        <label><!-- MGO Thank You Sent --></label>
+        <name>MGO_Thank_You_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Membership Close Date should be when we got the form, or when we got payment, whichever is earliest. Formula picks the earliest of the Date Renewal Form Received and Membership Paid Date. --></help>
+        <label><!-- Membership Close Date (Formula) --></label>
+        <name>Membership_Close_Date_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Close Month --></label>
+        <name>Membership_Close_Month__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date the membership was paid. --></help>
+        <label><!-- Membership Paid Date --></label>
+        <name>Membership_Paid_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field. Pulls the year based on the Membership Start Date. --></help>
+        <label><!-- Membership Year --></label>
+        <name>Membership_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the created date of the most recent payment made to this Opportunity. For most opportunities, this is the date it was paid in full. --></help>
+        <label><!-- Most Recent Allocation Date --></label>
+        <name>Most_Recent_Allocation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Placement Unfulfilled --></label>
+        <name>Name_Placement_Unfulfilled__c</name>
+        <picklistValues>
+            <masterLabel>Conference Signage</masterLabel>
+            <translation><!-- Conference Signage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/E-newsletter</masterLabel>
+            <translation><!-- Email/E-newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Materials</masterLabel>
+            <translation><!-- Meeting Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - On Audio Host Site</masterLabel>
+            <translation><!-- Podcast - On Audio Host Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save the Date Postcards</masterLabel>
+            <translation><!-- Save the Date Postcards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name Placement --></label>
+        <name>Name_Placement__c</name>
+        <picklistValues>
+            <masterLabel>Conference Signage</masterLabel>
+            <translation><!-- Conference Signage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email/E-newsletter</masterLabel>
+            <translation><!-- Email/E-newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Materials</masterLabel>
+            <translation><!-- Meeting Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - On Audio Host Site</masterLabel>
+            <translation><!-- Podcast - On Audio Host Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save the Date Postcards</masterLabel>
+            <translation><!-- Save the Date Postcards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Allocations --></label>
+        <name>Number_of_Allocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Record Type ID --></label>
+        <name>Opp_Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- ID for Primary Contact for an Opportunity&apos;s Account. --></help>
+        <label><!-- Opportunity Account Primary --></label>
+        <name>Opportunity_Account_Primary__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the long Opportunity ID, as opposed to the partial, 15-digit ID shown in URLs. --></help>
+        <label><!-- Opportunity ID 18 --></label>
+        <name>Opportunity_ID_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is an abbreviated version of the Record Type name, used in the NPSP Settings to set the Opportunity Name. --></help>
+        <label><!-- Opportunity Record Type Name Short --></label>
+        <name>Opportunity_Record_Type_Name_Short__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays Campaign Id from the Primary Campaign Source. --></help>
+        <label><!-- Primary Campaign ID --></label>
+        <name>Primary_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if the principles were accepted. --></help>
+        <label><!-- Principles Accepted --></label>
+        <name>Principles_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Invoices --></label>
+        <name>Print_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Thank You Letters --></label>
+        <name>Print_Thank_You_Letters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the Email Address for the Product Sale Contact. --></help>
+        <label><!-- Product Sale Contact Email --></label>
+        <name>Product_Sale_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows First Name for the Product Sale Contact. --></help>
+        <label><!-- Product Sale Contact First Name --></label>
+        <name>Product_Sale_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the amount expected --></help>
+        <label><!-- Projected Amount --></label>
+        <name>Projected_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refunds/Credits --></label>
+        <name>Refunds_Credits__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copies the information from the Renewal Special Instructions field on the Account. To make changes, adjust the account record. --></help>
+        <label><!-- Renewal Special Instructions --></label>
+        <name>Renewal_Special_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field shows whether or not this Opportunity has been exported to Great Plains. --></help>
+        <label><!-- Sent to Great Plains --></label>
+        <name>Sent_to_Great_Plains__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the sponsorship benefits that have yet to be fulfilled, or de-select the ones that have been completed. --></help>
+        <label><!-- Sponsorship Benefits Unfulfilled --></label>
+        <name>Sponsorship_Benefits_Unfulfilled__c</name>
+        <picklistValues>
+            <masterLabel>Foundation Type Sponsor</masterLabel>
+            <translation><!-- Foundation Type Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Full Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Full Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Half Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Half Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover Descr</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover Descr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Quarter Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Quarter Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keynote Sponsor</masterLabel>
+            <translation><!-- Keynote Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - Name/Message on Mid-roll</masterLabel>
+            <translation><!-- Podcast - Name/Message on Mid-roll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - Name/Message on Pre-roll</masterLabel>
+            <translation><!-- Podcast - Name/Message on Pre-roll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remarks at Opening Ceremony</masterLabel>
+            <translation><!-- Remarks at Opening Ceremony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Billing</masterLabel>
+            <translation><!-- Top Billing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sponsorship Benefits --></label>
+        <name>Sponsorship_Benefits__c</name>
+        <picklistValues>
+            <masterLabel>Foundation Type Sponsor</masterLabel>
+            <translation><!-- Foundation Type Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Full Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Full Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Half Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Half Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Inside Front Cover Descr</masterLabel>
+            <translation><!-- Giving Forum - Inside Front Cover Descr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving Forum - Quarter Page Ad</masterLabel>
+            <translation><!-- Giving Forum - Quarter Page Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keynote Sponsor</masterLabel>
+            <translation><!-- Keynote Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - Name/Message on Mid-roll</masterLabel>
+            <translation><!-- Podcast - Name/Message on Mid-roll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast - Name/Message on Pre-roll</masterLabel>
+            <translation><!-- Podcast - Name/Message on Pre-roll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remarks at Opening Ceremony</masterLabel>
+            <translation><!-- Remarks at Opening Ceremony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top Billing</masterLabel>
+            <translation><!-- Top Billing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the sponsorship level. --></help>
+        <label><!-- Sponsorship Level --></label>
+        <name>Sponsorship_Level__c</name>
+        <picklistValues>
+            <masterLabel>Gold Level</masterLabel>
+            <translation><!-- Gold Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Room</masterLabel>
+            <translation><!-- Parent Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum Level</masterLabel>
+            <translation><!-- Platinum Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Level</masterLabel>
+            <translation><!-- Premier Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver Level</masterLabel>
+            <translation><!-- Silver Level --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- [TEMP] Confirmed --></label>
+        <name>TEMP_Confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sets the ID for the conga template to be used with the Thank You button. --></help>
+        <label><!-- Thank You Template ID --></label>
+        <name>Thank_You_Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid [DEPRECATED] --></label>
+        <name>Total_Paid_Deprecated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Selects the correct Conga template for the 1st renewal letter. --></help>
+        <label><!-- 1st Renewal Letter Conga Template --></label>
+        <name>X1st_Renewal_Letter_Conga_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Renewal Letter Conga URL --></label>
+        <name>X1st_Renewal_Letter_Conga_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check when the first renewal letter is sent. --></help>
+        <label><!-- 1st Renewal Letter Sent --></label>
+        <name>X1st_Renewal_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Renewal Letters Conga URL --></label>
+        <name>X2nd_Renewal_Letters_Conga_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acknowledgement Sent --></label>
+        <name>gf_sf__Acknowledgement_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Previous Fiscal Year --></help>
+        <label><!-- Assets --></label>
+        <name>gf_sf__Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check/Reference Number --></label>
+        <name>gf_sf__Check_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Generator(s) --></label>
+        <name>gf_sf__CurrentGenerators__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery/Installation Status --></label>
+        <name>gf_sf__DeliveryInstallationStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to begin</masterLabel>
+            <translation><!-- Yet to begin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Drupal ID --></label>
+        <name>gf_sf__Drupal_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value will be sent down by Drupal. It is the link back to the Drupal Registration. --></help>
+        <label><!-- Drupal Registration Link --></label>
+        <name>gf_sf__Drupal_Registration_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal Type --></label>
+        <name>gf_sf__Drupal_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Registration Contact (Deprecated) --></label>
+        <name>gf_sf__Event_Registration_Contact__c</name>
+        <relationshipLabel><!-- Event Registration Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter in the total $$ value of grants paid in the previous fiscal year --></help>
+        <label><!-- Grants Paid --></label>
+        <name>gf_sf__Grants_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Competitor(s) --></label>
+        <name>gf_sf__MainCompetitors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in the total number of grants paid in the previous fiscal year --></help>
+        <label><!-- Number of Grants Paid --></label>
+        <name>gf_sf__Number_of_Grants_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>gf_sf__OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>gf_sf__Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check</masterLabel>
+            <translation><!-- Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PayPal</masterLabel>
+            <translation><!-- PayPal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transfer</masterLabel>
+            <translation><!-- Wire Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field shows the contact that purchased this order --></help>
+        <label><!-- Product Sale Contact --></label>
+        <name>gf_sf__Product_Sale_Contact__c</name>
+        <relationshipLabel><!-- Product Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>gf_sf__TrackingNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was membership active at the time of engagement? --></help>
+        <label><!-- Current Member --></label>
+        <name>gf_sps__Current_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>gf_sps__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated. --></help>
+        <label><!-- Sponsor Benefits --></label>
+        <name>gf_sps__Sponsor_Benefits__c</name>
+        <picklistValues>
+            <masterLabel>DEPRECATED</masterLabel>
+            <translation><!-- DEPRECATED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sponsorship Type --></label>
+        <name>gf_sps__Sponsorship_Type__c</name>
+        <picklistValues>
+            <masterLabel>In-Kind</masterLabel>
+            <translation><!-- In-Kind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monetary</masterLabel>
+            <translation><!-- Monetary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro-Bono</masterLabel>
+            <translation><!-- Pro-Bono --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>gf_sps__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Fórmula: El importe de esta oportunidad menos el Monto de pagos cancelados y el Monto de pagos recibidos.</help>
+        <label><!-- Remaining Balance --></label>
+        <name>npe01__Amount_Outstanding__c</name>
+    </fields>
+    <fields>
+        <help>Valor total de los pagos marcados como cancelados o imposibles de cobrar para esta oportunidad.</help>
+        <label><!-- Payment Writeoff Amount --></label>
+        <name>npe01__Amount_Written_Off__c</name>
+    </fields>
+    <fields>
+        <help>Campo oculto para pasar el Id del contacto para la creación de una Función de Contacto</help>
+        <label><!-- Contact Id for Role --></label>
+        <name>npe01__Contact_Id_for_Role__c</name>
+    </fields>
+    <fields>
+        <help>Si pagos esta activado, y este campo seleccionado, un nuevo pago NO será automáticamente creado para esta oportunidad.</help>
+        <label><!-- Do Not Automatically Create Payment --></label>
+        <name>npe01__Do_Not_Automatically_Create_Payment__c</name>
+    </fields>
+    <fields>
+        <help>Fórmula: Si la cuenta relacionada esta o no definida como un individuo (SYSTEMIsIndividual__c)</help>
+        <label><!-- Is Opp From Individual --></label>
+        <name>npe01__Is_Opp_From_Individual__c</name>
+    </fields>
+    <fields>
+        <help>Determina el valor del nivel de la última membresía en un contacto o una cuenta</help>
+        <label><!-- Member Level --></label>
+        <name>npe01__Member_Level__c</name>
+        <picklistValues>
+            <masterLabel>Advantage</masterLabel>
+            <translation><!-- Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of State</masterLabel>
+            <translation><!-- Out of State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation><!-- Regular --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fecha en la que la membresía termina.</help>
+        <label><!-- Membership End Date --></label>
+        <name>npe01__Membership_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Es esta una renovación, una nueva membresía o una membresía de alguien que se fue y ahora retorna.</help>
+        <label><!-- Membership Origin --></label>
+        <name>npe01__Membership_Origin__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nueva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reacquire</masterLabel>
+            <translation>Re-adquirida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fecha en el que el período de la membresía inicia</help>
+        <label><!-- Membership Start Date --></label>
+        <name>npe01__Membership_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Cantidad total de pagos para esta oportunidad.</help>
+        <label><!-- Number of Payments --></label>
+        <name>npe01__Number_of_Payments__c</name>
+    </fields>
+    <fields>
+        <help>El valor total de los pagos marcados como recibidos para esta oportunidad.</help>
+        <label><!-- Payment Amount Received --></label>
+        <name>npe01__Payments_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Donation --></label>
+        <name>npe03__Recurring_Donation__c</name>
+        <relationshipLabel><!-- Donations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Concatenación de campos usados durante el calculo de totales para localizar la oportunidad más reciente.</help>
+        <label><!-- Combined Rollup Fieldset --></label>
+        <name>npo02__CombinedRollupFieldset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field. Do not use. --></help>
+        <label><!-- Current Generator(s) - DEPRECATED --></label>
+        <name>npo02__CurrentGenerators__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field. Do not use. --></help>
+        <label><!-- Delivery/Installation Status- DEPRECATED --></label>
+        <name>npo02__DeliveryInstallationStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to begin</masterLabel>
+            <translation><!-- Yet to begin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field. Do not use. --></help>
+        <label><!-- Main Competitor(s) - DEPRECATED --></label>
+        <name>npo02__MainCompetitors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field. Do not use. --></help>
+        <label><!-- Order Number - DEPRECATED --></label>
+        <name>npo02__OrderNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field. Do not use. --></help>
+        <label><!-- Tracking Number - DEPRECATED --></label>
+        <name>npo02__TrackingNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls if Household contact roles are created for Opportunities.  System field, do not use. --></help>
+        <label><!-- _SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR --></label>
+        <name>npo02__systemHouseholdContactRoleProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Opportunities</masterLabel>
+            <translation>Todas las oportunidades</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Opportunities</masterLabel>
+            <translation>No oportunidades</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fecha de acuse de recibo</help>
+        <label><!-- Acknowledgment Date --></label>
+        <name>npsp__Acknowledgment_Date__c</name>
+    </fields>
+    <fields>
+        <help>Estado de acuse de recibo de esta donación</help>
+        <label><!-- Acknowledgment Status --></label>
+        <name>npsp__Acknowledgment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Acknowledged</masterLabel>
+            <translation>Acuse de recibo enviado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Acknowledge</masterLabel>
+            <translation>No enviar acuse de recibo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Be Acknowledged</masterLabel>
+            <translation>A enviar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date when the donor was specifically asked for the donation, as opposed to the Opportunity Close Date that the organization may set to either when the Opportunity was first created, or when the Opportunity was won. --></help>
+        <label><!-- Ask Date --></label>
+        <name>npsp__Ask_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Notes on why the donation ask was not successful. --></help>
+        <label><!-- Closed Lost Reason --></label>
+        <name>npsp__Closed_Lost_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Fair Market Value of an In-Kind gift. --></help>
+        <label><!-- Fair Market Value --></label>
+        <name>npsp__Fair_Market_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Categorizes the type of ask for this opportunity. --></help>
+        <label><!-- Gift Strategy --></label>
+        <name>npsp__Gift_Strategy__c</name>
+        <picklistValues>
+            <masterLabel>New Donor</masterLabel>
+            <translation><!-- New Donor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fecha en que el grant es activado, de acuerdo a la documentación o el contrato enviado por la organización que otorga el grant.</help>
+        <label><!-- Grant Contract Date --></label>
+        <name>npsp__Grant_Contract_Date__c</name>
+    </fields>
+    <fields>
+        <help>Contiene números únicos que a veces son asignados por la organización que asigna el grant.</help>
+        <label><!-- Grant Contract Number --></label>
+        <name>npsp__Grant_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grant Period End Date --></label>
+        <name>npsp__Grant_Period_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grant Period Start Date --></label>
+        <name>npsp__Grant_Period_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Describe las áreas financiadas por el grant. Usted puede completar lo que quiera aquí. Por ejemplo, usted puede completar el nombre del programa que aplica al grant.</help>
+        <label><!-- Program Areas --></label>
+        <name>npsp__Grant_Program_Area_s__c</name>
+    </fields>
+    <fields>
+        <help>URL que lleva a los requerimientos del grant en la página de quien provee el grant.</help>
+        <label><!-- Grant Requirements Website --></label>
+        <name>npsp__Grant_Requirements_Website__c</name>
+    </fields>
+    <fields>
+        <help>El contacto existente al cual esta donación homenajea</help>
+        <label><!-- Honoree Contact --></label>
+        <name>npsp__Honoree_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Honoree Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nombre del homenajeado como es provisto por el donante. Si este campo es dejado en blando, y el campo Contacto homenajeado contiene un valor, Salesforce automáticamente completa este valor con ese valor.</help>
+        <label><!-- Honoree Name --></label>
+        <name>npsp__Honoree_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds any rich text description of the In-Kind Gift, including pictures. --></help>
+        <label><!-- In-Kind Description --></label>
+        <name>npsp__In_Kind_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if the donor provided the Fair Market Value for this In-Kind gift. --></help>
+        <label><!-- In-Kind Donor Declared Value --></label>
+        <name>npsp__In_Kind_Donor_Declared_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of In-Kind gift. --></help>
+        <label><!-- In-Kind Type --></label>
+        <name>npsp__In_Kind_Type__c</name>
+        <picklistValues>
+            <masterLabel>Goods</masterLabel>
+            <translation><!-- Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si seleccionado, indica que este grant es una renovación de un gran anterior.</help>
+        <label><!-- Is Grant Renewal --></label>
+        <name>npsp__Is_Grant_Renewal__c</name>
+    </fields>
+    <fields>
+        <help>La cuenta de la compañía que igualará esta donación.</help>
+        <label><!-- Matching Gift Account --></label>
+        <name>npsp__Matching_Gift_Account__c</name>
+        <relationshipLabel><!-- Matched Gifts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El nombre de la compañía que igualará esta donación</help>
+        <label><!-- Matching Gift Employer --></label>
+        <name>npsp__Matching_Gift_Employer__c</name>
+    </fields>
+    <fields>
+        <help>El estado de esta donación siendo complementada</help>
+        <label><!-- Matching Gift Status --></label>
+        <name>npsp__Matching_Gift_Status__c</name>
+        <picklistValues>
+            <masterLabel>Potential</masterLabel>
+            <translation>Potencial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation>Recibido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Presentada</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La donación complementaria del empleador para esta donación del empleado.</help>
+        <label><!-- Matching Gift --></label>
+        <name>npsp__Matching_Gift__c</name>
+        <relationshipLabel><!-- Matched Gifts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El NPSP actualiza este campo automáticamente basado en el próximos Hito del Grant</help>
+        <label><!-- Next Deliverable Date --></label>
+        <name>npsp__Next_Grant_Deadline_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help>Un mensaje personalizado para el receptor de la notificación</help>
+        <label><!-- Notification Message --></label>
+        <name>npsp__Notification_Message__c</name>
+    </fields>
+    <fields>
+        <help>Como el receptor de la notificación debe ser notificado.</help>
+        <label><!-- Notification Preference --></label>
+        <name>npsp__Notification_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Notify</masterLabel>
+            <translation>No notificar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Correo electrónico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Teléfono</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Mail</masterLabel>
+            <translation>Correo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El contacto existente de la persona que debe ser notificado por la donación.</help>
+        <label><!-- Notification Recipient Contact --></label>
+        <name>npsp__Notification_Recipient_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (Notification Recipient) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La información de contacto (como prevista por el donante) para el destinatario de la notificación.</help>
+        <label><!-- Notification Recipient Information --></label>
+        <name>npsp__Notification_Recipient_Information__c</name>
+    </fields>
+    <fields>
+        <help>El nombre (como prevista por el donante) de quien debe ser notificada sobre la donación. Si este campo es dejado en blanco y el Contacto destinatario de la notificación contiene un valor, SF automáticamente completa este campo con ese valor.</help>
+        <label><!-- Notification Recipient Name --></label>
+        <name>npsp__Notification_Recipient_Name__c</name>
+    </fields>
+    <fields>
+        <help>Si este grant es una renovación de un grant previo, use este campo para relacionar este contacto con uno previo.</help>
+        <label><!-- Previous Grant/Gift Opportunity --></label>
+        <name>npsp__Previous_Grant_Opportunity__c</name>
+        <relationshipLabel><!-- Related Grants/Gifts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El estado a usar al crear un miembro de campaña para el contacto principal y el origen de campaña de esta oportunidad. Deje en blanco para ir por defecto a un estado respondido para una op. cerrada ganada, y un estado no respondido para otras op.</help>
+        <label><!-- Primary Contact Campaign Member Status --></label>
+        <name>npsp__Primary_Contact_Campaign_Member_Status__c</name>
+    </fields>
+    <fields>
+        <help>El contacto principal para esta oportunidad. La función del contacto principal se mantiene sincronizada con este campo. Para donantes individuales, esto significa atribuciones por esta oportunidad.</help>
+        <label><!-- Primary Contact --></label>
+        <name>npsp__Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date this donor was identified as qualifying for this donation. --></help>
+        <label><!-- Qualified Date --></label>
+        <name>npsp__Qualified_Date__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de las cuotas para incluir en el nombre de la oportunidad. Muestra el número de cuotas en paréntesis para donaciones recurrentes de final abierto, o el número de cuotas del total de una donación recurrentes con un número fijo de cuotas</help>
+        <label><!-- Recurring Donation Installment Name --></label>
+        <name>npsp__Recurring_Donation_Installment_Name__c</name>
+    </fields>
+    <fields>
+        <help>El número de cuota de la donación recurrente de esta oportunidad.</help>
+        <label><!-- Recurring Donation Installment Number --></label>
+        <name>npsp__Recurring_Donation_Installment_Number__c</name>
+    </fields>
+    <fields>
+        <help>El monto que se solicita. Este número puede ser diferente del monto otorgado final.</help>
+        <label><!-- Requested Amount --></label>
+        <name>npsp__Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Indica si la donación es en honor o memoria de un individuo</help>
+        <label><!-- Tribute Type --></label>
+        <name>npsp__Tribute_Type__c</name>
+        <picklistValues>
+            <masterLabel>Honor</masterLabel>
+            <translation>Homenaje</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memorial</masterLabel>
+            <translation>En memoria</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check when the reminder letter is sent. --></help>
+        <label><!-- 2nd Renewal Letter Sent --></label>
+        <name>x2nd_Renewal_Letter_Sent__c</name>
+    </fields>
+    <layouts>
+        <layout>Admin Layout</layout>
+        <sections>
+            <label>Información de la donación</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Drupal Information --></label>
+            <section>Drupal Information</section>
+        </sections>
+        <sections>
+            <label>Información del grant</label>
+            <section>Grant Information</section>
+        </sections>
+        <sections>
+            <label>Información del pago</label>
+            <section>Legacy Payment Information</section>
+        </sections>
+        <sections>
+            <label><!-- MGO Information (Level, Start Date, End Date Above) --></label>
+            <section>MGO Information (Level, Start Date, End Date Above)</section>
+        </sections>
+        <sections>
+            <label><!-- Membership Information --></label>
+            <section>Membership Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Event Registration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Drupal Integration --></label>
+            <section>Drupal Integration</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fiscal Agent Layout</layout>
+        <sections>
+            <label>Información de la donación</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Información del grant</label>
+            <section>Grant Information (OPTIONAL - only use if we are managing the grant)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MGO Subscription Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Subscription Information --></label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Miscellaneous Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Event --></label>
+        <name>Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Contracts --></label>
+        <name>Contracts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event Registration --></label>
+        <name>Event_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fiscal Agent --></label>
+        <name>Fiscal_Agent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grants and Donations --></label>
+        <name>Grants_and_Donations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MGO Subscription --></label>
+        <name>MGO_Subscription</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Membership Detail --></label>
+        <name>Membership_Detail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Miscellaneous --></label>
+        <name>Miscellaneous</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NPSP Default --></label>
+        <name>NPSP_Default</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Sales --></label>
+        <name>Product_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sponsorship --></label>
+        <name>Sponsorship</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If the stage is Bill Me Later, you must include a Bill Me Later Date. --></errorMessage>
+        <name>Bill_Me_Later_Must_have_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MGO Number of Users must be 1,3,6, or 9. --></errorMessage>
+        <name>MGO_Check_Number_of_Users</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Roster --></label>
+        <name>Account_Roster</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Rosters --></label>
+        <name>Account_Rosters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Invoice --></label>
+        <name>Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Invoices --></label>
+        <name>Invoices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MGO_Thank_You_Email --></label>
+        <name>MGO_Thank_You_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Thank_You_Letter --></label>
+        <name>Thank_You_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Thank_You_Letters --></label>
+        <name>Thank_You_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X1st_Renewal_Letter --></label>
+        <name>X1st_Renewal_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X1st_Renewal_Letters --></label>
+        <name>X1st_Renewal_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- X2nd_Renewal_Letter --></label>
+        <name>X2nd_Renewal_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Matching_Donation --></label>
+        <name>npe01__Add_Matching_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Matching_Donation --></label>
+        <name>npe01__Matching_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Contact_Donation --></label>
+        <name>npe01__New_Contact_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Organization_Donation --></label>
+        <name>npe01__New_Organization_Donation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Acknowledgment --></label>
+        <name>npsp__Email_Acknowledgment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Acknowledgments --></label>
+        <name>npsp__Email_Acknowledgments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Find_Matched_Gifts --></label>
+        <name>npsp__Find_Matched_Gifts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Soft_Credits --></label>
+        <name>npsp__Manage_Soft_Credits</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refresh_Name --></label>
+        <name>npsp__Refresh_Name</name>
+    </webLinks>
+</CustomObjectTranslation>

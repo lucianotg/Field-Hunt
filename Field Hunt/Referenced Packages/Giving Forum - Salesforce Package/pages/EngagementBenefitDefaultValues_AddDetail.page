@@ -1,0 +1,70 @@
+<apex:page standardController="gf_sf__Engagement_and_Benefits__c" extensions="gf_sf.EngagementBenefitDefaultValuesController">
+    <head>
+        <title>E2E Settings Add Detail </title>
+    </head>
+    
+    <style>
+        #assign-action-spinner-main {position: fixed;left: 0;top: 0;background-color:rgba(0,0,0,.6);height: 100%;width: 100%;z-index: 999;align: center;vertical-align: middle;}
+        #assign-action-spinner-content {position: absolute; top: 50%;left: 50%;z-index: 1000;background-color: #F5FCFF;width: 204;height: 94; border-radius: 1em;border: 1px solid #CEECFF;padding: 20px 40px 20px 40px;margin-left: -116px;margin-top: -36px;}
+        #assign-action-spinner-content img {width: 32;height: 32;align: center;vertical-align: middle;}
+        #assign-action-spinner-content p {display: inline;font-size: 135%; font-family:'segoe_uisemibold';}
+        body .pbBody table.list tr.headerRow th:first-child{width:176px;}
+        body .pbBody table.list tr.headerRow th:nth-child(2){width:296px;}
+    </style>
+    
+    <apex:actionStatus id="theActionStatus" layout="block">
+        <apex:facet name="start">
+            <div id="assign-action-spinner-main">
+                <div id="assign-action-spinner-content">
+                    <img src="/img/analytics/reportbuilder/icons/spinner32.gif" alt="Processing..." title="Processing..." />
+                    <p>Processing...</p>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionStatus>
+    
+    <apex:form >
+        <apex:actionFunction name="refreshInnerBlock" status="theActionStatus" reRender="theInnerPageBlock" action="{!checkDependentPicklist}"/>
+        <apex:actionFunction name="removeSetting" action="{!removeSetting}" status="theActionStatus" reRender="thePageBlock">
+            <apex:param name="index" assignTo="{!strSelectedIndex}" value="" />
+        </apex:actionFunction>
+    
+        <apex:pageblock id="thePageBlock" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" status="theActionStatus" reRender="theInnerPageBlock" action="{!upsertSetting}"/>
+                <apex:commandButton value="Cancel" status="theActionStatus" reRender="thePageBlock" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection title="Select Email Address" columns="1">
+                <apex:inputText label=" Enter Name of the Setting: " value="{!defaultSetName}" disabled="{!isEdit}" />
+                <apex:inputText label=" Enter Email Address of the Setting: " value="{!defaultSetEmail}" disabled="{!isEdit}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Set Values for New Email-to-Engagement Records" columns="1">
+                <apex:pageBlock id="theInnerPageBlock">
+                    <apex:pageMessages ></apex:pageMessages>
+                    <apex:pageBlockButtons location="bottom">
+                        <apex:commandLink value="Add New Setting" status="theActionStatus" reRender="theInnerPageBlock" action="{!addNewSetting}"/>
+                    </apex:pageBlockButtons>
+                    <apex:pageblockTable value="{!listIndex}" var="index" id="table">
+                        <apex:column style="width:70px;">
+                            <apex:facet name="header">Action</apex:facet>
+                            <apex:commandLink value="Delete" id="action" reRender="theInnerPageBlock" action="{!removeSetting}" status="theActionStatus">
+                                <apex:param name="index" value="{!index}"/>
+                            </apex:commandLink>
+                        </apex:column>
+                        <apex:column width="200">
+                            <apex:facet name="header">Field</apex:facet>
+                            <apex:selectList disabled="{!mapOldFields[index]}" value="{!mapAPINames[index]}" multiselect="false" size="1" onchange="refreshInnerBlock();" id="source">
+                                <apex:selectOptions value="{!mapSelectOptions[index]}"/>
+                            </apex:selectList>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Value</apex:facet>
+                            <apex:inputField id="theInputField" rendered="{!IF(mapAPINames[index] == 'None', false, true)}" value="{!engagementBenefits[mapAPINames[index]]}"/>
+                        </apex:column>
+                    </apex:pageblockTable>
+                </apex:pageBlock>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,35 @@
+.THIS .overview-container {
+  padding:8px;
+  border-radius: 4px;
+}
+
+.THIS .project-overview-header {
+  margin-bottom: 8px;
+}
+
+.THIS .progress-bar--container{
+  width: 100%;
+  border-radius:4px;
+  height:20px;
+  background-color:#cfd5df;
+}
+
+.THIS .progress-bar--bar{
+  background-color: #44a2b8;
+  border-radius:4px;
+  height:20px;
+  text-align:center;
+}
+
+.THIS .progress-bar--zerowidthbar{
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+.THIS .progress-bar--pct-complete-label{
+  color:white;
+}
+
+.THIS .milestones--container{
+  margin-top:6px;
+}

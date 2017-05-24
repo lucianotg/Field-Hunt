@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email_Opportunity_Missing</name>
+        <label>Email - Opportunity Missing</label>
+        <locationX>419</locationX>
+        <locationY>447</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyOpportunityMissing</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubjectOpportunityMissing</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!varCurrentUserEmail},info@mcf.org</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Email_Variables_Missing</name>
+        <label>Email - Variables Missing</label>
+        <locationX>145</locationX>
+        <locationY>263</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyVariablesMissing</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubjectVariablesMissing</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!varCurrentUserEmail},info@mcf.org</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Are_any_variables_missing</name>
+        <label>Are any variables missing?</label>
+        <locationX>143</locationX>
+        <locationY>63</locationY>
+        <defaultConnector>
+            <targetReference>Create_opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Variables_are_missing</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varNewCampaignMemberFee</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varNewCampaignMemberID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varNewCampaignMemberStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Variables_Missing</targetReference>
+            </connector>
+            <label>Variables are missing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Opportunity_Missing</name>
+        <label>Opportunity Missing?</label>
+        <locationX>413</locationX>
+        <locationY>265</locationY>
+        <defaultConnector>
+            <targetReference>Create_Campaign_Member</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity_ID_is_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varOpportunityID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Opportunity_Missing</targetReference>
+            </connector>
+            <label>Opportunity ID is Null</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Add New Campaign Member {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Add New Campaign Member</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Campaign_Member</name>
+        <label>Create Campaign Member</label>
+        <locationX>695</locationX>
+        <locationY>258</locationY>
+        <assignRecordIdToReference>varCreatedCampaignMemberID</assignRecordIdToReference>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>varCampaignID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>varNewCampaignMemberID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <elementReference>varNewCampaignMemberStatus</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_sf__Fee__c</field>
+            <value>
+                <elementReference>varNewCampaignMemberFee</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_sf__Opportunity__c</field>
+            <value>
+                <elementReference>varOpportunityID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_sf__Organization__c</field>
+            <value>
+                <elementReference>varAccountID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMember</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_opportunity</name>
+        <label>Create opportunity</label>
+        <locationX>415</locationX>
+        <locationY>61</locationY>
+        <assignRecordIdToReference>varOpportunityID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Opportunity_Missing</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>varAccountID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Amount</field>
+            <value>
+                <elementReference>varNewCampaignMemberFee</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>varCampaignID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012j0000000z3RrAAI</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Bill Me Now</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>gf_sf__Product_Sale_Contact__c</field>
+            <value>
+                <elementReference>varNewCampaignMemberID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordCreates>
+    <startElementReference>Are_any_variables_missing</startElementReference>
+    <textTemplates>
+        <name>EmailBodyOpportunityMissing</name>
+        <text>You tried to add a new campaign member to a campaign (ID: {!varCampaignID}). The Opportunity for the new campaign member was not created.
+
+Please verify that the Opportunity was created and linked to the registration.
+
+{!varNewCampaignMemberID}
+{!varNewCampaignMemberFee}
+{!varNewCampaignMemberStatus}
+
+{!$Flow.FaultMessage}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyVariablesMissing</name>
+        <text>You tried to add a new campaign member to a campaign (ID: {!varCampaignID}). However, some of the information was missing.
+
+All of the fields in the Add Campaign Member quick action must be filled out.
+
+New Campaign Member ID: {!varNewCampaignMemberID}
+New Campaign Member Fee: {!varNewCampaignMemberFee}
+New Campaign Member Status: {!varNewCampaignMemberStatus}
+
+{!$Flow.FaultMessage}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectOpportunityMissing</name>
+        <text>Opportunity not created on flow: Add New Campaign Member</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectVariablesMissing</name>
+        <text>Add Campaign Member Error - Missing Information</text>
+    </textTemplates>
+    <variables>
+        <name>varAccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varCampaignID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varCreatedCampaignMemberID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varCurrentUserEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Fee for the new campaign member.</description>
+        <name>varNewCampaignMemberFee</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>16</scale>
+    </variables>
+    <variables>
+        <description>ID for the new campaign member.</description>
+        <name>varNewCampaignMemberID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varNewCampaignMemberStatus</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varOpportunityID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

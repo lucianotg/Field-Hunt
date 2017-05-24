@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Deposit_Refund_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Holds deposit information putting together all payments that hit the bank as one deposit or refund.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Closed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Shows whether the deposit has been verified and finalized. The deposit should then not be changed anymore. Checks can then also be taken to the bank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check when the deposit has been verified and finalized</inlineHelpText>
+        <label>Closed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Amount__c</fullName>
+        <description>This is the total amount of the Deposit, as a total of all Allocations entered. This amount is manually entered, and should match the System Total, as a way to confirm that all the payments are entered correctly.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the total amount of the Deposit, as a total of all Allocations entered. This amount is manually entered, and should match the System Total, as a way to confirm that all the payments are entered correctly.</inlineHelpText>
+        <label>Deposit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Date__c</fullName>
+        <description>Date of the deposit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date of the deposit.</inlineHelpText>
+        <label>Deposit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Force_Update__c</fullName>
+        <description>Used to force workflows and processes to fire.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to force workflows and processes to fire.</inlineHelpText>
+        <label>Force Update</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Great_Plains_Export_Date__c</fullName>
+        <description>The date the deposit was sent to Great Plains.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the date the deposit was sent to Great Plains.</inlineHelpText>
+        <label>Great Plains Export Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Payment_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>In the case that the deposit was copied from the old Parent Payment object, this is the ID of the old Parent Payment.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>In the case that the deposit was copied from the old Parent Payment object, this is the ID of the old Parent Payment.</inlineHelpText>
+        <label>Parent Payment ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <description>This is the source of the funds.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the deposit source.</inlineHelpText>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Check/Cash Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Check/Cash Refund</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Card Authorize.net Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Card Paypal Deposit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wire Transfer Deposit</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sent_to_Great_Plains__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Shows that the deposit has been sent to Great Plains.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check when the deposit has been sent to Great Plains.</inlineHelpText>
+        <label>Sent to Great Plains</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>System_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( System_Total__c  &lt;&gt; Deposit_Amount__c , IMAGE(&quot;img/msg_icons/error32.png&quot;, &quot;The numbers don&apos;t add up.&quot;), IMAGE(&quot;img/msg_icons/confirm32.png&quot;, &quot;It all adds up!&quot;) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>System Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Total__c</fullName>
+        <description>This is the system total, calculated as the sum of all payments related to this deposit. Updates every 15 minutes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the system total, calculated as the sum of all payments related to this deposit. Updates every 15 minutes.</inlineHelpText>
+        <label>System Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Deposit/Refund</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Deposit_Date__c</columns>
+        <columns>Deposit_Amount__c</columns>
+        <columns>Closed__c</columns>
+        <columns>Sent_to_Great_Plains__c</columns>
+        <columns>Great_Plains_Export_Date__c</columns>
+        <columns>Force_Update__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Deposit Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Deposits and Refunds</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Deposit_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Payment_Method__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Deposit_Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Closed__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sent_to_Great_Plains__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Deposit_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Payment_Method__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Deposit_Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Closed__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sent_to_Great_Plains__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Deposit_Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Deposit_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Payment_Method__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Closed__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sent_to_Great_Plains__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Payment_Method__c</searchFilterFields>
+        <searchFilterFields>Deposit_Date__c</searchFilterFields>
+        <searchFilterFields>Deposit_Amount__c</searchFilterFields>
+        <searchFilterFields>Closed__c</searchFilterFields>
+        <searchFilterFields>Sent_to_Great_Plains__c</searchFilterFields>
+        <searchResultsAdditionalFields>Deposit_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Deposit_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Payment_Method__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sent_to_Great_Plains__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

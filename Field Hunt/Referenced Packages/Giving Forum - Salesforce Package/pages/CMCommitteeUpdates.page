@@ -1,0 +1,22 @@
+<apex:page standardController="Campaign" extensions="gf_sf.CampaignMembersCommitteeUpdateConExt">
+<apex:form >
+
+
+<apex:pageBlock >
+
+<apex:pageBlockSection >
+<apex:outputField value="{!Campaign.Name}"/>
+<apex:outputField value="{!Campaign.gf_sf__Committee_Affinity_Group__c}"/>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockButtons >
+<apex:commandButton action="{!UpdateGroupMembers}" value="Submit Update"/>
+<apex:commandButton action="{!Cancel}" value="Return to Campaign"/>
+
+</apex:pageBlockButtons>
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

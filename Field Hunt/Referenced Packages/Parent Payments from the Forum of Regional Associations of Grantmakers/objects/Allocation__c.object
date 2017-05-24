@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Check_Reference_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Fill this out if this payment is from a different payment method than the parent payment.</inlineHelpText>
+        <label>Check/Reference Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GL_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>GL Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>General_Ledger_Account__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>000-1010-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-1145-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2080-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2090-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-2098-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>000-9995-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>140-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>140-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>190-3100-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>190-3100-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>220-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>320-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>320-3300-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>322-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>322-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>323-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>323-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>323-3900-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>324-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>324-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>325-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>325-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3200-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>327-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>330-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>330-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>340-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>340-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3160-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>350-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>360-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>360-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>390-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>530-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>530-3500-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>585-3720-01</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>585-3720-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>590-3500-02</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>590-3500-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>620-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>620-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>837-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>837-3200-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3150-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3200-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>839-3300-Z</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>899-3150-01</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - My Brother&apos;s Keeper</controllingFieldValue>
+                <valueName>837-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Advancing Voices</controllingFieldValue>
+                <valueName>839-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - Advancing Voices</controllingFieldValue>
+                <valueName>839-3200-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Advancing Voices</controllingFieldValue>
+                <valueName>839-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - New Office Space</controllingFieldValue>
+                <valueName>899-3150-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - My Brother&apos;s Keeper</controllingFieldValue>
+                <valueName>837-3200-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Dues - New</controllingFieldValue>
+                <valueName>190-3100-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Member Summer Social</controllingFieldValue>
+                <valueName>220-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Pop-up Programs</controllingFieldValue>
+                <valueName>320-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Co-sponsored and Pop-up Programs</controllingFieldValue>
+                <valueName>320-3300-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Corporate Programs and Networks</controllingFieldValue>
+                <valueName>322-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Corporate Programs and Networks</controllingFieldValue>
+                <valueName>322-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Community Foundation Programs and Networks</controllingFieldValue>
+                <valueName>323-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Community Foundation Programs and Networks</controllingFieldValue>
+                <valueName>323-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous Income</controllingFieldValue>
+                <valueName>323-3900-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Family Philanthropy Programs and Networks</controllingFieldValue>
+                <valueName>324-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <valueName>000-1010-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accounts Receivable</controllingFieldValue>
+                <valueName>000-1145-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prepaid Dues</controllingFieldValue>
+                <valueName>000-2080-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prepaid - Other</controllingFieldValue>
+                <valueName>000-2090-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - MN Food Funder&apos;s Network</controllingFieldValue>
+                <valueName>000-2098-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refund/Clearing</controllingFieldValue>
+                <valueName>000-9995-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Annual Meeting</controllingFieldValue>
+                <valueName>140-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Annual Meeting</controllingFieldValue>
+                <valueName>140-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Member Dues - Renewal</controllingFieldValue>
+                <valueName>190-3100-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Family Philanthropy Programs and Networks</controllingFieldValue>
+                <valueName>324-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - CEO Circle</controllingFieldValue>
+                <valueName>325-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - CEO Circle</controllingFieldValue>
+                <valueName>325-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Public Policy</controllingFieldValue>
+                <valueName>327-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Public Policy</controllingFieldValue>
+                <valueName>327-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Grants - Public Policy</controllingFieldValue>
+                <valueName>327-3200-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Webinars</controllingFieldValue>
+                <valueName>330-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Webinars</controllingFieldValue>
+                <valueName>330-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Grantmaking for the 21st Century</controllingFieldValue>
+                <valueName>340-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Grantmaking for the 21st Century</controllingFieldValue>
+                <valueName>340-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Annual Conference</controllingFieldValue>
+                <valueName>350-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Exhibitor Fees - Annual Conference</controllingFieldValue>
+                <valueName>350-3160-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Annual Conference</controllingFieldValue>
+                <valueName>350-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Member Networks</controllingFieldValue>
+                <valueName>360-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Member Networks</controllingFieldValue>
+                <valueName>360-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Contract Training</controllingFieldValue>
+                <valueName>390-3300-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Giving Forum</controllingFieldValue>
+                <valueName>530-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ad Income - Giving Forum</controllingFieldValue>
+                <valueName>530-3500-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGO Subscription - New</controllingFieldValue>
+                <valueName>585-3720-01</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGO Subscription - Renewal</controllingFieldValue>
+                <valueName>585-3720-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Job Posting Income</controllingFieldValue>
+                <valueName>590-3500-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ad Income - E-communications</controllingFieldValue>
+                <valueName>590-3500-02</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sponsorships - Government Relations</controllingFieldValue>
+                <valueName>620-3150-Z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting Fees - Government Relations</controllingFieldValue>
+                <valueName>620-3300-Z</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Method__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Only fill this out if the payment method differs from the Parent Payment. Use values that exactly match the Payment Method field on Parent Payments.</inlineHelpText>
+        <label>Method</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Allocations</relationshipLabel>
+        <relationshipName>Allocations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Parent_Payment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Payment</label>
+        <referenceTo>Parent_Payment__c</referenceTo>
+        <relationshipLabel>Allocations</relationshipLabel>
+        <relationshipName>Allocations</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Membership Dues</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Membership Grant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Operating Grant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Events</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Donation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Allocation</label>
+    <nameField>
+        <displayFormat>A-{000000}</displayFormat>
+        <label>Allocation Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Allocations</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GL_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Parent_Payment__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GL_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Opportunity__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Parent_Payment__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Opportunity__c</searchFilterFields>
+        <searchFilterFields>Parent_Payment__c</searchFilterFields>
+        <searchFilterFields>Type__c</searchFilterFields>
+        <searchFilterFields>GL_Code__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

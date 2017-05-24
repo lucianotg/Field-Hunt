@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This is the long Account ID, as opposed to the partial, 15-digit ID shown in URLs. --></help>
+        <label><!-- Account ID 18 --></label>
+        <name>Account_ID_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the federal congressional district for the organization. --></help>
+        <label><!-- Federal Congressional District --></label>
+        <name>Federal_Congressional_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used with Jitterbit, Data Loader, or other tools to force an update of the account. --></help>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMPak Id --></label>
+        <name>IMPak_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the congressional district as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak Congressional District --></label>
+        <name>Impak_Congressional_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is an imported code showing the last user or process that edited a record in Impak before migration. (LMS = Lori Miller-Shiell, CNV = Conversion, WEB = Website, etc.) --></help>
+        <label><!-- Impak Last Change By --></label>
+        <name>Impak_Last_Change_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- This date shows the last time a record was edited in Impak before migration. --></help>
+        <label><!-- Impak Last Change Date --></label>
+        <name>Impak_Last_Change_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the state house as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak State House District --></label>
+        <name>Impak_State_House_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the state senate as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak State Senate District --></label>
+        <name>Impak_State_Senate_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the text version of the Membership Status field. It is used for reporting, since it is difficult to tell which of the two identically named Membership Status fields shows an Account&apos;s MCF membership. --></help>
+        <label><!-- Membership Status for Reports --></label>
+        <name>Membership_Status_for_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter is the Minnesota house district for the organization. --></help>
+        <label><!-- Minnesota House District --></label>
+        <name>Minnesota_House_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Minnesota senate district for the organization. --></help>
+        <label><!-- Minnesota Senate District --></label>
+        <name>Minnesota_Senate_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This shows the date of the most recent Event Registration invoice. --></help>
+        <label><!-- Most Recent Event Reg --></label>
+        <name>Most_Recent_Event_Reg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolls up the number of active organizational affiliations for this account. --></help>
+        <label><!-- Number of Affiliated Contacts --></label>
+        <name>Number_of_Affiliated_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Email --></label>
+        <name>Organization_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Level --></label>
+        <name>Previous_Level__c</name>
+        <relationshipLabel><!-- Accounts (Previous Level) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Pick the month in which the foundation should receive their first membership renewal letter. (October and December letters are sent requesting renewals for the following year.) --></help>
+        <label><!-- Renewal Cycle --></label>
+        <name>Renewal_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>A - October</masterLabel>
+            <translation><!-- A - October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B - December</masterLabel>
+            <translation><!-- B - December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C - February</masterLabel>
+            <translation><!-- C - February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - May</masterLabel>
+            <translation><!-- D - May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E - August</masterLabel>
+            <translation><!-- E - August --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter special requests that the member has made about how we should handle renewals. --></help>
+        <label><!-- Renewal Special Instructions --></label>
+        <name>Renewal_Special_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Returns correct plural form of the Account Name to be used in merge templates. --></help>
+        <label><!-- Account Name Plural (Formula) --></label>
+        <name>gf_pp__Account_Name_Plural_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>gf_sf__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A lookup field for designating a 2nd administrative contact for the Account. This contact in Drupal is able to edit information on behalf of their organization. --></help>
+        <label><!-- Administrative Contact 2 --></label>
+        <name>gf_sf__Administrative_Contact_2__c</name>
+        <relationshipLabel><!-- Accounts (Administrative Contact 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assets --></label>
+        <name>gf_sf__Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup field for designating a 2nd billing contact for the Account. --></help>
+        <label><!-- Billing Contact 2 --></label>
+        <name>gf_sf__Billing_Contact_2__c</name>
+        <relationshipLabel><!-- Accounts (Billing Contact 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A lookup field for designating a billing contact for the Account --></help>
+        <label><!-- Billing Contact --></label>
+        <name>gf_sf__Billing_Contact__c</name>
+        <relationshipLabel><!-- Accounts (Billing Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Blog --></label>
+        <name>gf_sf__Blog__c</name>
+    </fields>
+    <fields>
+        <help><!-- The CRM system currently in use by this member. --></help>
+        <label><!-- CRM --></label>
+        <name>gf_sf__CRM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>gf_sf__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name: --></label>
+        <name>gf_sf__DBA_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date this member first joined the association. --></help>
+        <label><!-- Date of First Membership --></label>
+        <name>gf_sf__Date_of_First_Membership__c</name>
+    </fields>
+    <fields>
+        <help><!-- The donor management system currently in use by this member. --></help>
+        <label><!-- Donor management system --></label>
+        <name>gf_sf__Donor_management_system__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal ID --></label>
+        <name>gf_sf__Drupal_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal Type --></label>
+        <name>gf_sf__Drupal_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- For recording the EIN of the Account. --></help>
+        <label><!-- EIN --></label>
+        <name>gf_sf__EIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>gf_sf__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>gf_sf__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook URL --></label>
+        <name>gf_sf__Facebook__c</name>
+    </fields>
+    <fields>
+        <help><!-- The finance system currently in use by this member. --></help>
+        <label><!-- Finance system --></label>
+        <name>gf_sf__Finance_system__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Year End --></label>
+        <name>gf_sf__Financial_Year_End__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to select one or more picklist values to indicate focus area(s). --></help>
+        <label><!-- Focus Area --></label>
+        <name>gf_sf__Focus_Area__c</name>
+        <picklistValues>
+            <masterLabel>Disaster preparedness</masterLabel>
+            <translation><!-- Disaster preparedness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Development</masterLabel>
+            <translation><!-- Economic Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education: Early childhood</masterLabel>
+            <translation><!-- Education: Early childhood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education: Higher education</masterLabel>
+            <translation><!-- Education: Higher education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education: K-12</masterLabel>
+            <translation><!-- Education: K-12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education: Out-of-school time</masterLabel>
+            <translation><!-- Education: Out-of-school time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education: STEM</masterLabel>
+            <translation><!-- Education: STEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment/Workforce development</masterLabel>
+            <translation><!-- Employment/Workforce development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation><!-- Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment/Sustainability</masterLabel>
+            <translation><!-- Environment/Sustainability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity and Inclusion</masterLabel>
+            <translation><!-- Equity and Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Families &amp; children</masterLabel>
+            <translation><!-- Families &amp; children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial literacy &amp; asset building</masterLabel>
+            <translation><!-- Financial literacy &amp; asset building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIV/AIDS</masterLabel>
+            <translation><!-- HIV/AIDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health access &amp; care</masterLabel>
+            <translation><!-- Health access &amp; care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing &amp; homelessness</masterLabel>
+            <translation><!-- Housing &amp; homelessness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services</masterLabel>
+            <translation><!-- Human Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunger &amp; nutrition</masterLabel>
+            <translation><!-- Hunger &amp; nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration &amp; refugees</masterLabel>
+            <translation><!-- Immigration &amp; refugees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental health</masterLabel>
+            <translation><!-- Mental health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit infrastructure</masterLabel>
+            <translation><!-- Nonprofit infrastructure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poverty</masterLabel>
+            <translation><!-- Poverty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public safety/violence prevention</masterLabel>
+            <translation><!-- Public safety/violence prevention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religion</masterLabel>
+            <translation><!-- Religion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science &amp; technology</masterLabel>
+            <translation><!-- Science &amp; technology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>gf_sf__Funder_Category__c</name>
+        <picklistValues>
+            <masterLabel>Community Foundation</masterLabel>
+            <translation><!-- Community Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant/Vendor</masterLabel>
+            <translation><!-- Consultant/Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Foundation/Program</masterLabel>
+            <translation><!-- Corporate Foundation/Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor Advised Fund</masterLabel>
+            <translation><!-- Donor Advised Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educational Institution</masterLabel>
+            <translation><!-- Educational Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elected Official - Federal</masterLabel>
+            <translation><!-- Elected Official - Federal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elected Official - Local</masterLabel>
+            <translation><!-- Elected Official - Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elected Official - State</masterLabel>
+            <translation><!-- Elected Official - State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government (Non-grantmaker)</masterLabel>
+            <translation><!-- Government (Non-grantmaker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government or Tribal Grantmaker</masterLabel>
+            <translation><!-- Government or Tribal Grantmaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National/Regional Group</masterLabel>
+            <translation><!-- National/Regional Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operating Foundation</masterLabel>
+            <translation><!-- Operating Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private - Family Foundation</masterLabel>
+            <translation><!-- Private - Family Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private - Independent</masterLabel>
+            <translation><!-- Private - Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public/Intermediary</masterLabel>
+            <translation><!-- Public/Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Association of Grantmakers</masterLabel>
+            <translation><!-- Regional Association of Grantmakers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to indicate the appropriate geographic areas of grantmaking focus. --></help>
+        <label><!-- Geographic Funding Areas --></label>
+        <name>gf_sf__Geographic_Location__c</name>
+        <picklistValues>
+            <masterLabel>Sample Picklist</masterLabel>
+            <translation><!-- Sample Picklist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Grant Detail Fiscal Year --></label>
+        <name>gf_sf__Grant_Detail_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- The grant management system currently in use by this member. --></help>
+        <label><!-- Grant management system --></label>
+        <name>gf_sf__Grant_management_system__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in the total $$ value of grants paid in the previous fiscal year --></help>
+        <label><!-- Grants Paid --></label>
+        <name>gf_sf__Grants_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to indicate active or inactive status of the Account. --></help>
+        <label><!-- Group / Committee Status --></label>
+        <name>gf_sf__Group_Committee_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed</masterLabel>
+            <translation><!-- Proposed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the date the group was started. --></help>
+        <label><!-- Group Start Date --></label>
+        <name>gf_sf__Group_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Type --></label>
+        <name>gf_sf__Group_Type__c</name>
+        <picklistValues>
+            <masterLabel>Affinity Group</masterLabel>
+            <translation><!-- Affinity Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collaborative</masterLabel>
+            <translation><!-- Collaborative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee</masterLabel>
+            <translation><!-- Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special</masterLabel>
+            <translation><!-- Special --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub-Committee</masterLabel>
+            <translation><!-- Sub-Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Force</masterLabel>
+            <translation><!-- Task Force --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Group</masterLabel>
+            <translation><!-- Task Group --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inc in Directory --></label>
+        <name>gf_sf__Inc_in_Directory__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn URL --></label>
+        <name>gf_sf__LinkedIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Congressional District --></label>
+        <name>gf_sf__Mailing_Address_Congressional_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address - County --></label>
+        <name>gf_sf__Mailing_Address_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- State House --></label>
+        <name>gf_sf__Mailing_Address_State_House__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Senate --></label>
+        <name>gf_sf__Mailing_Address_State_Senate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field must be manually kept up-to-date. --></help>
+        <label><!-- Membership Status --></label>
+        <name>gf_sf__Membership_Status__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former</masterLabel>
+            <translation><!-- Former --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Member</masterLabel>
+            <translation><!-- Non-Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective</masterLabel>
+            <translation><!-- Prospective --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mission/Goal --></label>
+        <name>gf_sf__Mission_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Number of Grants Made --></label>
+        <name>gf_sf__Number_of_Grants_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>gf_sf__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address - County --></label>
+        <name>gf_sf__Physical_Address_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address - Province --></label>
+        <name>gf_sf__Physical_Address_Province__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this lookup field for designating a primary contact for the Account. --></help>
+        <label><!-- Primary Contact --></label>
+        <name>gf_sf__Primary_Contact__c</name>
+        <relationshipLabel><!-- Accounts (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A link to the RedHen record for this Account --></help>
+        <label><!-- RedHen Detail Link --></label>
+        <name>gf_sf__RedHen_Detail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roster Date --></label>
+        <name>gf_sf__Roster_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show in Directory for --></label>
+        <name>gf_sf__Show_in_Directory_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Name --></label>
+        <name>gf_sf__Sort_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Rep --></label>
+        <name>gf_sf__Staff_Rep__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Staff Size Range --></label>
+        <name>gf_sf__Staff_Size_Range__c</name>
+        <picklistValues>
+            <masterLabel>TBD by RA</masterLabel>
+            <translation><!-- TBD by RA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff Size --></label>
+        <name>gf_sf__Staff_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter URL --></label>
+        <name>gf_sf__Twitter_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter- deprecated --></label>
+        <name>gf_sf__Twitter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Types of Support --></label>
+        <name>gf_sf__Types_of_Support__c</name>
+        <picklistValues>
+            <masterLabel>TBD by RA</masterLabel>
+            <translation><!-- TBD by RA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Count --></label>
+        <name>gf_sf__Unique_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup field for designating an administrative contact for the Account. This contact in Drupal is able to edit information on behalf of their organization. --></help>
+        <label><!-- Administrative Contact --></label>
+        <name>gf_sf__Web_Contact__c</name>
+        <relationshipLabel><!-- Accounts (Administrative Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Website Link --></label>
+        <name>gf_sf__Website_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who can view online - Committees? --></label>
+        <name>gf_sf__Who_can_view_online_Committees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who can view online - Members? --></label>
+        <name>gf_sf__Who_can_view_online_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who can view online - Non Members? --></label>
+        <name>gf_sf__Who_can_view_online_Non_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who can view online - Staff? --></label>
+        <name>gf_sf__Who_can_view_online_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Founded --></label>
+        <name>gf_sf__Year_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website URL --></label>
+        <name>gf_sf__website_url__c</name>
+    </fields>
+    <fields>
+        <help><!-- The oldest Close Date of a won Opportunity with amount greater than zero related to this Account.  REPLACED by First Close Date. --></help>
+        <label><!-- DEPRECATED - First Donation Date --></label>
+        <name>npe01__FirstDonationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The most recent Close Date of a won Opportunity related to this Account with amount greater than zero.  REPLACED by Last Close Date. --></help>
+        <label><!-- DEPRECATED - Last Donation Date --></label>
+        <name>npe01__LastDonationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account.  REPLACED by Households package. --></help>
+        <label><!-- DEPRECATED - Lifetime Donation Amount --></label>
+        <name>npe01__LifetimeDonationHistory_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities related to this Account.  REPLACED by Households package. --></help>
+        <label><!-- DEPRECATED - Lifetime Donation Number --></label>
+        <name>npe01__LifetimeDonationHistory_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the one-to-one contact. --></help>
+        <label><!-- Primary Contact --></label>
+        <name>npe01__One2OneContact__c</name>
+        <relationshipLabel><!-- Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether or not this Account is an Individual (true) or Organization (false). --></help>
+        <label><!-- _SYSTEM: IsIndividual --></label>
+        <name>npe01__SYSTEMIsIndividual__c</name>
+    </fields>
+    <fields>
+        <help>Champ système: ne pas utiliser ou changer.</help>
+        <label><!-- _SYSTEM: AccountType --></label>
+        <name>npe01__SYSTEM_AccountType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average won Opportunity amount related to this Account.  Updated automatically. --></help>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sum of won Opportunity amounts in the Best Gift Year for this Account. --></help>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year in which the largest total amount of won Opportunities related to this Account occurred.  See also Best Gift Year Total. --></help>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- The earliest won Opportunity (by Close Date) with amount greater than zero related to this Account. --></help>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <help>Pour les comptes de foyer, utilise les champs de contacts associés non exclus, ordonnés. Généré automatiquement.</help>
+        <label><!-- Formal Greeting --></label>
+        <name>npo02__Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Phone --></label>
+        <name>npo02__HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <help>Pour les comptes de foyer, utilise les champs de contacts associés non exclus, ordonnés. Généré automatiquement.</help>
+        <label><!-- Informal Greeting --></label>
+        <name>npo02__Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- The largest amount of a won Opportunity related to this Account. --></help>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The most recent Close Date of a won Opportunity related to this Account with amount greater than zero. --></help>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the most recent (by Close Date) won Membership Opportunity (by Record Type) for this Account. --></help>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The most recent Close Date of a won Membership Opportunity (by Record Type) related to this Account. --></help>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Membership level from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account.&quot; --></help>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Membership &quot;origin&quot; (new, renew...) from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account. --></help>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the most recent won Opportunity (by Close Date) with amount greater than zero related to this Account. --></help>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Membership end date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account. --></help>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Membership start date from most recent (by Close Date) won Membership Opportunity (by Record Type) related to this Account. --></help>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities  related to this Account. --></help>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Membership Opportunities (Record Type) related to this Account. --></help>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account, closed within the year or fiscal year preceding last year (see Household Settings). --></help>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings. --></help>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account, closed in the current year or fiscal year. --></help>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account, closed in the current year or fiscal year. --></help>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Account, closed within the year or fiscal year preceding last year. --></help>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Account, closed in the last number of days defined in Household Settings. --></help>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Account, closed in the previous year or fiscal year (see Household Settings). --></help>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Account, closed in the current year or fiscal year (see Household Settings). --></help>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <help>Pour les comptes de foyer, indique quels champs associés au nom ne doivent pas être remplis automatiquement par le code de foyer.</help>
+        <label><!-- _SYSTEM: CUSTOM NAMING --></label>
+        <name>npo02__SYSTEM_CUSTOM_NAMING__c</name>
+        <picklistValues>
+            <masterLabel>Formal_Greeting__c</masterLabel>
+            <translation><!-- Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informal_Greeting__c</masterLabel>
+            <translation><!-- Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The smallest non-zero amount of a won Opportunity related to this Account. --></help>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Membership Opportunities (Record Type) related to this Account. --></help>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sum of amounts of all won Opportunities related to this Account. --></help>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <help>Le lot dans lequel ce compte a été créé.</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le ou les secteur(s) financé(s) par cette organisation.</help>
+        <label><!-- Funding Focus --></label>
+        <name>npsp__Funding_Focus__c</name>
+        <picklistValues>
+            <masterLabel>Animal Welfare</masterLabel>
+            <translation>Protection des animaux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts and Culture</masterLabel>
+            <translation>Arts et culture</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capacity Building</masterLabel>
+            <translation>Développement de compétences</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation>Éducation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation>Environnement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Services</masterLabel>
+            <translation>Services de santé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services</masterLabel>
+            <translation>Services sociaux</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indique que cette organisation attribue des subventions. Peut s’appliquer à des fondations, des agences gouvernementales, des entreprises, etc.</help>
+        <label><!-- Grantmaker --></label>
+        <name>npsp__Grantmaker__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de l’administrateur de dons jumelés de l’entreprise.</help>
+        <label><!-- Matching Gift Administrator Name --></label>
+        <name>npsp__Matching_Gift_Administrator_Name__c</name>
+    </fields>
+    <fields>
+        <help>Le montant maximal offert par l’entreprise pour un don jumelé.</help>
+        <label><!-- Matching Gift Amount Max --></label>
+        <name>npsp__Matching_Gift_Amount_Max__c</name>
+    </fields>
+    <fields>
+        <help>Le montant de don jumelé le plus faible accepté par l’entreprise.</help>
+        <label><!-- Matching Gift Amount Min --></label>
+        <name>npsp__Matching_Gift_Amount_Min__c</name>
+    </fields>
+    <fields>
+        <help>Le montant maximal offert par l’entreprise pour les dons jumelés d’un employé sur une année.</help>
+        <label><!-- Matching Gift Annual Employee Max --></label>
+        <name>npsp__Matching_Gift_Annual_Employee_Max__c</name>
+    </fields>
+    <fields>
+        <help>Notes supplémentaires sur le programme de dons jumelés de l’entreprise.</help>
+        <label><!-- Matching Gift Comments --></label>
+        <name>npsp__Matching_Gift_Comments__c</name>
+    </fields>
+    <fields>
+        <help>Cette entreprise offre-t-elle des dons jumelés ?</help>
+        <label><!-- Matching Gift Company --></label>
+        <name>npsp__Matching_Gift_Company__c</name>
+    </fields>
+    <fields>
+        <help>L’adresse e-mail de l’administrateur de dons jumelés de l’entreprise.</help>
+        <label><!-- Matching Gift Email --></label>
+        <name>npsp__Matching_Gift_Email__c</name>
+    </fields>
+    <fields>
+        <help>La date à laquelle les informations de dons jumelés ont été mises à jour la dernière fois.</help>
+        <label><!-- Matching Gift Info Updated --></label>
+        <name>npsp__Matching_Gift_Info_Updated__c</name>
+    </fields>
+    <fields>
+        <help>Le pourcentage du don d’origine offert par l’entreprise.</help>
+        <label><!-- Matching Gift Percent --></label>
+        <name>npsp__Matching_Gift_Percent__c</name>
+    </fields>
+    <fields>
+        <help>Numéro de téléphone du bureau d’administration des dons jumelés.</help>
+        <label><!-- Matching Gift Phone --></label>
+        <name>npsp__Matching_Gift_Phone__c</name>
+    </fields>
+    <fields>
+        <help>Toutes les restrictions sur l’éligibilité des dons passés pour le jumelage.</help>
+        <label><!-- Matching Gift Request Deadline --></label>
+        <name>npsp__Matching_Gift_Request_Deadline__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Le nombre d’années pour lesquelles ce foyer a contenu un membre.</help>
+        <label><!-- Membership Span --></label>
+        <name>npsp__Membership_Span__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Actuel, expiré ou en période de grâce.  Période de grâce par défaut définie dans les paramètres de foyer.</help>
+        <label><!-- Membership Status --></label>
+        <name>npsp__Membership_Status__c</name>
+    </fields>
+    <fields>
+        <help>Pour les comptes de foyer, le nombre de contacts dans le foyer.</help>
+        <label><!-- Number of Household Members --></label>
+        <name>npsp__Number_of_Household_Members__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Case --></label>
+        <name>Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log A Note --></label>
+        <name>Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Groups --></label>
+        <name>Committee_Affinity_Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Funder --></label>
+        <name>Funder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Household Account --></label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organization --></label>
+        <name>Organization</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The country field must be filled in if a State is entered. --></errorMessage>
+        <name>gf_sf__Country_Required_if_State_exists</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The country field must use a standard two digit code for US or Canada or be blank. --></errorMessage>
+        <name>gf_sf__Validate_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Facebook_URL_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_LinkedIn_URL_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The state field must use a standard two digit code or be blank. --></errorMessage>
+        <name>gf_sf__Validate_State</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Twitter_URL_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Website_URL_by_Drupal_Regex</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Active_Roster --></label>
+        <name>Active_Roster</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Household --></label>
+        <name>npsp__Manage_Household</name>
+    </webLinks>
+</CustomObjectTranslation>

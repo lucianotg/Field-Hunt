@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deposit/Refund</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deposits and Refunds</value>
+    </caseValues>
+    <fields>
+        <help><!-- Check when the deposit has been verified and finalized --></help>
+        <label><!-- Closed --></label>
+        <name>Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total amount of the Deposit, as a total of all Allocations entered. This amount is manually entered, and should match the System Total, as a way to confirm that all the payments are entered correctly. --></help>
+        <label><!-- Deposit Amount --></label>
+        <name>Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of the deposit. --></help>
+        <label><!-- Deposit Date --></label>
+        <name>Deposit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to force workflows and processes to fire. --></help>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the date the deposit was sent to Great Plains. --></help>
+        <label><!-- Great Plains Export Date --></label>
+        <name>Great_Plains_Export_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the case that the deposit was copied from the old Parent Payment object, this is the ID of the old Parent Payment. --></help>
+        <label><!-- Parent Payment ID --></label>
+        <name>Parent_Payment_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the deposit source. --></help>
+        <label><!-- Payment Method --></label>
+        <name>Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Check/Cash Deposit</masterLabel>
+            <translation><!-- Check/Cash Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check/Cash Refund</masterLabel>
+            <translation><!-- Check/Cash Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Authorize.net Deposit</masterLabel>
+            <translation><!-- Credit Card Authorize.net Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Paypal Deposit</masterLabel>
+            <translation><!-- Credit Card Paypal Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transfer Deposit</masterLabel>
+            <translation><!-- Wire Transfer Deposit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check when the deposit has been sent to Great Plains. --></help>
+        <label><!-- Sent to Great Plains --></label>
+        <name>Sent_to_Great_Plains__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Status --></label>
+        <name>System_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the system total, calculated as the sum of all payments related to this deposit. Updates every 15 minutes. --></help>
+        <label><!-- System Total --></label>
+        <name>System_Total__c</name>
+    </fields>
+    <layouts>
+        <layout>Deposit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

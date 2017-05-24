@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_if_Campaign_Does_Not_Exist</name>
+        <label>Send Email if Campaign Does Not Exist</label>
+        <locationX>334</locationX>
+        <locationY>268</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyCampaign</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubjectCampaign</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>lpatino@mcf.org</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_if_Next_Year_Membership_Opportunity_Already_Exists</name>
+        <label>Send Email if Next Year Membership Opportunity Already Exists</label>
+        <locationX>636</locationX>
+        <locationY>267</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>lpatino@mcf.org</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Check_if_Next_Year_Campaign_Exists</name>
+        <label>Check if Next Year Campaign Exists</label>
+        <locationX>324</locationX>
+        <locationY>30</locationY>
+        <defaultConnector>
+            <targetReference>Look_for_Next_Year_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Next_Yr_Campaign_Does_Not_Exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varNextYrCampaignId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_if_Campaign_Does_Not_Exist</targetReference>
+            </connector>
+            <label>Next Yr Campaign Does Not Exist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Create_Next_Year_s_Opportunity</name>
+        <label>Create Next Year&apos;s Opportunity?</label>
+        <locationX>637</locationX>
+        <locationY>163</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Do_Not_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varFoundOppName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>forNextYrOppName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_if_Next_Year_Membership_Opportunity_Already_Exists</targetReference>
+            </connector>
+            <label>Do Not Create</label>
+        </rules>
+        <rules>
+            <name>Create_Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varFoundOppName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>forNextYrOppName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Next_Year_s_Membership_Opp</targetReference>
+            </connector>
+            <label>Create Opportunity</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <description>Formula for the next year&apos;s Campaign Name</description>
+        <name>forNextYrCampaignName</name>
+        <dataType>String</dataType>
+        <expression>TEXT(VALUE(LEFT({!varThisYrCampaignName},4))+1) &amp; &quot; Memberships&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>forNextYrCloseDate</name>
+        <dataType>Date</dataType>
+        <expression>IF ( 
+OR(
+MOD( YEAR( ({!varDateReceived} + 365 )), 400 ) = 0,
+AND(
+MOD( YEAR( ({!varDateReceived} + 365 )), 4 ) = 0,
+MOD( YEAR( ({!varDateReceived} + 365 )), 100 ) != 0
+)
+), 
+({!varDateReceived} + 366), ({!varDateReceived} + 365))</expression>
+    </formulas>
+    <formulas>
+        <name>forNextYrMemEndDate</name>
+        <dataType>Date</dataType>
+        <expression>IF( 
+AND( 
+MONTH({!varMemEndDate}) = 2, 
+DAY( {!varMemEndDate}) = 29, 
+NOT( 
+OR( 
+MOD( YEAR({!varMemEndDate}), 400 ) = 0, 
+AND( 
+MOD( YEAR( {!varMemEndDate}), 4 ) = 0, 
+MOD( YEAR({!varMemEndDate}), 100 ) != 0 
+) 
+) 
+) 
+), 
+DATE( YEAR( {!varMemEndDate}) + 1, 3, 1), 
+DATE( YEAR( {!varMemEndDate}) + 1, MONTH({!varMemEndDate}), DAY( {!varMemEndDate}) ))</expression>
+    </formulas>
+    <formulas>
+        <name>forNextYrMemStartDate</name>
+        <dataType>Date</dataType>
+        <expression>IF( 
+AND( 
+MONTH( {!varMemStartDate}) = 2, 
+DAY( {!varMemStartDate}) = 29, 
+NOT( 
+OR( 
+MOD( YEAR( {!varMemStartDate}), 400 ) = 0, 
+AND( 
+MOD( YEAR( {!varMemStartDate}), 4 ) = 0, 
+MOD( YEAR( {!varMemStartDate}), 100 ) != 0 
+) 
+) 
+) 
+), 
+DATE( YEAR( {!varMemStartDate}) + 1, 3, 1), 
+DATE( YEAR( {!varMemStartDate}) + 1, MONTH( {!varMemStartDate}), DAY( {!varMemStartDate}) ))</expression>
+    </formulas>
+    <formulas>
+        <name>forNextYrOppName</name>
+        <dataType>String</dataType>
+        <expression>{!varRenewalCycle} &amp; &quot; &quot; &amp; TEXT(VALUE(LEFT({!varThisYrCampaignName},4))+1) &amp; &quot; &quot; &amp; {!varAccountName} &amp; &quot; Membership&quot;</expression>
+    </formulas>
+    <interviewLabel>Create Next Year Membership Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Next Year Membership Opportunity</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Next_Year_s_Membership_Opp</name>
+        <label>Create Next Year&apos;s Membership Opp</label>
+        <locationX>930</locationX>
+        <locationY>165</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>varAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Amount</field>
+            <value>
+                <elementReference>varAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>varNextYrCampaignId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>forNextYrCloseDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Projected_Amount__c</field>
+            <value>
+                <elementReference>varAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012j0000000z3RtAAI</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Opened</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Renewal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>npe01__Member_Level__c</field>
+            <value>
+                <elementReference>varMemberLevel</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>npe01__Membership_End_Date__c</field>
+            <value>
+                <elementReference>forNextYrMemEndDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>npe01__Membership_Start_Date__c</field>
+            <value>
+                <elementReference>forNextYrMemStartDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Look_for_Next_Year_Opportunity</name>
+        <label>Look for Next Year Opportunity</label>
+        <locationX>638</locationX>
+        <locationY>41</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Next_Year_s_Opportunity</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>forNextYrOppName</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputAssignments>
+            <assignToReference>varFoundOppId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varFoundOppName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_NextYr_Campaign_Id</name>
+        <label>Lookup NextYr Campaign Id</label>
+        <locationX>41</locationX>
+        <locationY>34</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Next_Year_Campaign_Exists</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>forNextYrCampaignName</elementReference>
+            </value>
+        </filters>
+        <object>Campaign</object>
+        <outputAssignments>
+            <assignToReference>varNextYrCampaignId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Lookup_NextYr_Campaign_Id</startElementReference>
+    <textTemplates>
+        <name>EmailBody</name>
+        <text>AUTO ALERT: A membership record for this Account already exists in Salesforce.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyCampaign</name>
+        <text>A Campaign record for this membership year was not found in Salesforce.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubject</name>
+        <text>{!varFoundOppName} was not created</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectCampaign</name>
+        <text>Membership Campaign not found in Salesforce</text>
+    </textTemplates>
+    <variables>
+        <name>varAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>varCurrentOppName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>CloseDate</description>
+        <name>varDateReceived</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varFoundOppId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varFoundOppName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varMemberLevel</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varMemEndDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varMemStartDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varNextYrCampaignId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varNextYrCampaignStartDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varNotes</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varRenewalCycle</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varThisYrCampaignName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

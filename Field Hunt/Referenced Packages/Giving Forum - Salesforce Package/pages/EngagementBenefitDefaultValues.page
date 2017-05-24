@@ -1,0 +1,107 @@
+<apex:page standardController="gf_sf__Engagement_and_Benefits__c" extensions="gf_sf.EngagementBenefitDefaultController" >
+    <head>
+        <title>E2E Settings</title>
+    </head>
+    
+    <style>
+        #assign-action-spinner-main {position: fixed;left: 0;top: 0;background-color:rgba(0,0,0,.6);height: 100%;width: 100%;z-index: 999;align: center;vertical-align: middle;}
+        #assign-action-spinner-content {position: absolute; top: 50%;left: 50%;z-index: 1000;background-color: #F5FCFF;width: 204;height: 94; border-radius: 1em;border: 1px solid #CEECFF;padding: 20px 40px 20px 40px;margin-left: -116px;margin-top: -36px;}
+        #assign-action-spinner-content img {width: 32;height: 32;align: center;vertical-align: middle;}
+        #assign-action-spinner-content p {display: inline;font-size: 135%; font-family:'segoe_uisemibold';}
+        body .pbBody table.list tr.headerRow th:first-child{width:176px;}
+        body .pbBody table.list tr.headerRow th:nth-child(2){width:296px;}
+    </style>
+    
+    <apex:actionStatus id="theActionStatus" layout="block">
+        <apex:facet name="start">
+            <div id="assign-action-spinner-main">
+                <div id="assign-action-spinner-content">
+                    <img src="/img/analytics/reportbuilder/icons/spinner32.gif" alt="Processing..." title="Processing..." />
+                    <p>Processing...</p>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionStatus>
+    
+    <apex:form >
+        <apex:actionFunction name="removeSetting" action="{!removeSetting}" status="theActionStatus" reRender="thePageBlock">
+            <apex:param name="index" assignTo="{!strSelectedSettingName}" value="" />
+        </apex:actionFunction>
+        <apex:actionFunction name="cancelSetting" action="{!cancel}" status="theActionStatus" reRender="thePageBlock">
+            <apex:param name="index" assignTo="{!strSelectedSettingName}" value="" />
+        </apex:actionFunction>
+        <apex:actionFunction name="upsertSetting" action="{!upsertSetting}" status="theActionStatus" reRender="theOutputPanel" oncomplete="location.reload(true);">
+            <apex:param name="index" assignTo="{!strSelectedSettingName}" value="" />
+        </apex:actionFunction>
+    
+        <apex:outputPanel id="theOutputPanel">
+            <apex:pageMessages ></apex:pageMessages>
+    
+            <apex:pageBlock id="thePageBlock" mode="edit">
+                <apex:pageBlockSection title="Manage E2E Settings" columns="1" rendered="{!isNotEdit}">
+    
+                    <apex:pageBlock id="theInnerPageBlock">
+                        <apex:pageBlockButtons location="bottom">
+                            <apex:commandLink value="Add New E2E Setting" status="theActionStatus" reRender="theInnerPageBlock" action="{!addNewDefaultSet}" />
+                        </apex:pageBlockButtons>
+                        <apex:pageblockTable value="{!listWrapperDefaultSet}" var="settingList" id="table">
+                            <apex:column style="width:70px;">
+                                <apex:facet name="header">Action</apex:facet>
+                                <apex:commandLink value="Edit" id="actionEdit" reRender="thePageBlock" action="{!editSetting}" status="theActionStatus">
+                                    <apex:param name="editParam" value="{!settingList.defaultSettingName}" assignTo="{!editNameRetrieved}" id="editParam"/>
+                                </apex:commandLink>
+                            &nbsp;|&nbsp;
+                            
+                                <apex:commandLink value="Delete" id="actionDelete" reRender="thePageBlock" action="{!removeSetting}" status="theActionStatus">
+                                    <apex:param name="deleteParam" value="{!settingList.defaultSettingName}" assignTo="{!removeNameRetrieved}" id="deleteParam"/>
+                                    <apex:actionSupport event="onclick" action="{!removeSetting}" rerender="thePageBlock" oncomplete="location.reload(true);"/>
+                                </apex:commandLink>
+                            </apex:column>
+                            <apex:column width="200">
+                                <apex:facet name="header">Name</apex:facet>
+                                <apex:outputText value="{!settingList.defaultSettingName}"></apex:outputText>
+                            </apex:column>
+                            <apex:column width="200">
+                                <apex:facet name="header">Email</apex:facet>
+                                <apex:outputText value="{!settingList.defaultSettingEmailAddr}"></apex:outputText>
+                            </apex:column>
+                        </apex:pageblockTable>
+                    </apex:pageBlock>
+    
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+    
+            <apex:pageBlock id="theConstantPageBlock" mode="edit" rendered="{!isEdit}">
+                <apex:pageBlockButtons >
+                    <apex:commandButton value="Save" status="theActionStatus" reRender="theOutputPanel, theConstantPageBlock, theOutputPageBlock" action="{!upsertSetting}"/>
+                    <apex:commandButton value="Cancel" status="theActionStatus" reRender="theOutputPanel" action="{!cancel}"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockSection title="Recognize Signatures and Replies" columns="1">
+                    <apex:inputField label="Text string that marks the end of Body content" value="{!e2eTrunc.gf_sf__Truncation_Text__c}" required="true"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Error Management" columns="1">
+                    <apex:inputField label="User for Error Notification" value="{!accountUserId.OwnerId}" />
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Domain Omission" columns="1">
+                    <apex:inputTextarea label="Add Domains to Omit from Process. Enter each domain on separate line." value="{!strDomainValue}" disabled="false"/>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+    
+            <apex:pageBlock id="theOutputPageBlock" rendered="{!isNotEdit}" >
+                <apex:pageBlockButtons >
+                    <apex:commandButton value="Edit" status="theActionStatus" reRender="theOutputPanel" action="{!setToEditMode}"/>
+                </apex:pageBlockButtons>
+                <apex:pageBlockSection title="Recognize Signatures and Replies" columns="1">
+                    <apex:inputText label="Text string that marks the end of Body content" value="{!strTruncationText}" disabled="true"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Error Management" columns="1">
+                    <apex:inputText label="User for Error Notification" value="{!strAccUserName}" disabled="true"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Domain Omission" columns="1">
+                    <apex:inputTextarea label="Add Domains to Omit from Process. Enter each domain on separate line." value="{!strDomainValue}" disabled="true"/>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    
+    </apex:form>
+</apex:page>

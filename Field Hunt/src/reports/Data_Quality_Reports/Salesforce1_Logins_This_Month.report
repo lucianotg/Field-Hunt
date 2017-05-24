@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User.IdpEventLog$UserId$App</field>
+    </columns>
+    <columns>
+        <field>User.IdpEventLog$UserId$Timestamp</field>
+    </columns>
+    <columns>
+        <field>User.IdpEventLog$UserId$InitiatedBy</field>
+    </columns>
+    <description>Shows the users logging in via Salesfroce1 for this calendar month.</description>
+    <filter>
+        <criteriaItems>
+            <column>User$Username</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>info@mcf.org</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Salesforce1 Logins This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Identity_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User.IdpEventLog$UserId$Timestamp</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

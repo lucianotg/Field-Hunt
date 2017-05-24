@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>Active_Partnership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if partnership is active.</inlineHelpText>
+        <label>Active Partnership</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Colleague_Recommendation__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Would you recommend this speaker to a colleague?</inlineHelpText>
+        <label>Would You Recommend to an RA Colleague?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter discount as a percentage or dollar amount.</inlineHelpText>
+        <label>Discount Amount</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Discount Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Given__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Discount Given</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates date of completion</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Event_Type_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description of &quot;other&quot; event type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of &quot;other&quot; event type.</inlineHelpText>
+        <label>Event Type Other</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Event_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>At what type of event was the speaker featured?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>At what type of event was the speaker featured?</inlineHelpText>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Member program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Annual conference</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Expenses_Paid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Travel, lodging, etc.</inlineHelpText>
+        <label>Expenses Paid</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Performance_Reception_Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Feedback/Performance/Reception Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Performance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>How did the audience rate the quality of the speaker?</description>
+        <externalId>false</externalId>
+        <label>Audience Feedback/Performance/Reception</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Excellent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fair</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poor</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Member_at_Time_of_Engagement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Box identifies membership status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Was membership active at the time of engagement?</inlineHelpText>
+        <label>Member at Time of Engagement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Contribution_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>gf_sf__Related_Opportunity__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Contribution Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Type_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Partner Type Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describes the type of partner relationship.</description>
+        <externalId>false</externalId>
+        <label>Partner Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Funding partner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Thought partner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Conference partner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Strategic partner</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partnership_Description_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Partnership Description Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partnership_Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Describes the type of relationship with the partner.</description>
+        <externalId>false</externalId>
+        <label>Partnership Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Publication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recommendation_to_RA_Colleagues_Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Recommendation to RA Colleague Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Expertise__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Speaker Expertise</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nonprofit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grantmaking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Strategic Planning</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Speaker_Fee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Speaker fee not including other expenses (travel, etc).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Speaker fee not including other expenses (travel, etc).</inlineHelpText>
+        <label>Speaker Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Recommended_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Who recommended this speaker?</inlineHelpText>
+        <label>Speaker Recommended By</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Engagement and Benefits (Speaker Recommended By)</relationshipLabel>
+        <relationshipName>Engagement_and_Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Expense_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount charged by speaker.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount charged by speaker.</inlineHelpText>
+        <label>Total Expense Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <listViews>
+        <fullName>Partners</fullName>
+        <columns>NAME</columns>
+        <columns>Active_Partnership__c</columns>
+        <columns>gf_sf__Contact__c</columns>
+        <columns>gf_sf__Date__c</columns>
+        <columns>gf_sf__Related_Campaign__c</columns>
+        <columns>gf_sf__Related_Opportunity__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>gf_sf__Engagement_and_Benefits__c.Partnership</value>
+        </filters>
+        <label>Partners</label>
+    </listViews>
+    <listViews>
+        <fullName>Speakers</fullName>
+        <columns>NAME</columns>
+        <columns>gf_sf__Contact__c</columns>
+        <columns>gf_sf__Date__c</columns>
+        <columns>gf_sf__Related_Campaign__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>gf_sf__Engagement_and_Benefits__c.Speaker</value>
+        </filters>
+        <label>Speakers</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Partnership</fullName>
+        <active>true</active>
+        <description>Use to track partners and partnerships</description>
+        <label>Partnership</label>
+        <picklistValues>
+            <picklist>Colleague_Recommendation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Event_Type__c</picklist>
+            <values>
+                <fullName>Annual conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Performance__c</picklist>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Type__c</picklist>
+            <values>
+                <fullName>Conference partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Funding partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thought partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partnership_Description__c</picklist>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Speaker_Expertise__c</picklist>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantmaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonprofit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic Planning</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Description__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Type__c</picklist>
+            <values>
+                <fullName>Engagements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peer Connection</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Speaker</fullName>
+        <active>true</active>
+        <description>Use to track speakers.</description>
+        <label>Speaker</label>
+        <picklistValues>
+            <picklist>Colleague_Recommendation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Event_Type__c</picklist>
+            <values>
+                <fullName>Annual conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Member program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Feedback_Performance__c</picklist>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Type__c</picklist>
+            <values>
+                <fullName>Conference partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Funding partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thought partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partnership_Description__c</picklist>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Speaker_Expertise__c</picklist>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantmaking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonprofit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic Planning</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Description__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>gf_sf__Type__c</picklist>
+            <values>
+                <fullName>Engagements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peer Connection</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This is the self-selected list of areas where a contact believes they have expertise. This links to the &quot;Skills I Have&quot; field on the website. --></help>
+        <label><!-- Areas of Expertise --></label>
+        <name>Areas_of_Expertise__c</name>
+        <picklistValues>
+            <masterLabel>Advocacy &amp; Public Policy</masterLabel>
+            <translation><!-- Advocacy &amp; Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Foundation Ops</masterLabel>
+            <translation><!-- Community Foundation Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Giving Ops</masterLabel>
+            <translation><!-- Corporate Giving Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity Inclusion and Equity</masterLabel>
+            <translation><!-- Diversity Inclusion and Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerging Giving Practices</masterLabel>
+            <translation><!-- Emerging Giving Practices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation</masterLabel>
+            <translation><!-- Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Management</masterLabel>
+            <translation><!-- Executive Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funder Collaboration</masterLabel>
+            <translation><!-- Funder Collaboration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governance</masterLabel>
+            <translation><!-- Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant Management Systems</masterLabel>
+            <translation><!-- Grant Management Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant Review</masterLabel>
+            <translation><!-- Grant Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Grantmaking</masterLabel>
+            <translation><!-- International Grantmaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership</masterLabel>
+            <translation><!-- Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal &amp; Tax Compliance</masterLabel>
+            <translation><!-- Legal &amp; Tax Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Investments</masterLabel>
+            <translation><!-- Managing Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mission Investing</masterLabel>
+            <translation><!-- Mission Investing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private/Family Fnd Ops</masterLabel>
+            <translation><!-- Private/Family Fnd Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private/Independent Fnd Ops</masterLabel>
+            <translation><!-- Private/Independent Fnd Ops --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the long Contact ID, as opposed to the partial, 15-digit ID shown in URLs. --></help>
+        <label><!-- Contact ID 18 --></label>
+        <name>Contact_ID_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to add Contact to Mailing List --></help>
+        <label><!-- Convening Exhibitor Income --></label>
+        <name>Convening_Exhibitor_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a field for members to enter if they have a disability, and comes from their page on the website. --></help>
+        <label><!-- Disability --></label>
+        <name>Disability__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a field for members to enter ethnicity information if they select &quot;Other&quot; from the regular picklist. --></help>
+        <label><!-- Ethnicity Other --></label>
+        <name>Ethnicity_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Federal Congressional District for the contact. --></help>
+        <label><!-- Federal Congressional District --></label>
+        <name>Federal_Congressional_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used with Jitterbit, Data Loader, or other tools to force an update of the contact. --></help>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a field for members to enter self-described gender, if they select &quot;Other&quot; from the picklist. --></help>
+        <label><!-- Gender Other --></label>
+        <name>Gender_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to add Contact to Mailing List --></help>
+        <label><!-- Giving Forum --></label>
+        <name>Giving_Forum__c</name>
+    </fields>
+    <fields>
+        <help><!-- eNewsletter for grantseekers. Check to add Contact to Mailing List --></help>
+        <label><!-- Giving Memo --></label>
+        <name>Giving_Memo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to add Contact to Mailing List --></help>
+        <label><!-- Giving Memo and MCF Notes --></label>
+        <name>Giving_Memo_and_MCF_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the ID from our old database and should not be edited. --></help>
+        <label><!-- IMPak Id --></label>
+        <name>IMPak_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the congressional district as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak Congressional District --></label>
+        <name>Impak_Congressional_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is an imported code showing the last user or process that edited a record in Impak before migration. (LMS = Lori Miller-Shiell, CNV = Conversion, WEB = Website, etc.) --></help>
+        <label><!-- Impak Last Change By --></label>
+        <name>Impak_Last_Change_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- This date shows the last time a record was edited in Impak before migration. --></help>
+        <label><!-- Impak Last Change Date --></label>
+        <name>Impak_Last_Change_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the state house district as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak State House District --></label>
+        <name>Impak_State_House_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the state senate district as shown at the time of the conversion from Impak. --></help>
+        <label><!-- Impak State Senate District --></label>
+        <name>Impak_State_Senate_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Corresponds to the &quot;Do you consider yourself LGBT?&quot; question on the contact page of the website. --></help>
+        <label><!-- LGBT --></label>
+        <name>LGBT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Member-only print newsletter. Check to add Contact to Mailing List --></help>
+        <label><!-- MCF Messenger --></label>
+        <name>MCF_Messenger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Member-onlyeNewsletter. Check to add Contact to Mailing List --></help>
+        <label><!-- MCF Notes --></label>
+        <name>MCF_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- MGO Banner Image --></label>
+        <name>MGO_Banner_Image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the amount of the last MGO payment. --></help>
+        <label><!-- MGO Last Membership Amount --></label>
+        <name>MGO_Last_Membership_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of the last MGO order. --></help>
+        <label><!-- MGO Last Membership Date --></label>
+        <name>MGO_Last_Membership_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the level of the last MGO membership. --></help>
+        <label><!-- MGO Last Membership Level --></label>
+        <name>MGO_Last_Membership_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date the MGO membership ends. --></help>
+        <label><!-- MGO Membership End Date --></label>
+        <name>MGO_Membership_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of their first MGO membership. --></help>
+        <label><!-- MGO Membership Join Date --></label>
+        <name>MGO_Membership_Join_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the current MGO membership status for an individual. --></help>
+        <label><!-- MGO Membership Status --></label>
+        <name>MGO_Membership_Status__c</name>
+        <picklistValues>
+            <masterLabel>MGO-Active</masterLabel>
+            <translation><!-- MGO-Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO-Inactive</masterLabel>
+            <translation><!-- MGO-Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MGO Number of Users --></label>
+        <name>MGO_Number_of_Users__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select if a contact has asked us not to mail them. --></help>
+        <label><!-- Mail Opt Out --></label>
+        <name>Mail_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name Drupal --></label>
+        <name>Middle_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Minnesota House District for the contact. --></help>
+        <label><!-- Minnesota House District --></label>
+        <name>Minnesota_House_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Minnesota Senate District for the contact. --></help>
+        <label><!-- Minnesota Senate District --></label>
+        <name>Minnesota_Senate_District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of the number of active affiliations for a contact. --></help>
+        <label><!-- Number of Active Affiliations --></label>
+        <name>Number_of_Active_Affiliations__c</name>
+    </fields>
+    <fields>
+        <help><!-- User-entered or name from the website. Use it to update them to the correct account, or to change an account name when the name of an organization changes. Clear when all updates are done. --></help>
+        <label><!-- Organization Name Update --></label>
+        <name>Organization_Name_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- This shows True if the person is the primary contact for their main Account. To change this field, edit the Contact&apos;s Affiliation. --></help>
+        <label><!-- Primary Contact For Reports --></label>
+        <name>Primary_Contact_For_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the current coach for Ron McKinley Philanthropy Fellows. --></help>
+        <label><!-- RMPF Coach --></label>
+        <name>RMPF_Coach__c</name>
+        <relationshipLabel><!-- Contacts (RMPF Coach) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For Ron McKinley Fellows, shows whether they are current or former fellows. In order to update this field, go to the Ron McKinley Philanthropy Fellows Affiliation and change the Status. --></help>
+        <label><!-- RMPF Status --></label>
+        <name>RMPF_Status__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former</masterLabel>
+            <translation><!-- Former --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the supervisor at the host foundation for Ron McKinley Philanthropy Fellows. --></help>
+        <label><!-- RMPF Supervisor --></label>
+        <name>RMPF_Supervisor__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills and Knowledge --></label>
+        <name>Skills_and_Knowledge__c</name>
+        <picklistValues>
+            <masterLabel>Advocacy &amp; Public Policy</masterLabel>
+            <translation><!-- Advocacy &amp; Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Foundation Ops</masterLabel>
+            <translation><!-- Community Foundation Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Giving Ops</masterLabel>
+            <translation><!-- Corporate Giving Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity Inclusion and Equity</masterLabel>
+            <translation><!-- Diversity Inclusion and Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerging Giving Practices</masterLabel>
+            <translation><!-- Emerging Giving Practices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation</masterLabel>
+            <translation><!-- Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Management</masterLabel>
+            <translation><!-- Executive Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funder Collaboration</masterLabel>
+            <translation><!-- Funder Collaboration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Governance</masterLabel>
+            <translation><!-- Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant Management Systems</masterLabel>
+            <translation><!-- Grant Management Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant Review</masterLabel>
+            <translation><!-- Grant Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Grantmaking</masterLabel>
+            <translation><!-- International Grantmaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leadership</masterLabel>
+            <translation><!-- Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal &amp; Tax Compliance</masterLabel>
+            <translation><!-- Legal &amp; Tax Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managing Investments</masterLabel>
+            <translation><!-- Managing Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mission Investing</masterLabel>
+            <translation><!-- Mission Investing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private/Family Fnd Ops</masterLabel>
+            <translation><!-- Private/Family Fnd Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private/Independent Fnd Ops</masterLabel>
+            <translation><!-- Private/Independent Fnd Ops --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a single field combining Last, First and Middle names for sorting in Salesforce reports. --></help>
+        <label><!-- Sort Name --></label>
+        <name>Sort_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Last Membership Level --></label>
+        <name>gf_sf__Account_Last_Membership_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Membership Status --></label>
+        <name>gf_sf__Account_Membership_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is synched with Drupal to allow users to opt-in and opt-out of mailings around focus areas. CAUTION: If you add new values to Drupal first and they will auto-populate in Salesforce. Please keep this in mind when editing this field. --></help>
+        <label><!-- Areas of Interest --></label>
+        <name>gf_sf__Areas_of_Interest__c</name>
+        <picklistValues>
+            <masterLabel>tbd</masterLabel>
+            <translation><!-- tbd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Blog --></label>
+        <name>gf_sf__Blog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>gf_sf__Category__c</name>
+        <picklistValues>
+            <masterLabel>VALUES</masterLabel>
+            <translation><!-- VALUES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>gf_sf__County__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date this member first joined the association. --></help>
+        <label><!-- Date of First Membership --></label>
+        <name>gf_sf__Date_of_First_Membership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal ID --></label>
+        <name>gf_sf__Drupal_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal Type --></label>
+        <name>gf_sf__Drupal_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>gf_sf__Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>African American</masterLabel>
+            <translation><!-- African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Indian</masterLabel>
+            <translation><!-- American Indian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian/Pacific Islanders</masterLabel>
+            <translation><!-- Asian/Pacific Islanders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caucasian</masterLabel>
+            <translation><!-- Caucasian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latino</masterLabel>
+            <translation><!-- Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Facebook URL --></label>
+        <name>gf_sf__Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flickr --></label>
+        <name>gf_sf__Flickr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>gf_sf__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transgender</masterLabel>
+            <translation><!-- Transgender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Google+ --></label>
+        <name>gf_sf__Google_plus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inc. In Directory? --></label>
+        <name>gf_sf__Inc_In_Directory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inc. Individual In Directory? --></label>
+        <name>gf_sf__Inc_Individual_In_Directory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in Member Directory? --></label>
+        <name>gf_sf__IncludeInMemDirectory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Membership Status --></label>
+        <name>gf_sf__Individual_Membership_Status__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former</masterLabel>
+            <translation><!-- Former --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO - Active</masterLabel>
+            <translation><!-- MGO - Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO - Inactive</masterLabel>
+            <translation><!-- MGO - Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible for Membership</masterLabel>
+            <translation><!-- Not Eligible for Membership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective</masterLabel>
+            <translation><!-- Prospective --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual Type --></label>
+        <name>gf_sf__Individual_Type__c</name>
+        <picklistValues>
+            <masterLabel>VALUES</masterLabel>
+            <translation><!-- VALUES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instagram --></label>
+        <name>gf_sf__Instagram__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>gf_sf__Languages__c</name>
+    </fields>
+    <fields>
+        <help><!-- CAUTION This field syncs with Drupal. Please keep this in mind when editing this field. --></help>
+        <label><!-- Last Membership Level (Formula) --></label>
+        <name>gf_sf__Last_Membership_Level_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- LinkedIn URL --></label>
+        <name>gf_sf__LinkedIn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter in the contact&apos;s preference for how they want to be communicated with. CAUTION This field syncs with Drupal. If you add new values to Drupal first and they will auto-populate in Salesforce. Please keep this in mind when editing this field. --></help>
+        <label><!-- Mail Preference --></label>
+        <name>gf_sf__Mail_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Picklist Text</masterLabel>
+            <translation><!-- Picklist Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mailing List (Deprecated) --></label>
+        <name>gf_sf__Mailing_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- CAUTION This field syncs with Drupal. Please keep this in mind when editing this field. --></help>
+        <label><!-- Membership Status (Formula) --></label>
+        <name>gf_sf__Membership_Status_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name / Suffix --></label>
+        <name>gf_sf__Name_Suffix__c</name>
+    </fields>
+    <fields>
+        <help><!-- CAUTION This field syncs with Drupal. Please keep this in mind when editing this field. --></help>
+        <label><!-- Nickname --></label>
+        <name>gf_sf__Nickname__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Organization Category --></label>
+        <name>gf_sf__Organization_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Last Membership Level (deprecated) --></label>
+        <name>gf_sf__Organization_Last_Membership_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Member Status (deprecated) --></label>
+        <name>gf_sf__Organization_Member_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for populating by Drupal. It is the url of the picture uploaded by the member contact. --></help>
+        <label><!-- Picture URL --></label>
+        <name>gf_sf__Picture_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the picture uploaded to Drupal by the member contact. --></help>
+        <label><!-- Picture --></label>
+        <name>gf_sf__Picture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pinterest --></label>
+        <name>gf_sf__Pinterest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Professional Interests --></label>
+        <name>gf_sf__Professional_Interests__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture, Food &amp; Nutrition</masterLabel>
+            <translation><!-- Agriculture, Food &amp; Nutrition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts, Culture and Humanities</masterLabel>
+            <translation><!-- Arts, Culture and Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community &amp; Economic Development</masterLabel>
+            <translation><!-- Community &amp; Economic Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal Justice &amp; Legal Systems</masterLabel>
+            <translation><!-- Criminal Justice &amp; Legal Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness &amp; Relief</masterLabel>
+            <translation><!-- Disaster Preparedness &amp; Relief --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diversity Inclusion &amp; Equity</masterLabel>
+            <translation><!-- Diversity Inclusion &amp; Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - Cradle To Career</masterLabel>
+            <translation><!-- Education - Cradle To Career --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - E 12</masterLabel>
+            <translation><!-- Education - E 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - Early Childhood</masterLabel>
+            <translation><!-- Education - Early Childhood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - English Language Learners</masterLabel>
+            <translation><!-- Education - English Language Learners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - Equity Gaps</masterLabel>
+            <translation><!-- Education - Equity Gaps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - General</masterLabel>
+            <translation><!-- Education - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - Higher Ed</masterLabel>
+            <translation><!-- Education - Higher Ed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education - Out of School Time</masterLabel>
+            <translation><!-- Education - Out of School Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation><!-- Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health - Diseases and Disorders</masterLabel>
+            <translation><!-- Health - Diseases and Disorders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health - General</masterLabel>
+            <translation><!-- Health - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health - Medical Research</masterLabel>
+            <translation><!-- Health - Medical Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health - Mental Health</masterLabel>
+            <translation><!-- Health - Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health - Public Health</masterLabel>
+            <translation><!-- Health - Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services - Children &amp; Youth</masterLabel>
+            <translation><!-- Human Services - Children &amp; Youth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services - Family services</masterLabel>
+            <translation><!-- Human Services - Family services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services - General</masterLabel>
+            <translation><!-- Human Services - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Grantmaking</masterLabel>
+            <translation><!-- International Grantmaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philanthropy</masterLabel>
+            <translation><!-- Philanthropy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placeholder</masterLabel>
+            <translation><!-- Placeholder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Affairs &amp; Civic Engagement</masterLabel>
+            <translation><!-- Public Affairs &amp; Civic Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Policy</masterLabel>
+            <translation><!-- Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Safety</masterLabel>
+            <translation><!-- Public Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religion</masterLabel>
+            <translation><!-- Religion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Science &amp; Technology</masterLabel>
+            <translation><!-- Science &amp; Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Sciences</masterLabel>
+            <translation><!-- Social Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports and Recreation</masterLabel>
+            <translation><!-- Sports and Recreation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A link to the RedHen record for this Contact --></help>
+        <label><!-- RedHen Detail Link --></label>
+        <name>gf_sf__RedHen_Detail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Group (Deprecated) --></label>
+        <name>gf_sf__Security_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Needs --></label>
+        <name>gf_sf__Special_Needs__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a text field for the Spouse&apos;s name. If the spouse is also a Contact record in the system, then create a Relationship between the two records using the related list below. CAUTION This field syncs with Drupal. Please keep this in mind when editing. --></help>
+        <label><!-- Spouse --></label>
+        <name>gf_sf__Spouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tumblr --></label>
+        <name>gf_sf__Tumblr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Caution - this field integrates with Drupal --></help>
+        <label><!-- Twitter URL --></label>
+        <name>gf_sf__Twitter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Count --></label>
+        <name>gf_sf__Unique_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do not edit this field. It is for a new Drupal user account only. --></help>
+        <label><!-- User Entered Organization --></label>
+        <name>gf_sf__User_Entered_Organization__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must be full Web address and include http://www.... --></help>
+        <label><!-- Web --></label>
+        <name>gf_sf__Web__c</name>
+    </fields>
+    <fields>
+        <label><!-- YouTube/Vimeo --></label>
+        <name>gf_sf__YouTube_Vimeo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to add Contact to Mailing List --></help>
+        <label><!-- mcf.org Jobs Board Advertising --></label>
+        <name>mcf_org_Jobs_Board_Advertising__c</name>
+    </fields>
+    <fields>
+        <help>L’e-mail secondaire est un quatrième e-mail optionnel : en plus du personnel, préféré ou professionnel.</help>
+        <label><!-- Alternate Email --></label>
+        <name>npe01__AlternateEmail__c</name>
+    </fields>
+    <fields>
+        <help>Voir le champ d’e-mail préféré.</help>
+        <label><!-- Personal Email --></label>
+        <name>npe01__HomeEmail__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Utilise le champ de type d’adresse principale pour déterminer l’adresse de domicile à partir de l’adresse postale ou d’une autre adresse.</help>
+        <label><!-- Home Address --></label>
+        <name>npe01__Home_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING - This field may not accurately reflect the donation history. Please use the Last Gift Date field instead. --></help>
+        <label><!-- DEPRECATED - Last Transaction Date --></label>
+        <name>npe01__Last_Donation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING- This field may not accurately reflect donation histories. Please use the Total Amount field on the Contact record instead. --></help>
+        <label><!-- Lifetime Transaction Total --></label>
+        <name>npe01__Lifetime_Giving_History_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Par ordre de préférence, le champ SYSTEM_AccountType, le champ type de compte, et « Organisation ».</help>
+        <label><!-- Organization Type --></label>
+        <name>npe01__Organization_Type__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Si le type d’adresse principale est Autre, l’adresse postale.  Si le type d’adresse secondaire est Autre, l’autre adresse.</help>
+        <label><!-- Other Address --></label>
+        <name>npe01__Other_Address__c</name>
+    </fields>
+    <fields>
+        <help>Quel numéro de téléphone doit être utilisé pour la plupart des communications impliquant ce contact ?</help>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__PreferredPhone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Quel e-mail doit être utilisé pour la plupart des communications impliquant ce contact ?</help>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation><!-- Alternate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Quel est le type de l’adresse postale ?</help>
+        <label><!-- Primary Address Type --></label>
+        <name>npe01__Primary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Domicile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Travail</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Exclut ce contact du traitement de comptes autocréés ou de comptes de panier.</help>
+        <label><!-- Private --></label>
+        <name>npe01__Private__c</name>
+    </fields>
+    <fields>
+        <help>Quel est le type de l’autre adresse ?</help>
+        <label><!-- Secondary Address Type --></label>
+        <name>npe01__Secondary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Domicile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Travail</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indique le modèle qui définit la relation du compte : Individus (panier) ou autocréé</help>
+        <label><!-- DEPRECATED - _SYSTEM: ACCOUNT PROCESSOR --></label>
+        <name>npe01__SystemAccountProcessor__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Individu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-to-One</masterLabel>
+            <translation><!-- One-to-One --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ce champ n&apos;est plus utilisé et ne doit pas être référencé. Le champ &quot;Type du compte&quot; (Type_of_Account__c) le remplace.</help>
+        <label><!-- _SYSTEM: IsIndividual - DEPRECATED --></label>
+        <name>npe01__SystemIsIndividual__c</name>
+    </fields>
+    <fields>
+        <help>Indique le type de compte dont ce contact dépend.</help>
+        <label><!-- Type of Account --></label>
+        <name>npe01__Type_of_Account__c</name>
+    </fields>
+    <fields>
+        <help>Voir le champ d’e-mail préféré.</help>
+        <label><!-- Work Email --></label>
+        <name>npe01__WorkEmail__c</name>
+    </fields>
+    <fields>
+        <help>Voir le champ de téléphone préféré.</help>
+        <label><!-- Work Phone --></label>
+        <name>npe01__WorkPhone__c</name>
+    </fields>
+    <fields>
+        <help>Formule : Si le type d’adresse principale est Professionnel, l’adresse postale.  Si le type d’adresse secondaire est Professionnel, l’autre adresse.</help>
+        <label><!-- Work Address --></label>
+        <name>npe01__Work_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- The average amount of all won Opportunities related to this Contact by a primary Opportunity Contact Role. --></help>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sum of won Opportunity amounts in the Best Gift Year. --></help>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year of the largest total amount of won Opportunities related to this Contact by primary Contact Role.  See also Best Gift Year Total. --></help>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- The oldest Close Date of a won Opportunity with amount greater than zero related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Clone of the Household Mailing address (also a Formula) --></help>
+        <label><!-- Household Mailing Address --></label>
+        <name>npo02__Formula_HouseholdMailingAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Simple formula of Household Phone field. --></help>
+        <label><!-- Household Phone --></label>
+        <name>npo02__Formula_HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the order in which Contact names are used to generate Household name. --></help>
+        <label><!-- Household Naming Order --></label>
+        <name>npo02__Household_Naming_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>npo02__Household__c</name>
+        <relationshipLabel><!-- Household Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field.  Do not use. --></help>
+        <label><!-- Languages - DEPRECATED --></label>
+        <name>npo02__Languages__c</name>
+    </fields>
+    <fields>
+        <help><!-- The largest amount of a won Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Last Close Date field of the related Household. --></help>
+        <label><!-- Last Household Gift Date --></label>
+        <name>npo02__LastCloseDateHH__c</name>
+    </fields>
+    <fields>
+        <help><!-- The close date of the most recent won Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the most recent (by Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The most recent Close Date of a won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The level of the most recent (by Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- The origin (new, renewal, reacquire...) of the most recent (Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the most recent won Opportunity by Close Date related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field.  Do not use. --></help>
+        <label><!-- Level - DEPRECATED --></label>
+        <name>npo02__Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Membership End Date of the most recent (Close Date) Membership Opportunity (Record Type) related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Join Date of the oldest (Close Date) Membership Opportunity (Record Type) related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help>Détermine de quels noms de foyer ce contact ne fait PAS partie.</help>
+        <label><!-- Naming Exclusions --></label>
+        <name>npo02__Naming_Exclusions__c</name>
+        <picklistValues>
+            <masterLabel>Household__c.Formal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Informal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Name</masterLabel>
+            <translation><!-- Household__c.Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of won Membership Opportunities (Record Type) related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed two years ago. --></help>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed in the last number of days defined in Household Settings. --></help>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula:  Total Gifts Last Year on related Household. --></help>
+        <label><!-- Total Household Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYearHH__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed last year. --></help>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula:  Total Gifts This Year on related Household. --></help>
+        <label><!-- Total Household Gifts This Year --></label>
+        <name>npo02__OppAmountThisYearHH__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed this year. --></help>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed two years ago. --></help>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed in the last number of days defined in Household Settings. --></help>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed last year. --></help>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed this year. --></help>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- The smallest amount of a won Opportunity related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help>Montant total de crédit de groupe de l’année dernière.</help>
+        <label><!-- Soft Credit Last Year --></label>
+        <name>npo02__Soft_Credit_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Montant total de crédit de groupe cette année</help>
+        <label><!-- Soft Credit This Year --></label>
+        <name>npo02__Soft_Credit_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Montant total en crédits de groupe sur la durée de vie de ce contact. Défini dans l’onglet de configuration de foyer.</help>
+        <label><!-- Soft Credit Total --></label>
+        <name>npo02__Soft_Credit_Total__c</name>
+    </fields>
+    <fields>
+        <help>Montant total de crédit de groupe il y a deux ans.</help>
+        <label><!-- Soft Credit Two Years Ago --></label>
+        <name>npo02__Soft_Credit_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Household should be created and updated for this Contact (all Contacts or just Individual Account Contacts) --></help>
+        <label><!-- _SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED --></label>
+        <name>npo02__SystemHouseholdProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Individual Contacts</masterLabel>
+            <translation><!-- All Individual Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All New or Edited Contacts</masterLabel>
+            <translation><!-- All New or Edited Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contacts</masterLabel>
+            <translation><!-- No Contacts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The total amount of won Membership Opportunities (Record Type) related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sum of won Opportunity Amounts related to this Contact by primary Opportunity Contact Role. --></help>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula:  Total Gifts on related Household. --></help>
+        <label><!-- Total Household Gifts --></label>
+        <name>npo02__Total_Household_Gifts__c</name>
+    </fields>
+    <fields>
+        <help>Si cette adresse doit être vérifiée, cliquez sur le bouton « Vérifier l’adresse » en haut la page d’adresse. Consultez la documentation d’aide dans le Power of Us Hub pour plus d’informations.</help>
+        <label><!-- Address Verification Status --></label>
+        <name>npsp__Address_Verification_Status__c</name>
+    </fields>
+    <fields>
+        <help>lien vers le lot dans lequel ce contact a été créé.</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L’adresse actuelle renseignée dans les champs de livraison du contact.</help>
+        <label><!-- Current Address --></label>
+        <name>npsp__Current_Address__c</name>
+        <relationshipLabel><!-- Contacts (Current Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cette option marque le contact comme décédé, et l’exclut de la dénomination du foyer, des e-mails et des appels téléphoniques.</help>
+        <label><!-- Deceased --></label>
+        <name>npsp__Deceased__c</name>
+    </fields>
+    <fields>
+        <help>Cette option exclut le contact des e-mails et des appels téléphoniques.</help>
+        <label><!-- Do Not Contact --></label>
+        <name>npsp__Do_Not_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Cocher cette case exclut ce contact de la salutation formelle du foyer.</help>
+        <label><!-- Exclude from Household Formal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Cocher cette case exclut ce contact de la salutation informelle du foyer.</help>
+        <label><!-- Exclude from Household Informal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Cocher cette case exclut ce contact du nom du foyer.</help>
+        <label><!-- Exclude from Household Name --></label>
+        <name>npsp__Exclude_from_Household_Name__c</name>
+    </fields>
+    <fields>
+        <help>Le montant du crédit de groupe le plus ancien.</help>
+        <label><!-- First Soft Credit Amount --></label>
+        <name>npsp__First_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>La date du premier crédit de groupe.</help>
+        <label><!-- First Soft Credit Date --></label>
+        <name>npsp__First_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Contient l’ID du foyer actuel, qu’il s’agisse d’un compte de foyer ou d’un objet de foyer.</help>
+        <label><!-- HHId --></label>
+        <name>npsp__HHId__c</name>
+    </fields>
+    <fields>
+        <help>Le montant du crédit de groupe le plus élevé.</help>
+        <label><!-- Largest Soft Credit Amount --></label>
+        <name>npsp__Largest_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>La date du crédit de groupe le plus élevé.</help>
+        <label><!-- Largest Soft Credit Date --></label>
+        <name>npsp__Largest_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Le montant du crédit de groupe le plus récent.</help>
+        <label><!-- Last Soft Credit Amount --></label>
+        <name>npsp__Last_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>La date du crédit de groupe le plus récent.</help>
+        <label><!-- Last Soft Credit Date --></label>
+        <name>npsp__Last_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de crédits de groupe fermés aux cours des derniers jours tels que définis dans la configuration de NPSP.</help>
+        <label><!-- Number of Soft Credits Last N Days --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de crédits de groupe de l’année dernière.</help>
+        <label><!-- Number of Soft Credits Last Year --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de crédits de groupe cette année.</help>
+        <label><!-- Number of Soft Credits This Year --></label>
+        <name>npsp__Number_of_Soft_Credits_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de crédits de groupe il y a deux ans.</help>
+        <label><!-- Number of Soft Credits Two Years Ago --></label>
+        <name>npsp__Number_of_Soft_Credits_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de crédits de groupe.</help>
+        <label><!-- Number of Soft Credits --></label>
+        <name>npsp__Number_of_Soft_Credits__c</name>
+    </fields>
+    <fields>
+        <help>Utilisé pour référencer le compte de l’enregistrement d’affiliation d’organisation marqué comme principal.</help>
+        <label><!-- Primary Affiliation --></label>
+        <name>npsp__Primary_Affiliation__c</name>
+        <relationshipLabel><!-- Do Not Use.  Use Organization Affiliations. --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ceci est coché si l’utilisateur est le contact principal sur son compte.  Le contact principal peut être modifié sur le compte.</help>
+        <label><!-- Primary Contact --></label>
+        <name>npsp__Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Le montant total des crédits de groupe fermés aux cours des derniers jours tels que définis dans la configuration de foyer.</help>
+        <label><!-- Soft Credit Last N Days --></label>
+        <name>npsp__Soft_Credit_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, le lien vers l’adresse actuelle du contact remplace l’adresse par défaut ou l’adresse saisonnière du foyer.</help>
+        <label><!-- Address Override --></label>
+        <name>npsp__is_Address_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__Currency_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe --></label>
+        <name>rh2__Describe__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Formula Test --></label>
+        <name>rh2__Formula_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integer Test --></label>
+        <name>rh2__Integer_Test__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- Case --></label>
+        <name>Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Event --></label>
+        <name>Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log A Note --></label>
+        <name>Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- General Contact --></label>
+        <name>General_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Individual Member --></label>
+        <name>Individual_Member</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Blog_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Facebook_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Flickr_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Google_Plus_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Instagram_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_LinkedIn_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Pinterest_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Tumblr_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Twitter_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_Web_by_Drupal_Regex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid url. The most common error is not starting the value with http:// --></errorMessage>
+        <name>gf_sf__Validate_YouTube_Vimeo_by_Drupal_Regex</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MGO_First_Renewal_Reminder --></label>
+        <name>MGO_First_Renewal_Reminder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_New_Employee_Trustee_Email --></label>
+        <name>Send_New_Employee_Trustee_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_New_Member_Email --></label>
+        <name>Send_New_Member_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Affiliations --></label>
+        <name>gf_sf__Add_Affiliations</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Relationships_Viewer --></label>
+        <name>npe4__Relationships_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Copy_Address_to_Household --></label>
+        <name>npo02__Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Household --></label>
+        <name>npo02__Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Contacts --></label>
+        <name>npsp__Merge_Contacts</name>
+    </webLinks>
+</CustomObjectTranslation>

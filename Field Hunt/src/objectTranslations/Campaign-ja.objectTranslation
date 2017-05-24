@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Returns the fiscal year of the Start Date or Start Date and Time field on the campaign, if they&apos;re not blank. The field is used to determine which Opportunities are deferred revenue when exporting to Great Plains --></help>
+        <label><!-- Campaign Fiscal Year --></label>
+        <name>Campaign_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the long Campaign ID, as opposed to the partial, 15-digit ID shown in URLs. --></help>
+        <label><!-- Campaign ID 18 --></label>
+        <name>Campaign_ID_18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Memb Record Type ID --></label>
+        <name>Campaign_Memb_Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Record Type ID --></label>
+        <name>Campaign_Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the number of days remaining until the event, plus the event name. Is used in dashboards to sort events. --></help>
+        <label><!-- Days Remaining + Title --></label>
+        <name>Days_Remaining_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the month of the Event Start Date and Time. --></help>
+        <label><!-- Event Month --></label>
+        <name>Event_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the correct General Ledger Account for MEETING FEES ONLY. --></help>
+        <label><!-- General Ledger Account --></label>
+        <name>General_Ledger_Account__c</name>
+        <picklistValues>
+            <masterLabel>Ad Income - E-communications</masterLabel>
+            <translation><!-- Ad Income - E-communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Income - Giving Forum</masterLabel>
+            <translation><!-- Ad Income - Giving Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracting</masterLabel>
+            <translation><!-- Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibitor Fees - Annual Conference</masterLabel>
+            <translation><!-- Exhibitor Fees - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiscal Agent - MN Food Funder&apos;s Network</masterLabel>
+            <translation><!-- Fiscal Agent - MN Food Funder&apos;s Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Advancing Voices</masterLabel>
+            <translation><!-- Grants - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - My Brother&apos;s Keeper</masterLabel>
+            <translation><!-- Grants - My Brother&apos;s Keeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grants - Public Policy</masterLabel>
+            <translation><!-- Grants - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Posting Income</masterLabel>
+            <translation><!-- Job Posting Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO Subscription - New</masterLabel>
+            <translation><!-- MGO Subscription - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MGO Subscription - Renewal</masterLabel>
+            <translation><!-- MGO Subscription - Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Advancing Voices</masterLabel>
+            <translation><!-- Meeting Fees - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Annual Conference</masterLabel>
+            <translation><!-- Meeting Fees - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Annual Meeting</masterLabel>
+            <translation><!-- Meeting Fees - Annual Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - CEO Circle</masterLabel>
+            <translation><!-- Meeting Fees - CEO Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Co-sponsored and Pop-up Programs</masterLabel>
+            <translation><!-- Meeting Fees - Co-sponsored and Pop-up Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Community Foundation Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Community Foundation Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Contract Training</masterLabel>
+            <translation><!-- Meeting Fees - Contract Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Corporate Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Corporate Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Family Philanthropy Programs and Networks</masterLabel>
+            <translation><!-- Meeting Fees - Family Philanthropy Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Government Relations</masterLabel>
+            <translation><!-- Meeting Fees - Government Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Grantmaking for the 21st Century</masterLabel>
+            <translation><!-- Meeting Fees - Grantmaking for the 21st Century --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Member Networks</masterLabel>
+            <translation><!-- Meeting Fees - Member Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Public Policy</masterLabel>
+            <translation><!-- Meeting Fees - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Ron McKinley Fellowship Program</masterLabel>
+            <translation><!-- Meeting Fees - Ron McKinley Fellowship Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Fees - Webinars</masterLabel>
+            <translation><!-- Meeting Fees - Webinars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Dues - New</masterLabel>
+            <translation><!-- Member Dues - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member Dues - Renewal</masterLabel>
+            <translation><!-- Member Dues - Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Income</masterLabel>
+            <translation><!-- Miscellaneous Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid - Other</masterLabel>
+            <translation><!-- Prepaid - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid Dues</masterLabel>
+            <translation><!-- Prepaid Dues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund/Clearing</masterLabel>
+            <translation><!-- Refund/Clearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Advancing Voices</masterLabel>
+            <translation><!-- Sponsorships - Advancing Voices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Annual Conference</masterLabel>
+            <translation><!-- Sponsorships - Annual Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Annual Meeting</masterLabel>
+            <translation><!-- Sponsorships - Annual Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - CEO Circle</masterLabel>
+            <translation><!-- Sponsorships - CEO Circle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Co-sponsored and Pop-up Programs</masterLabel>
+            <translation><!-- Sponsorships - Co-sponsored and Pop-up Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Community Foundation Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Community Foundation Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Corporate Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Corporate Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Family Philanthropy Programs and Networks</masterLabel>
+            <translation><!-- Sponsorships - Family Philanthropy Programs and Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Giving Forum</masterLabel>
+            <translation><!-- Sponsorships - Giving Forum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Government Relations</masterLabel>
+            <translation><!-- Sponsorships - Government Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Grantmaking for the 21st Century</masterLabel>
+            <translation><!-- Sponsorships - Grantmaking for the 21st Century --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Member Celebration</masterLabel>
+            <translation><!-- Sponsorships - Member Celebration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Member Networks</masterLabel>
+            <translation><!-- Sponsorships - Member Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - My Brother&apos;s Keeper</masterLabel>
+            <translation><!-- Sponsorships - My Brother&apos;s Keeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - New Office Space</masterLabel>
+            <translation><!-- Sponsorships - New Office Space --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Public Policy</masterLabel>
+            <translation><!-- Sponsorships - Public Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorships - Webinars</masterLabel>
+            <translation><!-- Sponsorships - Webinars --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the correct General Ledger Code for MEETING FEES ONLY. --></help>
+        <label><!-- General Ledger Code --></label>
+        <name>General_Ledger_Code__c</name>
+        <picklistValues>
+            <masterLabel>000-1010</masterLabel>
+            <translation><!-- 000-1010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-1145</masterLabel>
+            <translation><!-- 000-1145 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2080</masterLabel>
+            <translation><!-- 000-2080 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2090</masterLabel>
+            <translation><!-- 000-2090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-2098</masterLabel>
+            <translation><!-- 000-2098 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>000-9995</masterLabel>
+            <translation><!-- 000-9995 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140-3150</masterLabel>
+            <translation><!-- 140-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140-3300</masterLabel>
+            <translation><!-- 140-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3100-01</masterLabel>
+            <translation><!-- 190-3100-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3100-02</masterLabel>
+            <translation><!-- 190-3100-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-3900</masterLabel>
+            <translation><!-- 190-3900 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>220-3150</masterLabel>
+            <translation><!-- 220-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>320-3150</masterLabel>
+            <translation><!-- 320-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>320-3300-01</masterLabel>
+            <translation><!-- 320-3300-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>322-3150</masterLabel>
+            <translation><!-- 322-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>322-3300</masterLabel>
+            <translation><!-- 322-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>323-3150</masterLabel>
+            <translation><!-- 323-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>323-3300</masterLabel>
+            <translation><!-- 323-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>324-3150</masterLabel>
+            <translation><!-- 324-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>324-3300</masterLabel>
+            <translation><!-- 324-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325-3150</masterLabel>
+            <translation><!-- 325-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>325-3300</masterLabel>
+            <translation><!-- 325-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3150</masterLabel>
+            <translation><!-- 327-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3200</masterLabel>
+            <translation><!-- 327-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>327-3300</masterLabel>
+            <translation><!-- 327-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330-3150</masterLabel>
+            <translation><!-- 330-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>330-3300</masterLabel>
+            <translation><!-- 330-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>340-3150</masterLabel>
+            <translation><!-- 340-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>340-3300</masterLabel>
+            <translation><!-- 340-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3150</masterLabel>
+            <translation><!-- 350-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3160</masterLabel>
+            <translation><!-- 350-3160 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-3300</masterLabel>
+            <translation><!-- 350-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>360-3150</masterLabel>
+            <translation><!-- 360-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>360-3300</masterLabel>
+            <translation><!-- 360-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>390-3250</masterLabel>
+            <translation><!-- 390-3250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>390-3300</masterLabel>
+            <translation><!-- 390-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>530-3150</masterLabel>
+            <translation><!-- 530-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>530-3500</masterLabel>
+            <translation><!-- 530-3500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>585-3720-01</masterLabel>
+            <translation><!-- 585-3720-01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>585-3720-02</masterLabel>
+            <translation><!-- 585-3720-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>590-3500</masterLabel>
+            <translation><!-- 590-3500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>590-3500-02</masterLabel>
+            <translation><!-- 590-3500-02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>620-3150</masterLabel>
+            <translation><!-- 620-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>620-3300</masterLabel>
+            <translation><!-- 620-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>837-3150</masterLabel>
+            <translation><!-- 837-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>837-3200</masterLabel>
+            <translation><!-- 837-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3150</masterLabel>
+            <translation><!-- 839-3150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3200</masterLabel>
+            <translation><!-- 839-3200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>839-3300</masterLabel>
+            <translation><!-- 839-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>850-3300</masterLabel>
+            <translation><!-- 850-3300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>899-3150-01</masterLabel>
+            <translation><!-- 899-3150-01 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Cancellations from IMPak. Do not edit this field. --></help>
+        <label><!-- IMPak Cancellatoins --></label>
+        <name>IMPakCancellations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Registrants from IMPak. Do not edit this field. --></help>
+        <label><!-- IMPak Total Registrants --></label>
+        <name>IMPak_Total_Registrants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Campaign --></label>
+        <name>Is_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Contact --></label>
+        <name>Lead_Contact__c</name>
+        <relationshipLabel><!-- Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the Event Code from our old database. --></help>
+        <label><!-- Legacy ID --></label>
+        <name>Legacy_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the fee for the new campaign member. --></help>
+        <label><!-- New Campaign Member Fee --></label>
+        <name>New_Campaign_Member_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the status for the new campaign member. --></help>
+        <label><!-- New Campaign Member Status --></label>
+        <name>New_Campaign_Member_Status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Campaign Member --></label>
+        <name>New_Campaign_Member__c</name>
+        <relationshipLabel><!-- Campaigns (New Campaign Member) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Counts the number of people registered who are not MCF employees. --></help>
+        <label><!-- Non-Staff Registrations --></label>
+        <name>Non_Staff_Registrations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of people you hope to register for the event. --></help>
+        <label><!-- Registration Goal --></label>
+        <name>Registration_Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- This fields adds up all the Campaign members marked with a status of &quot;Attended&quot; --></help>
+        <label><!-- Attendees --></label>
+        <name>gf_sf__Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>gf_sf__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>gf_sf__Committee_Affinity_Group__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Drupal ID --></label>
+        <name>gf_sf__Drupal_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drupal Type --></label>
+        <name>gf_sf__Drupal_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date and Time --></label>
+        <name>gf_sf__End_Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Usually comes from Drupal but may need to be entered manually. This is the long form, more descriptive title for an event or campaign, and is used on external communications such as invoices. --></help>
+        <label><!-- Event Title --></label>
+        <name>gf_sf__Event_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of event being held --></help>
+        <label><!-- Event Type --></label>
+        <name>gf_sf__Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Conference</masterLabel>
+            <translation><!-- Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program</masterLabel>
+            <translation><!-- Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reception</masterLabel>
+            <translation><!-- Reception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>gf_sf__Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Required --></label>
+        <name>gf_sf__Login_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Members Only --></label>
+        <name>gf_sf__Members_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- This fields adds up all the Campaign members marked with a status of &quot;No-show&quot; or &quot;Canceled&quot; --></help>
+        <label><!-- No-shows/Cancellations --></label>
+        <name>gf_sf__No_shows_Cancellations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Registration --></label>
+        <name>gf_sf__Online_Registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date and Time --></label>
+        <name>gf_sf__Start_Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time (deprecated) --></label>
+        <name>gf_sf__Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sponsors --></label>
+        <name>gf_sps__Number_of_Sponsors__c</name>
+    </fields>
+    <layouts>
+        <layout>Master Campaign Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Goals vs Actuals --></label>
+            <section>Goals vs Actuals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sponsorship, Grant or Project Campaign Layout</layout>
+        <sections>
+            <label><!-- Campaign Details --></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Campaign Member --></label>
+        <name>Add_Campaign_Member</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Campaign --></label>
+        <name>Child_Campaign</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Events and Meetings --></label>
+        <name>Events_and_Meetings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mailing List --></label>
+        <name>Mailing_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product --></label>
+        <name>Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project --></label>
+        <name>Project</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Group_Members --></label>
+        <name>gf_sf__Add_Group_Members</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Household_Mailing_List --></label>
+        <name>npo02__Household_Mailing_List</name>
+    </webLinks>
+</CustomObjectTranslation>

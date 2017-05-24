@@ -1,0 +1,150 @@
+.THIS {
+  padding:8px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.THIS .status-square--container{
+  float: left;
+  width:12px;
+  height:12px;
+  margin-top:3px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.THIS .snapshot-top-container {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.THIS .snapshot-circle-container {
+	float: left; 
+	width: 45%;
+}
+
+.THIS .snapshot-circle {
+	float: right; 
+	margin-right: 5px;
+}
+
+.THIS .task-snapshot--graph {
+  margin-top:4px;
+}
+
+.THIS .snapshot-stat-list {
+	float: left;
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+.THIS .snapshot-stat-list-container {
+	float: left;
+	width: 55%;
+}
+
+.THIS .snapshot-stat-list-item {
+	float: left;
+	margin-left: 3px;
+	max-width: 130px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.THIS .taskSnapshotBucketCount {
+	float: left;
+	margin-left: 5px;
+}
+
+.THIS .taskSnapshotBucketName {
+	float: left;
+	margin-left: 2px;
+}
+
+.THIS .slds-task-snapshot-bottom-row-text {
+	float: left; 
+	margin-top: 3px; 
+	margin-left: 2px;
+}
+
+.THIS .slds-task-snapshot-bottom-row-icon {
+	float: left;
+}
+
+.THIS .slds-task-snapshot-right-stat-list {
+	float: left; 
+	margin-top: 18px; 
+	margin-left: 2%; 
+	height: 100%;
+}
+
+.THIS .overview-container--bottom {
+	margin-top: 15px;
+	height: 20px; 
+	width: 100%;
+}
+
+.THIS .snapshot-bottom-middle {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.THIS .snapshot-bottom-center-text {
+	float: left; 
+	margin-left: 3px; 
+	margin-top: 2px;
+}
+
+.THIS .taskSnapshotColorSquare {
+	float: left; 
+	margin-top: 4px;
+}
+
+.THIS .slds-clear-float {
+	clear: both;
+}
+
+.THIS .slds-task-snapshot-right-bottom-stat-container {
+	float:left; 
+	margin-left: 30px;
+}
+
+.THIS .slds-task-snapshot-left-bottom-stat-container {
+	float:left; 
+	margin-left: 5px;
+}
+
+.THIS .snapshot-bottom-left-text {
+	float: left; 
+	margin-left: 3px; 
+	margin-top: 2px;
+}
+
+
+.THIS .snapshot-bottom-right {
+	float: left; 
+	width: 55%;
+}
+
+.THIS .snapshot-bottom-left {
+	float: left; 
+	width: 45%;
+}
+
+.THIS .snapshot-bottom-left-stat {
+	float: right; 
+	margin-right: 5px;
+}
+
+.THIS .snapshot-bottom-right-stat {
+	float: left; 
+	margin-left: 29px; 
+	width: 100%;
+}
+
+.THIS .snapshot-bottom-right-text {
+	float: left; 
+	margin-left: 3px; 
+	margin-top: 2px;
+}

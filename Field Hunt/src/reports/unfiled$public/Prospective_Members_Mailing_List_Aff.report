@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.gf_sf__Funder_Category__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.FirstName</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.MiddleName</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.LastName</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$gf_sf__Role__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Account.BillingStreet</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Account.BillingCity</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Account.BillingState</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Account.BillingPostalCode</field>
+    </columns>
+    <description>From the Affiliations table, shows the Prospective Members&apos; Primary Contacts and mailing information.</description>
+    <filter>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Organization__c.Membership_Status_for_Reports__c</column>
+            <operator>equals</operator>
+            <value>Prospective</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Prospective Member Affiliations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Affiliations_with_Account_and_Contact_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>npe5__Affiliation__c$npe5__Organization__c.Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>npe5__Affiliation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

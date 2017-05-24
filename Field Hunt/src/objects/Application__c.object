@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object holds application information for job applicants, including the Ron McKinley Philanthropy Fellowship program.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Applicant_Address_Line_1__c</fullName>
+        <description>First line of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the first line of the applicant&apos;s address.</inlineHelpText>
+        <label>Applicant Address Line 1</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_Address_Line_2__c</fullName>
+        <description>Second line of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the second line of the applicant&apos;s address.</inlineHelpText>
+        <label>Applicant Address Line 2</label>
+        <length>128</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_City__c</fullName>
+        <description>City portion of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the applicant&apos;s city.</inlineHelpText>
+        <label>Applicant City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_Country__c</fullName>
+        <description>Country portion of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the applicant&apos;s country.</inlineHelpText>
+        <label>Applicant Country</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_Email__c</fullName>
+        <description>The email address of the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the email address of the applicant</inlineHelpText>
+        <label>Applicant Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_First_Name__c</fullName>
+        <description>The first name of the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the first name of the applicant.</inlineHelpText>
+        <label>Applicant First Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_Last_Name__c</fullName>
+        <description>The last name of the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the last name of the applicant.</inlineHelpText>
+        <label>Applicant Last Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_LinkedIn_URL__c</fullName>
+        <description>The LinkedIn URL for the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the LinedIn URL for the applicant.</inlineHelpText>
+        <label>Applicant LinkedIn URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Applicant_Middle_Name__c</fullName>
+        <description>The middle name of the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the middle name of the applicant.</inlineHelpText>
+        <label>Applicant Middle Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_Phone_Number__c</fullName>
+        <description>The phone number of the applicant.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the phone number of the applicant.</inlineHelpText>
+        <label>Applicant Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Applicant_Postal_Code__c</fullName>
+        <description>Postal Code portion of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the applicant&apos;s postal code.</inlineHelpText>
+        <label>Applicant Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicant_State__c</fullName>
+        <description>State portion of the applicant&apos;s address.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the applicant&apos;s state.</inlineHelpText>
+        <label>Applicant State</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application_Stage__c</fullName>
+        <description>This is the stage the applicant has reached in the interview process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the stage the applicant has reached in the interview process.</inlineHelpText>
+        <label>Application Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Applied</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Chosen for Phone Screen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Semi-finalist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finalist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hired</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RMPF_Application_Cycle__c</fullName>
+        <description>Used for the Ron McKinley program only. The cycle when the application was submitted. This will usually be just a year (2016 for applications received during the 2016 application cycle, even if the fellows start in 2017).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for the Ron McKinley program only. Enter the cycle when the application was submitted. This will usually be just a year (2016 for applications received during the 2016 application cycle, even if the fellows start in 2017).</inlineHelpText>
+        <label>RMPF Application Cycle</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Application</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>X2016_Ron_McKinley_Applicants</fullName>
+        <columns>NAME</columns>
+        <columns>Application_Stage__c</columns>
+        <columns>Applicant_First_Name__c</columns>
+        <columns>Applicant_Middle_Name__c</columns>
+        <columns>Applicant_Last_Name__c</columns>
+        <columns>Applicant_Email__c</columns>
+        <columns>Applicant_Phone_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Application__c.Ron_McKinley_Applicant</value>
+        </filters>
+        <filters>
+            <field>RMPF_Application_Cycle__c</field>
+            <operation>equals</operation>
+            <value>2016</value>
+        </filters>
+        <label>2016 Ron McKinley Applicants</label>
+        <sharedTo>
+            <group>Ron_McKinley_Admins</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>APP{00000}</displayFormat>
+        <label>Application Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Applications</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Job_Application</fullName>
+        <active>true</active>
+        <description>Used for most job applicants.</description>
+        <label>Job Application</label>
+        <picklistValues>
+            <picklist>Application_Stage__c</picklist>
+            <values>
+                <fullName>Applied</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Chosen for Phone Screen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finalist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-finalist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ron_McKinley_Applicant</fullName>
+        <active>true</active>
+        <description>Use for applications to the Ron McKinley Philanthropy Fellowship Program</description>
+        <label>Ron McKinley Applicant</label>
+        <picklistValues>
+            <picklist>Application_Stage__c</picklist>
+            <values>
+                <fullName>Applied</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Chosen for Phone Screen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finalist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-finalist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Applicant_First_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Applicant_Last_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Application_Stage__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RMPF_Application_Cycle__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

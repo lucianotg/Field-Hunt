@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Title</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Organization__c.Name</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Phone</field>
+    </columns>
+    <columns>
+        <field>npe5__Affiliation__c$npe5__Contact__c.Email</field>
+    </columns>
+    <description>Shows only people with Current Affiliations, based on the selected Account ID 18. The Account ID 18 can be found on the Account page under System Information.</description>
+    <filter>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Organization__c.Account_ID_18__c</column>
+            <operator>equals</operator>
+            <value>001j000000cX4PRAA0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>npe5__Affiliation__c$npe5__Status__c</column>
+            <operator>equals</operator>
+            <value>Current</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Roster by AccountID</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Affiliations_with_Account_and_Contact_Fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>npe5__Affiliation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

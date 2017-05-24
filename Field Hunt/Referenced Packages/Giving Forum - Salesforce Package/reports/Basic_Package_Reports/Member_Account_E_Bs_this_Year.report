@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Engagement_and_Benefits__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Unique_Count__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <description>This report shows the total of current member accounts that received an engagement or benefit record this year. Included in this report is the additional total of member accounts that did not receive an engagement or benefit this year.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Membership_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Current</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Engagement_and_Benefits__r$RecordType</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Member Account E/Bs this Year</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Engagements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Engagement_and_Benefits__r$Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>
